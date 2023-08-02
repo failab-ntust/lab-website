@@ -1,95 +1,78 @@
+"use client"
+import { Box, Typography, Paper, Grid, BottomNavigation, Container, Link, ListItem, ListItemIcon, ListItemText, ListItemAvatar, Avatar } from '@mui/material'
 import Image from 'next/image'
-import styles from './page.module.css'
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <>
+
+
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={{ xs: 2, sm: 0 }} columns={{ xs: 4, sm: 8, md: 12 }} >
+          <Grid item xs={4} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+              src='/fintech.png'
+              alt='fintech'
+              width={150}
+              height={150}
             />
-          </a>
-        </div>
-      </div>
+          </Grid>
+          <Grid item xs={4} md={8} sx={{ display: 'flex', justifyContent: 'flex-end', flexDirection: 'column' }}>
+            <Typography variant="h5" sx={{ fontFamily: 'monospace', color: '#777777' }}>
+              臺灣科技大學 <br /> 管理學院 管理學士班
+            </Typography>
+            <Typography variant="h3" sx={{ fontFamily: 'monospace', fontWeight: 700 }}>
+              金融科技與人工智慧實驗室
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <Box sx={{ bgcolor: '#F5F5F5', borderRadius: 5, mt: 5 }}>
+        <ListItem>
+          <MonetizationOnIcon fontSize="large" sx={{ mr: 1, color: "#FFD700", }} />
+          <Typography variant="h5" noWrap sx={{ lineHeight: 'normal' }}>
+            最新消息
+          </Typography>
+        </ListItem>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+        <ListItem>
+          <ListItemAvatar sx={{ bgcolor: '#FFD700', borderRadius: 1, mr: 1 }}>
+            2022/12
+          </ListItemAvatar>
+          <ListItemText primary="第五屆法遵科技與電腦稽核專題競賽 – 亞軍"
+            secondary="指導學生：管理學士班 – 郁庭、芷綾、卉萱、亭蓁、家萱" />
+        </ListItem>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+        <ListItem>
+          <ListItemAvatar sx={{ bgcolor: '#FFD700', borderRadius: 1, mr: 1 }}>
+            2022/11
+          </ListItemAvatar>
+          <ListItemText primary="通過國科會計畫通過 – 在保護個人隱私下建構跨產業資料共享框架" />
+        </ListItem>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
+        <ListItem>
+          <ListItemAvatar sx={{ bgcolor: '#FFD700', borderRadius: 1, mr: 1 }}>
+            2022/11
+          </ListItemAvatar>
+          <ListItemText primary="研究論文 ”Diversity-Optimized Group Extraction in Social Networks” 接受" />
+        </ListItem>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </Box >
+      {/* <Box sx={{
+        position: 'absolute',
+        bottom: 0,
+        bgcolor: '#48abe0',
+        // height: 200,
+        // width: '100%',
+        // borderRadius: '15rem 15rem 0 0',
+        border: '2px solid black'
+      }} /> */}
+
+
+
+    </>
   )
 }
+

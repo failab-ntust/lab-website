@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import ResponsiveAppBar from './ResponsiveAppBar'
+import { Box, Typography, Container, Link } from '@mui/material'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} >
+        <ResponsiveAppBar />
+        <Box sx={{ m: 3 }}>
+          {children}
+        </Box>
+      </body>
     </html>
+
   )
 }
