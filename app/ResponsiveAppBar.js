@@ -20,9 +20,9 @@ const display = {
     Above900px: { xs: 'none', md: 'flex' },
     Below900px: { xs: 'flex', md: 'none' }
 }
-const LogoName = ({ xs, md, flexGrow, letterSpacing }) => (
+const LogoName = ({ variant, xs, md, flexGrow, letterSpacing }) => (
     <Typography
-        variant="h4"
+        variant={variant}
         noWrap
         component="a"
         href="/"
@@ -64,7 +64,7 @@ function ResponsiveAppBar() {
 
                 <Toolbar disableGutters sx={{ display: display.Above900px }}>
                     <MonetizationOnIcon fontSize="large" sx={{ display: display.Above900px, mr: 1, color: "#FFD700" }} />
-                    <LogoName {...{ xs: 'none', md: 'flex', flexGrow: 0, letterSpacing: '.3rem' }} />
+                    <LogoName {...{ variant: 'h4', xs: 'none', md: 'flex', flexGrow: 0, letterSpacing: '.3rem' }} />
 
 
                     <Box sx={{ flexGrow: 1, display: display.Above900px, justifyContent: 'flex-end' }}>
@@ -134,7 +134,7 @@ function ResponsiveAppBar() {
 
                     </Box>
 
-                    <LogoName {...{ xs: 'flex', md: 'none', flexGrow: 1.5, letterSpacing: '.1rem' }} />
+                    <LogoName {...{ variant: 'h5', xs: 'flex', md: 'none', flexGrow: 1.5, letterSpacing: '.1rem' }} />
 
                 </Toolbar>
                 {/* below 900px */}

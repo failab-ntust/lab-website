@@ -18,12 +18,33 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className} >
+      <body className={inter.className} style={{ position: 'relative' }}>
         <ResponsiveAppBar />
-        <Box sx={{ m: 3 }}>
+        <Box sx={{ mx: { xs: 3, md: 5 }, mt: { xs: 2, md: 2 } }}>
           {children}
         </Box>
+        <Box sx={{ width: '100%', bgcolor: '#FDD700', height: 100, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', mt: 3 }}>
+          <Typography
+            variant="subtitle2"
+            component="div"
+            gutterBottom
+            display="block"
+            color="text.secondary"
+          >
+            © Copyright <b>FAILab</b>. All Rights Reserved
+          </Typography>
+          <Typography
+            variant="subtitle2"
+            component="div"
+            gutterBottom
+            display="block"
+            color="text.secondary"
+          >
+            Built by FAILab
+          </Typography>
+        </Box>
       </body>
+
     </html>
 
   )
