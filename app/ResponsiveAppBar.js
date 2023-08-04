@@ -58,7 +58,7 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static" elevation={0} sx={{ bgcolor: "#FFFFFF" }}>
+        <AppBar position="sticky" elevation={0} sx={{ bgcolor: "#FFFFFF" }}>
             <Container maxWidth="xl">
                 {/* above 900px*/}
 
