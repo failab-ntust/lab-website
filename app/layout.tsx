@@ -2,9 +2,11 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import ResponsiveAppBar from './ResponsiveAppBar'
-import { Box, Typography, Container, Link } from '@mui/material'
+import { Box } from '@mui/material'
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './theme'
+import Footer from './Footer'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -25,26 +27,7 @@ export default function RootLayout({
           <Box sx={{ mx: { xs: 3, md: 5 }, mt: { xs: 2, md: 2 } }}>
             {children}
           </Box>
-          <Box sx={{ width: '100%', bgcolor: '#FDD700', height: 100, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', mt: 3 }}>
-            <Typography
-              variant="subtitle2"
-              component="div"
-              gutterBottom
-              display="block"
-              color="text.secondary"
-            >
-              © Copyright <b>FAILab</b>. All Rights Reserved
-            </Typography>
-            <Typography
-              variant="subtitle2"
-              component="div"
-              gutterBottom
-              display="block"
-              color="text.secondary"
-            >
-              Built by FAILab
-            </Typography>
-          </Box>
+          <Footer />
         </body>
       </ThemeProvider>
 
