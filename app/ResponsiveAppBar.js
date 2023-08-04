@@ -72,8 +72,8 @@ function ResponsiveAppBar() {
                             {pages.map((page, index) => (
                                 <Tab
                                     key={index}
-                                    disableRipple={true}
-                                    disableFocusRipple={true}
+                                    disableRipple
+                                    disableFocusRipple
                                     sx={{ opacity: 1 }}
                                     label={
                                         <Typography
