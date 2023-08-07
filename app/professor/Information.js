@@ -172,7 +172,7 @@ export default function Information() {
     };
 
     return (
-        <>
+        <Box sx={{ height: '100%' }}>
             <CusBox title="簡介">
                 <Typography>
                     Chih-Chieh Chang (CCC) received the Ph.D. degree from the Department of Industrial and Information Management, National Cheng Kung University, Tainan City, Taiwan, in 2012. He is currently an Assistant Professor with the School of Management, National Taiwan University of Science Technology (NTUST), Taipei City, Taiwan. His research interests include machine learning, data mining, digital transformation and financial technology. Due to his past work experience, CCC puts more emphasis on the connection between practice and academic research.
@@ -246,6 +246,6 @@ export default function Information() {
                     ))}
                 </CustomTabPanel>
             </CusBox >
-        </>
+        </Box>
     );
 }
