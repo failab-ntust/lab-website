@@ -5,7 +5,7 @@ import { Box, Container } from '@mui/material'
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './theme'
 
-import ResponsiveAppBar from './ResponsiveAppBar'
+import ResponsiveAppBar from './NavBar'
 import Footer from './Footer'
 
 const inter = Inter({ subsets: ['latin'] })

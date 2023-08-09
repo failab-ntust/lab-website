@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/ResponsiveAppBar.js"
+    "app/NavBar.js"
   ],
   "exclude": [
     "node_modules"

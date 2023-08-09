@@ -40,7 +40,7 @@ const LogoName = ({ variant, xs, md, flexGrow, letterSpacing }) => (
     </Typography>
 )
 
-function ResponsiveAppBar() {
+function NavBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [currentTabIndex, setCurrentTabIndex] = React.useState(false);
     const pathname = usePathname()
@@ -68,7 +68,7 @@ function ResponsiveAppBar() {
 
 
                     <Box sx={{ flexGrow: 1, display: display.Above900px, justifyContent: 'flex-end' }}>
-                        <Tabs value={false} onChange={handleTabChange} >
+                        <Tabs value={false} onChange={handleTabChange} indicatorColor='primary'>
                             {pages.map((page, index) => (
                                 <Tab
                                     key={index}
@@ -82,7 +82,7 @@ function ResponsiveAppBar() {
                                             component="a"
                                             href={page.href}
                                             sx={{
-                                                color: pathname === page.href ? '#FDD700' : '#000000',
+                                                color: pathname === page.href ? (theme) => theme.palette.secondary.main : '#000000',
                                                 textDecoration: 'none',
                                                 fontWeight: 600
                                             }}>
@@ -145,4 +145,4 @@ function ResponsiveAppBar() {
         </AppBar >
     );
 }
-export default ResponsiveAppBar;
+export default NavBar;
