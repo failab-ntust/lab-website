@@ -24,12 +24,14 @@ export default function RootLayout({
     <html lang="en">
       <ThemeProvider theme={theme}>
         <body className={inter.className} style={{ margin: 0 }}>
-          <Container disableGutters maxWidth='xl'>
+          <Container disableGutters maxWidth='xl' sx={{ display: 'flex', flexDirection: 'column', height: '100vh', mt: 7 }}>
             <ResponsiveAppBar />
-            <Box sx={{ mx: { xs: 4, md: 10 }, my: { xs: 2, md: 2 } }}>
+            <Box sx={{ flex: 9, mx: { xs: 4, md: 10 }, my: { xs: 2, md: 2 } }}>
               {children}
             </Box>
-            <Footer />
+            <Box sx={{ flex: 1 }}>
+              <Footer />
+            </Box>
           </Container>
         </body>
       </ThemeProvider>
