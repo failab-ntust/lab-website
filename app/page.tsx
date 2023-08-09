@@ -14,7 +14,7 @@ export default function Home() {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={{ xs: 2, sm: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
           <Grid item xs={4} sm={8} md={7} >
-            <Box sx={{ display: 'flex', justifyContent: { xs: 'space-around', md: 'flex-start' }, py: 5 }}>
+            <Box sx={{ display: 'flex', justifyContent: { xs: 'space-around', md: 'flex-start' }, py: 3 }}>
               {/* <Image
                 src='/fintech.png'
                 alt='fintech'
@@ -27,6 +27,9 @@ export default function Home() {
                 </Typography>
                 <Typography sx={{ typography: { xs: 'h4', sm: 'h3', fontWeight: '700 !important' } }}>
                   金融科技與人工智慧實驗室
+                </Typography>
+                <Typography sx={{ typography: { xs: 'h6', sm: 'h5' } }}>
+                  Fintech and Artificial Intelligence Lab
                 </Typography>
               </Box>
             </Box>

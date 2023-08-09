@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import { Box } from '@mui/material'
+import { Box, Container } from '@mui/material'
 import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './theme'
 
@@ -24,15 +24,15 @@ export default function RootLayout({
     <html lang="en">
       <ThemeProvider theme={theme}>
         <body className={inter.className} style={{ margin: 0 }}>
-          <ResponsiveAppBar />
-          <Box sx={{ mx: { xs: 3, md: 10 }, mt: { xs: 2, md: 2 } }}>
-            {children}
-          </Box>
-          <Footer />
+          <Container disableGutters maxWidth='xl'>
+            <ResponsiveAppBar />
+            <Box sx={{ mx: { xs: 4, md: 10 }, my: { xs: 2, md: 2 } }}>
+              {children}
+            </Box>
+            <Footer />
+          </Container>
         </body>
       </ThemeProvider>
-
     </html>
-
   )
 }
