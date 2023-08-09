@@ -40,7 +40,7 @@ export default function Home() {
                 最新消息
               </Typography>
             </ListItem>
-            <Box sx={{ bgcolor: '#F5F5F5', borderRadius: 5, p: { xs: 0, md: 1.5 }, maxHeight: 300, overflowY: 'auto' }}>
+            <Box sx={{ bgcolor: '#F5F5F5', borderRadius: 5, p: { xs: 0, md: 1.5 }, minHeight: 200, overflowY: 'auto' }}>
               <ListItem>
                 <ListItemAvatar sx={{ bgcolor: '#FFD700', borderRadius: 1, mr: 1 }}>
                   2022/12
