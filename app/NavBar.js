@@ -20,29 +20,29 @@ const display = {
     Above900px: { xs: 'none', md: 'flex' },
     Below900px: { xs: 'flex', md: 'none' }
 }
-const LogoName = ({ variant, xs, md, flexGrow, letterSpacing }) => (
-    <Typography
-        variant={variant}
-        noWrap
-        component="a"
-        href="/"
-        sx={{
-            display: { xs: xs, md: md },
-            flexGrow: flexGrow,
-            fontFamily: 'monospace',
-            fontWeight: 700,
-            letterSpacing: letterSpacing,
-            color: '#000000',
-            textDecoration: 'none'
-        }}
-    >
-        FAILAB
-    </Typography>
+const LogoName = ({ flexGrow, variant, xs, md, letterSpacing }) => (
+    <Box sx={{ display: { xs: xs, md: md }, flexGrow: flexGrow }}>
+        <Typography
+            variant={variant}
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+                fontFamily: 'monospace',
+                fontWeight: 700,
+                letterSpacing: letterSpacing,
+                color: '#000000',
+                textDecoration: 'none'
+            }}
+        >
+            FAILAB
+        </Typography>
+    </Box>
 )
+
 
 function NavBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [currentTabIndex, setCurrentTabIndex] = React.useState(false);
     const pathname = usePathname()
 
     const handleOpenNavMenu = (e) => {
@@ -53,22 +53,17 @@ function NavBar() {
         setAnchorElNav(null);
     };
 
-    const handleTabChange = (e, tabIndex) => {
-        setCurrentTabIndex(tabIndex);
-    };
-
     return (
         <AppBar position="fixed" elevation={0} sx={{ bgcolor: "#FFFFFF" }}>
             <Container maxWidth="xl">
                 {/* above 900px*/}
 
                 <Toolbar disableGutters sx={{ display: display.Above900px }}>
-                    <MonetizationOnIcon fontSize="large" sx={{ display: display.Above900px, mr: 1, color: "#FFD700" }} />
+                    <MonetizationOnIcon color='primary' fontSize="large" sx={{ mr: 1 }} />
                     <LogoName {...{ variant: 'h4', xs: 'none', md: 'flex', flexGrow: 0, letterSpacing: '.3rem' }} />
 
-
                     <Box sx={{ flexGrow: 1, display: display.Above900px, justifyContent: 'flex-end' }}>
-                        <Tabs value={false} onChange={handleTabChange} indicatorColor='primary'>
+                        <Tabs value={false}>
                             {pages.map((page, index) => (
                                 <Tab
                                     key={index}
@@ -87,7 +82,8 @@ function NavBar() {
                                                 fontWeight: 600
                                             }}>
                                             {page.item}
-                                        </Typography>} />
+                                        </Typography>}
+                                />
                             ))}
                         </Tabs>
                     </Box>
@@ -97,7 +93,10 @@ function NavBar() {
 
                 {/* below 900px*/}
                 <Toolbar disableGutters sx={{ display: display.Below900px }}>
-                    <Box sx={{ flexGrow: 1, display: display.Below900px }}>
+                    <MonetizationOnIcon color='primary' fontSize="large" sx={{ mr: 1 }} />
+                    <LogoName {...{ variant: 'h5', xs: 'flex', md: 'none', letterSpacing: '.1rem', flexGrow: 1 }} />
+
+                    <Box sx={{ display: display.Below900px }}>
                         <IconButton
                             size="large"
                             aria-label="account of current user"
@@ -110,32 +109,33 @@ function NavBar() {
                         </IconButton>
 
                         <SwipeableDrawer
-                            anchor={'left'}
+                            anchor='top'
                             open={Boolean(anchorElNav)}
                             onClose={handleCloseNavMenu}
                             onOpen={handleOpenNavMenu}
                         >
                             <List>
                                 {pages.map((page, index) => (
-                                    <ListItem key={page.item} component="a" href={page.href} disablePadding sx={{
-                                        color: pathname === page.href ? '#FDD700' : '#000000',
-                                        textDecoration: 'none',
-                                    }}>
-                                        <ListItemButton>
-                                            <ListItemIcon>
-                                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                                            </ListItemIcon>
-                                            <ListItemText primary={page.item} />
-                                        </ListItemButton>
-                                    </ListItem>
+                                    <ListItemButton
+                                        selected={pathname === page.href}
+                                        key={page.item}
+                                        component="a"
+                                        href={page.href}
+                                        sx={{
+                                            color: '#000000',
+                                            textDecoration: 'none',
+                                        }}
+                                    >
+                                        <ListItemIcon>
+                                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                        </ListItemIcon>
+                                        <ListItemText primary={page.item} />
+                                    </ListItemButton>
                                 ))}
                             </List>
                         </SwipeableDrawer>
 
                     </Box>
-
-                    <LogoName {...{ variant: 'h5', xs: 'flex', md: 'none', flexGrow: 1.5, letterSpacing: '.1rem' }} />
-
                 </Toolbar>
                 {/* below 900px */}
 

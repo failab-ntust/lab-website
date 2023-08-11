@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material'
 
 export default function Footer() {
     return (
-        <Box sx={{ bgcolor: '#FDD700', height: 90, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+        <Box sx={{ bgcolor: '#FDD700', height: 80, display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             <Typography
                 variant="subtitle2"
                 component="div"
