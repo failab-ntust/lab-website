@@ -34,7 +34,7 @@ const images = [
 function SwipeableTextMobileStepper() {
     const theme = useTheme();
     const [activeStep, setActiveStep] = React.useState(0);
-    // const [showOverlay, setShowOverlay] = React.useState(false);
+
     const maxSteps = images.length;
 
     const handleNext = () => {
@@ -72,11 +72,7 @@ function SwipeableTextMobileStepper() {
                 enableMouseEvents
             >
                 {images.map((step, index) => (
-                    <Box key={index}
-                    // sx={{ position: 'relative' }}
-                    // onMouseOver={() => setShowOverlay(true)}
-                    // onMouseOut={() => setShowOverlay(false)}
-                    >
+                    <Box key={index}>
                         <Box
                             component="img"
                             key={index}
@@ -89,18 +85,6 @@ function SwipeableTextMobileStepper() {
                             src={step.imgPath}
                             alt={step.label}
                         />
-                        {/* {showOverlay &&
-                            <Box sx={{
-                                position: 'absolute', top: 0, width: '100%',
-                                height: '100%', bgcolor: '#000000', opacity: 0.5
-                            }}>
-                                <IconButton size="large" onClick={handleBack} >
-                                    <KeyboardArrowLeft />
-                                </IconButton>
-                                <IconButton size="large" onClick={handleNext}>
-                                    <KeyboardArrowRight />
-                                </IconButton>
-                            </Box>} */}
                     </Box>
                 ))}
 
