@@ -93,9 +93,9 @@ export default function Result() {
     };
 
     return (
-        <Box sx={{ height: '100%' }}>
+        <Box height='100%'>
             <FieldTitle fieldtitle='研究成果' />
-            <Box sx={{ bgcolor: '#F5F5F5', minHeight: '85%', borderRadius: 5 }}>
+            <Box sx={{ bgcolor: '#F5F5F5', borderRadius: 5, minHeight: '88%' }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3, display: 'flex', justifyContent: 'center' }}>
                     <Tabs
                         value={value}

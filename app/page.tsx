@@ -1,6 +1,5 @@
 "use client"
 import { Box, Typography, Grid, ListItem, ListItemIcon, ListItemText, ListItemAvatar, Avatar, List } from '@mui/material'
-import Image from 'next/image'
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import Carousel from './Carousel'
 
@@ -14,13 +13,7 @@ export default function Home() {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={{ xs: 2, sm: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
           <Grid item xs={4} sm={8} md={7} >
-            <Box sx={{ display: 'flex', justifyContent: { xs: 'space-around', md: 'flex-start' }, py: 3 }}>
-              {/* <Image
-                src='/fintech.png'
-                alt='fintech'
-                width={150}
-                height={150}
-              /> */}
+            <Box sx={{ display: 'flex', justifyContent: { xs: 'space-around', md: 'flex-start' }, pt: 3, pb: 2.5 }}>
               <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
                 <Typography sx={{ typography: { xs: 'h6', sm: 'h5' }, color: '#777777' }}>
                   臺灣科技大學 管理學士班
