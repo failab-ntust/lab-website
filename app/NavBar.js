@@ -2,19 +2,20 @@
 import * as React from 'react';
 import { usePathname } from 'next/navigation';
 
-import { AppBar, Box, Toolbar, IconButton, Typography, Container, SwipeableDrawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Tabs, Tab } from '@mui/material';
+import { AppBar, Box, Toolbar, IconButton, Typography, Container, SwipeableDrawer, ListItemButton, ListItemIcon, ListItemText, Tabs, Tab, Stack } from '@mui/material';
 
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
+import PersonIcon from '@mui/icons-material/Person';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
+import PeopleIcon from '@mui/icons-material/People';
 
 const pages = [
-    { item: '指導教授', href: '/professor' },
-    { item: '研究領域', href: '/research' },
-    { item: '研究成果', href: '/result' },
-    { item: '研究成員', href: '/members' },
-    { item: '關於我們', href: '/aboutus' }
+    { item: '指導教授', href: '/professor', icon: <PersonIcon /> },
+    { item: '研究領域', href: '/research', icon: <MenuBookIcon /> },
+    { item: '研究成果', href: '/result', icon: <ReceiptLongIcon /> },
+    { item: '研究成員', href: '/members', icon: <PeopleIcon /> }
 ];
 const display = {
     Above900px: { xs: 'none', md: 'flex' },
@@ -114,25 +115,30 @@ function NavBar() {
                             onClose={handleCloseNavMenu}
                             onOpen={handleOpenNavMenu}
                         >
-                            <List>
-                                {pages.map((page, index) => (
-                                    <ListItemButton
-                                        selected={pathname === page.href}
-                                        key={page.item}
-                                        component="a"
-                                        href={page.href}
-                                        sx={{
-                                            color: '#000000',
-                                            textDecoration: 'none',
-                                        }}
-                                    >
+                            {/* <List> */}
+                            {pages.map((page, index) => (
+                                <ListItemButton
+                                    divider
+                                    selected={pathname === page.href}
+                                    key={index}
+                                    component="a"
+                                    href={page.href}
+                                    sx={{
+                                        color: '#000000',
+                                        textDecoration: 'none',
+                                        justifyContent: 'center'
+                                    }}
+                                >
+
+                                    <Stack direction='row' justifyContent='center' py={0.5}>
                                         <ListItemIcon>
-                                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                            {page.icon}
                                         </ListItemIcon>
-                                        <ListItemText primary={page.item} />
-                                    </ListItemButton>
-                                ))}
-                            </List>
+                                        {page.item}
+                                    </Stack>
+                                </ListItemButton>
+
+                            ))}
                         </SwipeableDrawer>
 
                     </Box>

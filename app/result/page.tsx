@@ -104,11 +104,25 @@ export default function Result() {
                         textColor='secondary'
                         indicatorColor='secondary'
                         variant="scrollable"
-                        allowScrollButtonsMobile
                     >
-                        <Tab label="國科會計畫" disableRipple {...a11yProps(0)} />
-                        <Tab label="產學合作案" disableRipple {...a11yProps(1)} />
-                        <Tab label="Publication" disableRipple {...a11yProps(2)} />
+                        <Tab disableRipple {...a11yProps(0)}
+                            label={
+                                <Typography variant="body1" noWrap>
+                                    國科會計畫
+                                </Typography>
+                            } />
+                        <Tab disableRipple {...a11yProps(1)}
+                            label={
+                                <Typography variant="body1" noWrap>
+                                    產學合作案
+                                </Typography>
+                            } />
+                        <Tab disableRipple {...a11yProps(2)}
+                            label={
+                                <Typography variant="body1" noWrap>
+                                    Publication
+                                </Typography>
+                            } />
                     </Tabs>
                 </Box>
 

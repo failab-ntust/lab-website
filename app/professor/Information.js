@@ -121,7 +121,7 @@ const CourseGrid = ({ course, link, img }) => (
             }
         }}>
         <Image
-            src={`${img}.svg`}
+            src={`/fields/${img}.svg`}
             alt={img}
             width={100}
             height={100}
@@ -173,25 +173,26 @@ export default function Information() {
 
     return (
         <Box sx={{ height: '100%' }}>
-            <Dots />
 
             <CusBox title="關於我">
                 <Typography>
-                    目前擔任國立臺灣科技大學管理學院助理教授，研究興趣包括機器學習、資料挖掘、數位轉型和金融科技。
+                    Chih-Chieh Chang (CCC) received the Ph.D. degree from the Department of Industrial and Information Management, National Cheng Kung University, Tainan City, Taiwan, in 2012. He is currently an Assistant Professor with the School of Management, National Taiwan University of Science Technology (NTUST), Taipei City, Taiwan.
+                </Typography>
+                <br />
+                <br />
+                <Typography>
+                    His research interests include machine learning, data mining, digital transformation and financial technology. Due to his past work experience, CCC puts more emphasis on the connection between practice and academic research.
+                </Typography>
+                <br />
+                <br />
+                <Typography>
+                    His research has been published in some data mining and machine learning related journals, including Decision Support System (Q1), IEEE TCSS (Q2), Journal of Intelligent Manufacturing (Q1), and etc. He also has some conference papers presented in IEEE Big Data and GSIS.
                 </Typography>
 
                 <br />
                 <br />
                 <Typography>
-                    曾發表研究論文於多個資料挖掘和機器學習相關的期刊，包括 Decision Support System（Q1）、IEEE TCSS（Q2）、Journal of Intelligent Manufacturing（Q1）等。
-                    曾參與 IEEE Big Data 和 GSIS 等會議，發表相關論文。
-                </Typography>
-
-                <br />
-                <br />
-                <Typography>
-                    曾在富邦集團擔任多年職位，包括金融科技辦公室和momo（可能指富邦媒體科技），專注於推動使用資料科學和機器學習工具，協助企業進行數位轉型。
-                    完成過多個專案，包括機器人顧問（Robo advisor）、聊天機器人（Chatbot）、跨領域資料分析平台（Cross Domain data analysis platform）。
+                    Regarding industry experience, he had eight years in Fubon Group including Fintech office and momo, which he focused on promoting using data science and machine learning tools to help enterprises to process digital transformation. He had finished projects: Robo advisor, Chatbot, Cross Domain data analysis platform.
                 </Typography>
             </CusBox>
 

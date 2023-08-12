@@ -41,7 +41,7 @@ export default function Research() {
             </Typography>
 
             <br />
-            <Grid container spacing={{ xs: 2, md: 3, lg: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
+            <Grid container spacing={3} columns={{ xs: 4, sm: 8, md: 12 }} >
                 <Grid item xs={4} sm={8} md={6}>
                     <FieldGrid field="數位轉型" >
                         <FieldContent icon={<Looks1Icon color='primary' />} subfield='數據賦能' subcontent='在大數據時代下，數據除了蒐集紀錄相關資訊外也同時隱含其他潛在可能的資訊。實驗室將協助企業透過視覺化軟體及No Code AI工具輔助提升企業在數據運用的價值。' />
