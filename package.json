@@ -22,6 +22,7 @@
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-swipeable-views": "^0.14.0",
     "react-swipeable-views-utils": "^0.14.0",
     "styled-components": "^5.3.11",
     "typescript": "5.1.6"
