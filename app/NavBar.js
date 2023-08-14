@@ -2,7 +2,7 @@
 import * as React from 'react';
 import { usePathname } from 'next/navigation';
 
-import { AppBar, Box, Toolbar, IconButton, Typography, Container, SwipeableDrawer, ListItemButton, ListItemIcon, ListItemText, Tabs, Tab, Stack } from '@mui/material';
+import { AppBar, Box, Toolbar, IconButton, Typography, Container, SwipeableDrawer, ListItemButton, ListItemIcon, Tabs, Tab, Stack } from '@mui/material';
 
 import MenuIcon from '@mui/icons-material/Menu';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
@@ -41,6 +41,12 @@ const LogoName = ({ flexGrow, variant, xs, md, letterSpacing }) => (
     </Box>
 )
 
+const CusToolbar = ({ display, children }) => (
+    <Toolbar disableGutters sx={{ display: display }}>
+        <MonetizationOnIcon color='primary' fontSize="large" sx={{ mr: 1 }} />
+        {children}
+    </Toolbar>
+)
 
 function NavBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -58,9 +64,7 @@ function NavBar() {
         <AppBar position="fixed" elevation={0} sx={{ bgcolor: "#FFFFFF" }}>
             <Container maxWidth="xl">
                 {/* above 900px*/}
-
-                <Toolbar disableGutters sx={{ display: display.Above900px }}>
-                    <MonetizationOnIcon color='primary' fontSize="large" sx={{ mr: 1 }} />
+                <CusToolbar display={display.Above900px}>
                     <LogoName {...{ variant: 'h4', xs: 'none', md: 'flex', flexGrow: 0, letterSpacing: '.3rem' }} />
 
                     <Box sx={{ flexGrow: 1, display: display.Above900px, justifyContent: 'flex-end' }}>
@@ -88,14 +92,11 @@ function NavBar() {
                             ))}
                         </Tabs>
                     </Box>
-
-                </Toolbar>
-                {/* above 900px*/}
+                </CusToolbar>
 
                 {/* below 900px*/}
-                <Toolbar disableGutters sx={{ display: display.Below900px }}>
-                    <MonetizationOnIcon color='primary' fontSize="large" sx={{ mr: 1 }} />
-                    <LogoName {...{ variant: 'h5', xs: 'flex', md: 'none', letterSpacing: '.1rem', flexGrow: 1 }} />
+                <CusToolbar display={display.Below900px}>
+                    <LogoName {...{ variant: 'h5', xs: 'flex', md: 'none', flexGrow: 1, letterSpacing: '.1rem' }} />
 
                     <Box sx={{ display: display.Below900px }}>
                         <IconButton
@@ -115,7 +116,6 @@ function NavBar() {
                             onClose={handleCloseNavMenu}
                             onOpen={handleOpenNavMenu}
                         >
-                            {/* <List> */}
                             {pages.map((page, index) => (
                                 <ListItemButton
                                     divider
@@ -142,11 +142,7 @@ function NavBar() {
                         </SwipeableDrawer>
 
                     </Box>
-                </Toolbar>
-                {/* below 900px */}
-
-
-
+                </CusToolbar>
             </Container>
         </AppBar >
     );
