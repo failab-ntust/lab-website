@@ -24,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel='icon' href='/coin.png' />
+        <link rel="apple-touch-icon" href="/coin-apple-icon.png" />
       </head>
       <ThemeProvider theme={theme}>
         <body className={inter.className} style={{ margin: 0 }}>
