@@ -9,7 +9,7 @@ import SmartphoneIcon from '@mui/icons-material/Smartphone';
 
 function About() {
     return (
-        <Stack justifyContent='space-evenly' flexDirection={{ xs: 'column', md: 'row' }} sx={{ bgcolor: '#F5F5F5', borderRadius: 5 }} spacing={2}>
+        <Stack justifyContent='space-evenly' flexDirection={{ xs: 'column', sm: 'row' }} sx={{ bgcolor: '#F5F5F5', borderRadius: 5 }} spacing={2}>
             <Stack alignItems='center'>
                 <Image
                     src='/chihchieh-removebg.png'
@@ -25,7 +25,7 @@ function About() {
                 <Typography variant="h6" sx={{ lineHeight: 'normal', fontWeight: 600 }}>
                     台灣科技大學 管理學士班 助理教授
                 </Typography>
-                <Box sx={{ bgcolor: { sm: 'white' }, p: 1.5 }}>
+                <Box sx={{ bgcolor: { xs: 'transparent', md: 'white' }, p: 1.5 }}>
                     <ListItem disableGutters>
                         <ListItemAvatar>
                             <Tooltip title="Email" placement="left">

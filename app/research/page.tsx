@@ -22,7 +22,7 @@ const FieldContent = ({ icon, subfield, subcontent }: any) => (
     <Box my={1.5}>
         <Stack direction='row' alignItems='center' spacing={1}>
             {icon}
-            <Typography variant='body1' sx={{ fontWeight: 600 }}>
+            <Typography variant='body1' sx={{ color: '#555555', fontWeight: 600 }}>
                 {subfield}
             </Typography>
         </Stack>

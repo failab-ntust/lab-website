@@ -2,30 +2,37 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Box, Typography, ListItem, Stack, Divider, Grid, Tabs, Tab, Link } from '@mui/material';
-import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
+import ViewStreamIcon from '@mui/icons-material/ViewStream';
 import CircleIcon from '@mui/icons-material/Circle';
+import PersonPinCircleOutlinedIcon from '@mui/icons-material/PersonPinCircleOutlined';
+import InterestsOutlinedIcon from '@mui/icons-material/InterestsOutlined';
+import CollectionsBookmarkOutlinedIcon from '@mui/icons-material/CollectionsBookmarkOutlined';
+import DomainOutlinedIcon from '@mui/icons-material/DomainOutlined';
 import Image from 'next/image'
 
 const CusBox = ({ title, children }) => (
     <>
         <ListItem disableGutters>
-            <MonetizationOnIcon fontSize="large" sx={{ mr: 1, color: "#FFD700" }} />
+            <ViewStreamIcon fontSize="large" color='secondary' sx={{ mr: 1 }} />
             <Typography variant="h5" noWrap sx={{ lineHeight: 'normal', fontWeight: 700 }}>
                 {title}
             </Typography>
         </ListItem>
-        <Box sx={{ bgcolor: '#F5F5F5', p: { xs: 2, md: 3 }, boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px', mb: 4 }}>
+        <Box sx={{ bgcolor: '#F5F5F5', borderRadius: 5, p: { xs: 2, md: 3 }, mb: 4 }}>
             {children}
         </Box>
     </>
 )
 
-const Dots = () => (
-    <Stack direction="row" spacing={2} justifyContent="center" m={3} >
-        {Array.from(Array(3)).map((_, index) => (
-            <CircleIcon color='secondary' sx={{ fontSize: 15 }} key={index} />
-        ))}
-    </Stack>
+const AboutMe = ({ content, icon }) => (
+    <Stack direction={{ xs: 'row', sm: 'column' }} justifyContent='space-evenly' spacing={2} sx={{ bgcolor: '#F5F5F5', p: 2, borderRadius: 5, minHeight: { md: 320 } }}>
+        <Stack alignItems='center' justifyContent='center'>
+            {icon}
+        </Stack>
+        <Typography variant='body1'>
+            {content}
+        </Typography>
+    </Stack >
 )
 
 const Education = ({ school, degree, duringtime }) => (
@@ -174,29 +181,26 @@ export default function Information() {
     return (
         <Box sx={{ height: '100%' }}>
 
-            <CusBox title="關於我">
-                <Typography>
-                    Chih-Chieh Chang (CCC) received the Ph.D. degree from the Department of Industrial and Information Management, National Cheng Kung University, Tainan City, Taiwan, in 2012. He is currently an Assistant Professor with the School of Management, National Taiwan University of Science Technology (NTUST), Taipei City, Taiwan.
+            <ListItem disableGutters>
+                <ViewStreamIcon fontSize="large" color='secondary' sx={{ mr: 1 }} />
+                <Typography variant="h5" noWrap sx={{ lineHeight: 'normal', fontWeight: 700 }}>
+                    關於我
                 </Typography>
-                <br />
-                <br />
-                <Typography>
-                    His research interests include machine learning, data mining, digital transformation and financial technology. Due to his past work experience, CCC puts more emphasis on the connection between practice and academic research.
-                </Typography>
-                <br />
-                <br />
-                <Typography>
-                    His research has been published in some data mining and machine learning related journals, including Decision Support System (Q1), IEEE TCSS (Q2), Journal of Intelligent Manufacturing (Q1), and etc. He also has some conference papers presented in IEEE Big Data and GSIS.
-                </Typography>
-
-                <br />
-                <br />
-                <Typography>
-                    Regarding industry experience, he had eight years in Fubon Group including Fintech office and momo, which he focused on promoting using data science and machine learning tools to help enterprises to process digital transformation. He had finished projects: Robo advisor, Chatbot, Cross Domain data analysis platform.
-                </Typography>
-            </CusBox>
-
-            <Dots />
+            </ListItem>
+            <Grid container spacing={{ xs: 2, sm: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
+                <Grid item xs={4} sm={4} md={3} >
+                    <AboutMe content='Chih-Chieh Chang (CCC) received the Ph.D. degree from the Department of Industrial and Information Management, National Cheng Kung University, in 2012. He is currently an Assistant Professor with the School of Management, National Taiwan University of Science Technology (NTUST).' icon={<PersonPinCircleOutlinedIcon sx={{ fontSize: 60, color: '#FFB400' }} />} />
+                </Grid>
+                <Grid item xs={4} sm={4} md={3} >
+                    <AboutMe content='His research interests include machine learning, data mining, digital transformation and financial technology. Due to his past work experience, CCC puts more emphasis on the connection between practice and academic research.' icon={<InterestsOutlinedIcon sx={{ fontSize: 60, color: '#FFB400' }} />} />
+                </Grid>
+                <Grid item xs={4} sm={4} md={3} >
+                    <AboutMe content='His research has been published in some data mining and machine learning related journals, including Decision Support System (Q1), IEEE TCSS (Q2), Journal of Intelligent Manufacturing (Q1), and etc. He also has some conference papers presented in IEEE Big Data and GSIS.' icon={<CollectionsBookmarkOutlinedIcon sx={{ fontSize: 60, color: '#FFB400' }} />} />
+                </Grid>
+                <Grid item xs={4} sm={4} md={3} >
+                    <AboutMe content='Regarding industry experience, he had eight years in Fubon Group including Fintech office and momo, which he focused on promoting using data science and machine learning tools to help enterprises to process digital transformation. He had finished projects: Robo advisor, Chatbot, Cross Domain data analysis platform.' icon={<DomainOutlinedIcon sx={{ fontSize: 60, color: '#FFB400' }} />} />
+                </Grid>
+            </Grid>
 
             <Grid container spacing={{ xs: 2, md: 3, lg: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} >
                 <Grid item xs={4} sm={8} md={6}>
@@ -228,7 +232,7 @@ export default function Information() {
 
                 </Grid>
             </Grid>
-            <Dots />
+
 
             <CusBox title="教授課程">
                 <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3 }}>
@@ -238,6 +242,7 @@ export default function Information() {
                         aria-label="basic tabs example"
                         textColor='secondary'
                         indicatorColor='secondary'
+                        centered
                     >
                         <Tab label="MBA" disableRipple {...a11yProps(0)} />
                         <Tab label="大學部" disableRipple {...a11yProps(1)} />

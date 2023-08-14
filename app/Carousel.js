@@ -10,25 +10,21 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
     {
-        label: 'San Francisco – Oakland Bay Bridge, United States',
-        imgPath:
-            'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+        label: '🎉聖誕期末聚餐-1',
+        imgPath: 'lab-photo/lab-photo-1.jpg',
     },
     {
-        label: 'Bird',
-        imgPath:
-            'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+        label: '🎉聖誕期末聚餐-2',
+        imgPath: 'lab-photo/lab-photo-2.jpg',
     },
     {
-        label: 'Bali, Indonesia',
-        imgPath:
-            'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+        label: '🎉聖誕期末聚餐-3',
+        imgPath: 'lab-photo/lab-photo-3.jpg',
     },
     {
-        label: 'Goč, Serbia',
-        imgPath:
-            'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
-    },
+        label: '🎉聖誕期末聚餐-4',
+        imgPath: 'lab-photo/lab-photo-4.jpg',
+    }
 ];
 
 function SwipeableTextMobileStepper() {
@@ -72,15 +68,20 @@ function SwipeableTextMobileStepper() {
                 enableMouseEvents
             >
                 {images.map((step, index) => (
-                    <Box key={index}>
+                    <Box key={index} sx={{
+                        display: 'block',
+                        position: 'relative',
+                        paddingTop: '70%'
+                    }}>
                         <Box
                             component="img"
-                            key={index}
                             sx={{
-                                display: 'block',
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
                                 width: '100%',
-                                height: '56.25%',
-                                overflow: 'hidden'
+                                height: '100%',
+                                objectFit: 'cover'
                             }}
                             src={step.imgPath}
                             alt={step.label}

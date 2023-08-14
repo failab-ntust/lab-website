@@ -1,12 +1,12 @@
 "use client"
 import { Box, Stack, Typography, Grid, ListItem, ListItemText, ListItemAvatar } from '@mui/material'
-import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
+import ViewStreamIcon from '@mui/icons-material/ViewStream';
 import Carousel from './Carousel'
 
 
 const Title = ({ title }: any) => (
   <ListItem disableGutters>
-    <MonetizationOnIcon fontSize="large" sx={{ mr: 1, color: "#FFD700" }} />
+    <ViewStreamIcon fontSize="large" color='secondary' sx={{ mr: 1 }} />
     <Typography variant="h5" noWrap sx={{ lineHeight: 'normal' }}>
       {title}
     </Typography>
@@ -15,7 +15,7 @@ const Title = ({ title }: any) => (
 
 const News = ({ date, content, subcontent }: any) => (
   <ListItem>
-    <ListItemAvatar sx={{ bgcolor: '#FFD700', borderRadius: 1, mr: 1 }}>
+    <ListItemAvatar sx={{ bgcolor: (theme) => theme.palette.primary.main, borderRadius: 1, mr: 1 }}>
       {date}
     </ListItemAvatar>
     <ListItemText primary={content}
@@ -28,7 +28,7 @@ export default function Home() {
     <Box>
       <Grid container spacing={{ xs: 2, sm: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
 
-        <Grid item xs={4} sm={8} md={7} >
+        <Grid item xs={4} sm={8} md={7.5} >
           <Box sx={{ display: 'flex', justifyContent: { xs: 'space-around', md: 'flex-start' }, pt: 3, pb: 2.5 }}>
             <Stack justifyContent='space-evenly'>
               <Typography sx={{ typography: { xs: 'h6', sm: 'h5' }, color: '#777777' }}>
@@ -54,7 +54,7 @@ export default function Home() {
           </Box>
         </Grid>
 
-        <Grid item xs={4} sm={8} md={5} >
+        <Grid item xs={4} sm={8} md={4.5} >
           <Title title='活動剪影' />
           <Carousel />
         </Grid>
