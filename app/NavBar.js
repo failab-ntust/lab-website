@@ -1,11 +1,11 @@
 "use client";
 import * as React from 'react';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 import { AppBar, Box, Toolbar, IconButton, Typography, Container, SwipeableDrawer, ListItemButton, ListItemIcon, Tabs, Tab, Stack } from '@mui/material';
 
 import MenuIcon from '@mui/icons-material/Menu';
-import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import PersonIcon from '@mui/icons-material/Person';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
@@ -43,7 +43,7 @@ const LogoName = ({ flexGrow, variant, xs, md, letterSpacing }) => (
 
 const CusToolbar = ({ display, children }) => (
     <Toolbar disableGutters sx={{ display: display }}>
-        <MonetizationOnIcon color='primary' fontSize="large" sx={{ mr: 1 }} />
+        <Image src='/coin.png' width={35} height={35} alt='logo' style={{ marginRight: 10 }} />
         {children}
     </Toolbar>
 )

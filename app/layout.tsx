@@ -22,6 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel='icon' href='/coin.png' />
+      </head>
       <ThemeProvider theme={theme}>
         <body className={inter.className} style={{ margin: 0 }}>
           <Container disableGutters maxWidth='xl' sx={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
