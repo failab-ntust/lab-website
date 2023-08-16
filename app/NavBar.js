@@ -3,19 +3,30 @@ import * as React from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
-import { AppBar, Box, Toolbar, IconButton, Typography, Container, SwipeableDrawer, ListItemButton, ListItemIcon, Tabs, Tab, Stack } from '@mui/material';
+import { AppBar, Box, Toolbar, IconButton, Typography, Container, SwipeableDrawer, ListItemButton, ListItemIcon, Stack, Menu, MenuItem, Button, Collapse, ListItemText, List } from '@mui/material';
 
 import MenuIcon from '@mui/icons-material/Menu';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import PersonIcon from '@mui/icons-material/Person';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import WorkIcon from '@mui/icons-material/Work';
+import ScienceIcon from '@mui/icons-material/Science';
 import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
-import PeopleIcon from '@mui/icons-material/People';
+import Diversity3Icon from '@mui/icons-material/Diversity3';
+import GroupsIcon from '@mui/icons-material/Groups';
+import ExpandLess from '@mui/icons-material/ExpandLess';
+import ExpandMore from '@mui/icons-material/ExpandMore';
 
 const pages = [
     { item: '指導教授', href: '/professor', icon: <PersonIcon /> },
     { item: '研究領域', href: '/research', icon: <MenuBookIcon /> },
-    { item: '研究成果', href: '/result', icon: <ReceiptLongIcon /> },
-    { item: '研究成員', href: '/members', icon: <PeopleIcon /> }
+    { item: '業界機會', href: '/opportunity', icon: <WorkIcon /> },
+    {
+        item: '實驗室成果', subitem: [
+            { item: '研究成果', href: '/research_result', icon: <ReceiptLongIcon /> },
+            { item: '競賽成果', href: '/competition_result', icon: <Diversity3Icon /> }], icon: <ScienceIcon />
+    },
+    { item: '實驗室成員', href: '/members', icon: <GroupsIcon /> }
 ];
 const display = {
     Above900px: { xs: 'none', md: 'flex' },
@@ -50,6 +61,11 @@ const CusToolbar = ({ display, children }) => (
 
 function NavBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [drawerOpen, setDrawerOpen] = React.useState(true);
+
+    const open = Boolean(anchorEl);
+
     const pathname = usePathname()
 
     const handleOpenNavMenu = (e) => {
@@ -60,6 +76,18 @@ function NavBar() {
         setAnchorElNav(null);
     };
 
+    const handleOpen = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+
+    const handleDrawerClick = () => {
+        setDrawerOpen(!drawerOpen);
+    };
+
     return (
         <AppBar position="fixed" elevation={0} sx={{ bgcolor: "#FFFFFF" }}>
             <Container maxWidth="xl">
@@ -67,31 +95,47 @@ function NavBar() {
                 <CusToolbar display={display.Above900px}>
                     <LogoName {...{ variant: 'h4', xs: 'none', md: 'flex', flexGrow: 0, letterSpacing: '.3rem' }} />
 
-                    <Box sx={{ flexGrow: 1, display: display.Above900px, justifyContent: 'flex-end' }}>
-                        <Tabs value={false}>
-                            {pages.map((page, index) => (
-                                <Tab
-                                    key={index}
+                    <Stack direction='row' spacing={1} sx={{ flexGrow: 1, display: display.Above900px, justifyContent: 'flex-end' }}>
+                        {pages.map((page, index) => (
+                            <Box key={index} sx={{ justifyContent: 'center' }}>
+                                <Button
+                                    variant="text"
+                                    color="secondary"
+                                    href={page.href}
+                                    aria-expanded={page.subitem ? 'true' : undefined}
+                                    onClick={page.subitem && handleOpen}
+                                    size="large"
                                     disableRipple
-                                    disableFocusRipple
-                                    sx={{ opacity: 1 }}
-                                    label={
-                                        <Typography
-                                            variant="body1"
-                                            noWrap
-                                            component="a"
-                                            href={page.href}
-                                            sx={{
-                                                color: pathname === page.href ? (theme) => theme.palette.secondary.main : '#000000',
-                                                textDecoration: 'none',
-                                                fontWeight: 600
-                                            }}>
-                                            {page.item}
-                                        </Typography>}
-                                />
-                            ))}
-                        </Tabs>
-                    </Box>
+                                    endIcon={page.subitem && <KeyboardArrowDownIcon />}
+                                    sx={{
+                                        color: pathname === page.href ? (theme) => theme.palette.secondary.main : '#000000',
+                                        fontWeight: 600
+                                    }}>
+                                    {page.item}
+                                </Button>
+                                {
+                                    page.subitem &&
+                                    <Menu
+                                        key={index}
+                                        anchorEl={anchorEl}
+                                        open={open}
+                                        onClose={handleClose}
+                                    >
+                                        {page.subitem.map((subitem, index) => (
+                                            <MenuItem
+                                                key={index}
+                                                component="a"
+                                                href={subitem.href}
+                                                selected={pathname === subitem.href}
+                                            >
+                                                {subitem.item}
+                                            </MenuItem>
+                                        ))}
+                                    </Menu>
+                                }
+                            </Box>
+                        ))}
+                    </Stack>
                 </CusToolbar>
 
                 {/* below 900px*/}
@@ -107,7 +151,7 @@ function NavBar() {
                             onClick={handleOpenNavMenu}
                             color="inherit"
                         >
-                            <MenuIcon sx={{ color: "#FFD700" }} />
+                            <MenuIcon color='secondary' />
                         </IconButton>
 
                         <SwipeableDrawer
@@ -117,27 +161,44 @@ function NavBar() {
                             onOpen={handleOpenNavMenu}
                         >
                             {pages.map((page, index) => (
-                                <ListItemButton
-                                    divider
-                                    selected={pathname === page.href}
-                                    key={index}
-                                    component="a"
-                                    href={page.href}
-                                    sx={{
-                                        color: '#000000',
-                                        textDecoration: 'none',
-                                        justifyContent: 'center'
-                                    }}
-                                >
+                                <Box key={index}>
+                                    <ListItemButton
+                                        divider
+                                        selected={pathname === page.href}
+                                        href={page.href}
+                                        sx={{ justifyContent: 'center' }}
+                                        onClick={page.subitem && handleDrawerClick}
+                                    >
+                                        <Stack direction='row' alignItems='center'>
+                                            <ListItemIcon sx={{ justifyContent: 'center', alignItems: 'center' }}>
+                                                {page.icon}
+                                            </ListItemIcon>
+                                            <ListItemText primary={page.item} />
+                                            {page.subitem &&
+                                                (drawerOpen ? <ExpandLess /> : <ExpandMore />)
+                                            }
+                                        </Stack>
+                                    </ListItemButton>
 
-                                    <Stack direction='row' justifyContent='center' py={0.5}>
-                                        <ListItemIcon>
-                                            {page.icon}
-                                        </ListItemIcon>
-                                        {page.item}
-                                    </Stack>
-                                </ListItemButton>
-
+                                    {page.subitem &&
+                                        <Collapse in={drawerOpen} timeout="auto" unmountOnExit>
+                                            {page.subitem.map((subitem, index) => (
+                                                <ListItemButton key={index}
+                                                    selected={pathname === subitem.href}
+                                                    href={subitem.href}
+                                                    sx={{ justifyContent: 'center' }}
+                                                >
+                                                    <Stack direction='row'>
+                                                        <ListItemIcon sx={{ justifyContent: 'center', alignItems: 'center' }}>
+                                                            {subitem.icon}
+                                                        </ListItemIcon>
+                                                        <ListItemText primary={subitem.item} />
+                                                    </Stack>
+                                                </ListItemButton>
+                                            ))}
+                                        </Collapse>
+                                    }
+                                </Box>
                             ))}
                         </SwipeableDrawer>
 

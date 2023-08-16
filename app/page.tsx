@@ -32,7 +32,7 @@ export default function Home() {
           <Box sx={{ display: 'flex', justifyContent: { xs: 'space-around', md: 'flex-start' }, pt: 3, pb: 2.5 }}>
             <Stack justifyContent='space-evenly'>
               <Typography sx={{ typography: { xs: 'h6', sm: 'h5' }, color: '#777777' }}>
-                臺灣科技大學 管理學士班
+                臺灣科技大學
               </Typography>
               <Typography sx={{ typography: { xs: 'h4', sm: 'h3', fontWeight: '700 !important' } }}>
                 金融科技與人工智慧實驗室

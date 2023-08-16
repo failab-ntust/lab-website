@@ -1,28 +1,17 @@
 'use client';
 import * as React from 'react';
+import Image from 'next/image'
 import PropTypes from 'prop-types';
+
 import { Box, Typography, ListItem, Stack, Divider, Grid, Tabs, Tab, Link } from '@mui/material';
+
 import ViewStreamIcon from '@mui/icons-material/ViewStream';
-import CircleIcon from '@mui/icons-material/Circle';
 import PersonPinCircleOutlinedIcon from '@mui/icons-material/PersonPinCircleOutlined';
 import InterestsOutlinedIcon from '@mui/icons-material/InterestsOutlined';
 import CollectionsBookmarkOutlinedIcon from '@mui/icons-material/CollectionsBookmarkOutlined';
 import DomainOutlinedIcon from '@mui/icons-material/DomainOutlined';
-import Image from 'next/image'
 
-const CusBox = ({ title, children }) => (
-    <>
-        <ListItem disableGutters>
-            <ViewStreamIcon fontSize="large" color='secondary' sx={{ mr: 1 }} />
-            <Typography variant="h5" noWrap sx={{ lineHeight: 'normal', fontWeight: 700 }}>
-                {title}
-            </Typography>
-        </ListItem>
-        <Box sx={{ bgcolor: '#F5F5F5', borderRadius: 5, p: { xs: 2, md: 3 }, mb: 4 }}>
-            {children}
-        </Box>
-    </>
-)
+import SubTitle from '../SubTitle'
 
 const AboutMe = ({ content, icon }) => (
     <Stack direction={{ xs: 'row', sm: 'column' }} justifyContent='space-evenly' spacing={2} sx={{ bgcolor: '#F5F5F5', p: 2, borderRadius: 5, minHeight: { md: 320 } }}>
@@ -204,7 +193,7 @@ export default function Information() {
 
             <Grid container spacing={{ xs: 2, md: 3, lg: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} >
                 <Grid item xs={4} sm={8} md={6}>
-                    <CusBox title="經歷">
+                    <SubTitle title="經歷">
 
                         <Experience {...{ workplace: '國立台北商業大學 – 會計資訊系', position: '專案助理教授', duringtime: '2021/08～2022/07' }} />
 
@@ -219,22 +208,22 @@ export default function Information() {
                         <Divider sx={{ m: 2 }} />
 
                         <Experience {...{ workplace: '富邦金控 – 創新科技辦公室', position: '大數據暨人工智慧組組長', duringtime: '2015/10～2020/08' }} />
-                    </CusBox>
+                    </SubTitle>
                 </Grid>
                 <Grid item xs={4} sm={8} md={6}>
-                    <CusBox title="學歷">
+                    <SubTitle title="學歷">
                         <Education {...{ school: '國立成功大學工業與資訊管理所', degree: '博士', duringtime: '2009/09～2012/05' }} />
 
                         <Divider sx={{ m: 2 }} />
 
                         <Education {...{ school: '國立中正大學醫療與資訊管理所', degree: '碩士', duringtime: '2007/09～2009/07' }} />
-                    </CusBox>
+                    </SubTitle>
 
                 </Grid>
             </Grid>
 
 
-            <CusBox title="教授課程">
+            <SubTitle title="教授課程">
                 <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3 }}>
                     <Tabs
                         value={value}
@@ -263,7 +252,7 @@ export default function Information() {
                         </Grid>
                     ))}
                 </CustomTabPanel>
-            </CusBox>
+            </SubTitle>
         </Box>
     );
 }

@@ -18,12 +18,12 @@ function About() {
                     height={300}
                 />
             </Stack>
-            <Stack justifyContent='space-evenly' alignItems='center' >
+            <Stack justifyContent='center' alignItems='center' spacing={1}>
                 <Typography variant="h5" sx={{ lineHeight: 'normal', fontWeight: 700 }}>
                     張智傑 Chih-Chieh Chang
                 </Typography>
-                <Typography variant="h6" sx={{ lineHeight: 'normal', fontWeight: 600 }}>
-                    台灣科技大學 管理學士班 助理教授
+                <Typography variant="h6" sx={{ lineHeight: 'normal', fontWeight: 600, px: 1 }} align='center'>
+                    管理學士班/資管所甲組/人工智慧所 助理教授
                 </Typography>
                 <Box sx={{ bgcolor: { xs: 'transparent', md: 'white' }, p: 1.5 }}>
                     <ListItem disableGutters>
@@ -71,7 +71,7 @@ function About() {
                         </ListItemAvatar>
                         <ListItemText primary={
                             <Typography variant="body1" >
-                                Phone：(+886) 927-376-598
+                                Phone：+886-2737-6598
                             </Typography>
                         } />
                     </ListItem>

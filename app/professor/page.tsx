@@ -6,12 +6,12 @@ import Grid from '@mui/material/Unstable_Grid2';
 
 import About from './About'
 import Information from './Information'
-import FieldTitle from '../FieldTitle'
+import PageTitle from '../PageTitle'
 
 export default function Professor() {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <FieldTitle fieldtitle='指導教授' />
+            <PageTitle title='指導教授' />
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                 <Grid xs={4} sm={8} md={12}>
                     <About />

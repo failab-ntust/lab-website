@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href='/favicon.ico' sizes="any" />
         <link rel='icon' href='/coin.png' />
         <link rel="apple-touch-icon" href="/coin-apple-icon.png" />
       </head>
@@ -30,7 +31,7 @@ export default function RootLayout({
         <body className={inter.className} style={{ margin: 0 }}>
           <Container disableGutters maxWidth='xl' sx={{ height: '100vh', display: 'flex', flexDirection: 'column' }}>
             <NavBar />
-            <Box flex={9} sx={{ mx: { xs: 4, md: 10 }, mb: { xs: 2, md: 2 }, mt: 8 }}>
+            <Box flex={9} sx={{ mx: { xs: 3, md: 10 }, mb: { xs: 3, md: 2 }, mt: 8 }}>
               {children}
             </Box>
             <Box flex={1}>

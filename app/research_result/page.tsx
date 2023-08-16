@@ -3,7 +3,7 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import { Box, Typography, Tabs, Tab, Stepper, Step, StepLabel } from '@mui/material';
 
-import FieldTitle from '../FieldTitle'
+import PageTitle from '../PageTitle'
 
 interface TabPanelProps {
     children?: React.ReactNode;
@@ -94,7 +94,7 @@ export default function Result() {
 
     return (
         <Box height='100%'>
-            <FieldTitle fieldtitle='研究成果' />
+            <PageTitle title='研究成果' />
             <Box sx={{ bgcolor: '#F5F5F5', borderRadius: 5, minHeight: '88%' }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3, display: 'flex', justifyContent: 'center' }}>
                     <Tabs

@@ -3,7 +3,7 @@ import { Box, Card, CardContent, Typography, Stack, Grid, Divider } from '@mui/m
 import Looks1Icon from '@mui/icons-material/LooksOne';
 import Looks2Icon from '@mui/icons-material/LooksTwo';
 import Looks3Icon from '@mui/icons-material/Looks3';
-import FieldTitle from '../FieldTitle'
+import PageTitle from '../PageTitle'
 
 const FieldGrid = ({ field, children }: any) => (
     <Card elevation={0} sx={{ bgcolor: '#F5F5F5', borderRadius: 5 }}>
@@ -35,7 +35,7 @@ const FieldContent = ({ icon, subfield, subcontent }: any) => (
 export default function Research() {
     return (
         <Box>
-            <FieldTitle fieldtitle='研究領域' />
+            <PageTitle title='研究領域' />
             <Typography variant='h6' >
                 FAILab 主要研究方向以行為理論、資料科學及機器學習前瞻技術應用於資訊安全、金融產業、運動產業及企業數位轉型。
             </Typography>
