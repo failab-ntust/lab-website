@@ -4,16 +4,34 @@ import PageTitle from '../PageTitle'
 import PersonCard from './PersonCard'
 import SubTitle from '../SubTitle'
 
+const _110Master = [
+    { grade: 'Master', name: 'Khairul Izyan Bin Anuar', class: 'MBA', imgSrc: '/110/Khairul Izyan Bin Anuar', researchfield: '小樣本、機器學習', email: 'M11021805@mail.ntust.edu.tw' },
+]
+const _111Master = [
+    { grade: 'Master', name: 'Do Nguyen Ngan Khanh', class: 'MBA', imgSrc: '/111/Do Nguyen Ngan Khanh', researchfield: '使用者意圖、聯邦式學習', email: 'M11021852mail.ntust.edu.tw' },
+    { grade: 'Master', name: '趙寶蓉', class: 'MBA', imgSrc: '/111/趙寶榕', researchfield: '使用者意圖、對話式商務', email: 'M11121024@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '許怡晴', class: 'MBA', imgSrc: '/111/許怡晴', researchfield: '使用者意圖、流程自動化', email: 'M10921020@mail.ntust.edu.tw' },
+
+    { grade: 'Master', name: '羅雋齡', class: '產碩-AI跨域', imgSrc: '/111/羅雋齡', co_advisor: '王紹睿教授', researchfield: '小樣本、機器學習、自動化爬蟲', email: 'M11115Q02@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '陳涵愉', class: '產碩-AI跨域', imgSrc: '/111/陳涵愉', co_advisor: '陳怡伶教授', researchfield: '影像辨識、深度學習、運動科學', email: 'M11115Q24@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '陳哲賢', class: '產碩-AI跨域', imgSrc: '/111/陳哲賢', co_advisor: '王紹睿教授', researchfield: '影像辨識、深度學習、自訂化爬蟲', email: 'M11115Q12@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '高瑜', class: '產碩-AI跨域', imgSrc: '/111/高瑜', co_advisor: '陳怡伶教授', researchfield: '資料隱私保護、機器學習', email: 'M11115Q07@mail.ntust.edu.tw' },
+
+    { grade: 'Master', name: '錢嘉偉', class: '產創-AI所', imgSrc: '/111/錢嘉偉', researchfield: '影像辨識、深度學習、運動科學', email: 'M11152029@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '張棨揚', class: '產創-AI所', imgSrc: '/111/張棨揚', co_advisor: '羅乃維院長', researchfield: '資訊安全、深度學習', email: 'M11152013@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '蔡子勛', class: '產創-AI所', imgSrc: '/111/蔡子勛', co_advisor: '羅乃維院長', researchfield: '資訊安全、深度學習', email: 'M11152026@mail.ntust.edu.tw' }
+]
+
+const _112Master = [
+    { grade: 'Master', name: '羅巧筠', class: '資管所甲組', imgSrc: '/112/羅巧筠', researchfield: '討論中…', email: 'M11209102@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '吳竣宇', class: '產創-AI所', imgSrc: '/112/吳竣宇', co_advisor: '羅乃維教授', researchfield: '討論中…', email: 'M11252003@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '陳軍翰', class: '產創-AI所', imgSrc: '/112/陳軍翰', co_advisor: '羅乃維教授', researchfield: '討論中…', email: 'M11252012@mail.ntust.edu.tw' }
+]
+
 const _112EMBA = [
     { grade: 'EMBA', name: 'XXX', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
     { grade: 'EMBA', name: 'XXX', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
     { grade: 'EMBA', name: 'XXX', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' }
-]
-const _112Master = [
-    { grade: 'Master', name: 'XXX', class: 'XX班', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: 'XXX', class: 'XX班', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: 'XXX', class: 'XX班', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: 'XXX', class: 'XX班', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' }
 ]
 
 const _112Undergraduate = [
@@ -21,29 +39,16 @@ const _112Undergraduate = [
     { grade: 'Undergraduate', name: 'XXX', class: 'XX班', imgSrc: '', co_advisor: '', researchfield: 'XX領域', email: 'xxx@gmail.com' }
 ]
 
-const _111Master = [
-    { grade: 'Master', name: 'Izyan', class: 'MBA', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: '趙寶蓉', class: 'MBA', imgSrc: '111_MBA_趙寶榕', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: 'Ngan Khanh', class: 'MBA', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: '許怡晴', class: 'MBA', imgSrc: '111_MBA_許怡晴', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: '羅雋齡', class: '產碩專班', imgSrc: '111_產碩專班_羅雋齡', co_advisor: '王紹睿老師', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: '陳哲賢', class: '產碩專班', imgSrc: '111_產碩專班_陳哲賢', co_advisor: '王紹睿老師', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: '高瑜', class: '產碩專班', imgSrc: '111_產碩專班_高瑜', co_advisor: '陳怡伶老師', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: '陳涵愉', class: '產碩專班', imgSrc: '111_產碩專班_陳涵愉', co_advisor: '陳怡伶老師', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: '張棨揚', class: '產創學院', imgSrc: '', co_advisor: '羅乃維院長', researchfield: 'XX領域', email: 'xxx@gmail.com' },
-    { grade: 'Master', name: '蔡子勛', class: '產創學院', imgSrc: '', co_advisor: '羅乃維院長', researchfield: 'XX領域', email: 'xxx@gmail.com' }
-]
-
 const CusGrid = ({ grade, data }: any) => (
     <Box py={2}>
         <Typography variant='h6' color='secondary' mb={1}>{grade}</Typography>
-        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 9, md: 12, lg: 15 }} >
+        <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16 }} >
             {data ? data.map((person: any, index: number) => (
-                <Grid item xs={2} sm={3} md={6} lg={5} key={index}>
+                <Grid item xs={4} sm={4} md={6} lg={8} key={index}>
                     <PersonCard {...{ person }} />
                 </Grid>
             )) :
-                <Grid item xs={4} sm={9} md={12} lg={15} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid item xs={4} sm={8} md={12} lg={16} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Avatar
                         alt="we_want_you"
                         variant="square"
@@ -60,21 +65,24 @@ export default function Members() {
     return (
         <Box>
             <PageTitle title='研究成員' />
-            <SubTitle title='112學年度'>
-                <CusGrid grade='博士班' data={null} />
-                <CusGrid grade='EMBA' data={_112EMBA} />
-                <CusGrid grade='碩士班' data={_112Master} />
-                <CusGrid grade='專題生' data={_112Undergraduate} />
+            <SubTitle title='110學年度'>
+                <CusGrid grade='碩士班' data={_110Master} />
             </SubTitle>
             <SubTitle title='111學年度'>
                 <CusGrid grade='碩士班' data={_111Master} />
             </SubTitle>
+            <SubTitle title='112學年度'>
+                <CusGrid grade='博士班' data={null} />
+                <CusGrid grade='EMBA' data={null} />
+                <CusGrid grade='碩士班' data={_112Master} />
+                <CusGrid grade='專題生' data={null} />
+            </SubTitle>
 
-            <PageTitle title='畢業成員' />
+            {/* <PageTitle title='畢業成員' />
             <SubTitle title='112學年度'>
                 <CusGrid grade='EMBA' data={_112EMBA} />
                 <CusGrid grade='碩士班' data={_112Master} />
-            </SubTitle>
+            </SubTitle> */}
         </Box>
     )
 }

@@ -104,14 +104,21 @@ export default function PersonCard({ person }) {
         <Stack sx={{ border: '1px solid #CCCCCC' }}
             direction={{ xs: 'column', sm: 'column', md: 'row' }}
             justifyContent='center'
-            alignItems='center'
+            alignItems={{ xs: 'flex-start', md: 'center' }}
             spacing={1}
         >
             <Avatar
                 alt="profile"
                 variant="square"
                 src={person.imgSrc ? `/members/${person.imgSrc}.jpg` : '/avatar.png'}
-                sx={{ width: { xs: '100%', md: 140 }, height: { xs: 120, sm: 200, md: 140 } }}
+                sx={{
+                    width: { xs: '40%', md: 140 }, height: { xs: 120, sm: 200, md: 140 },
+                    pointerEvents: 'none',
+                    userSelect: 'none',
+                    '-webkit-user-select': 'none', /* Safari */
+                    '-moz-user-select': 'none', /* Firefox */
+                    '-ms-user-select': 'none'
+                }}
             />
             <ListItemText
                 primary={
@@ -123,7 +130,7 @@ export default function PersonCard({ person }) {
                     </Stack>
                 }
                 secondary={
-                    <Typography variant='body2' px={1} >E-mail：{person.email}</Typography>
+                    <Typography variant='body2' px={1}>E-mail: {person.email}</Typography>
                 }
             />
         </Stack>
