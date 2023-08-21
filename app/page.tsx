@@ -1,8 +1,9 @@
 "use client"
-import { Box, Stack, Typography, Grid, ListItem, ListItemText, ListItemAvatar } from '@mui/material'
+import React from 'react';
+import { Box, Stack, Typography, Grid, ListItem } from '@mui/material'
 import ViewStreamIcon from '@mui/icons-material/ViewStream';
-import Carousel from './Carousel'
-
+import ImageCarousel from './ImageCarousel'
+import LatestNews from './LatestNews'
 
 const Title = ({ title }: any) => (
   <ListItem disableGutters>
@@ -13,23 +14,13 @@ const Title = ({ title }: any) => (
   </ListItem>
 )
 
-const News = ({ date, content, subcontent }: any) => (
-  <ListItem>
-    <ListItemAvatar sx={{ bgcolor: (theme) => theme.palette.primary.main, borderRadius: 1, mr: 1 }}>
-      {date}
-    </ListItemAvatar>
-    <ListItemText primary={content}
-      secondary={subcontent} />
-  </ListItem>
-)
-
 export default function Home() {
   return (
-    <Box>
+    <Box mt={5}>
       <Grid container spacing={{ xs: 2, sm: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
 
         <Grid item xs={4} sm={8} md={7.5} >
-          <Box sx={{ display: 'flex', justifyContent: { xs: 'space-around', md: 'flex-start' }, pt: 3, pb: 2.5 }}>
+          <Box sx={{ display: 'flex', justifyContent: { xs: 'space-around', md: 'flex-start' }, pt: 2, pb: 2.5 }}>
             <Stack justifyContent='space-evenly'>
               <Typography sx={{ typography: { xs: 'h6', sm: 'h5' }, color: '#777777' }}>
                 臺灣科技大學
@@ -44,19 +35,13 @@ export default function Home() {
           </Box>
 
           <Title title='最新消息' />
+          <LatestNews />
 
-          <Box sx={{ bgcolor: '#F5F5F5', borderRadius: 5, p: { xs: 0, md: 1.5 }, minHeight: 200, overflowY: 'auto' }}>
-            <News date='2022/12' content='第五屆法遵科技與電腦稽核專題競賽 – 亞軍' subcontent='指導學生：管理學士班 – 郁庭、芷綾、卉萱、亭蓁、家萱' />
-
-            <News date='2022/11' content='通過國科會計畫通過 – 在保護個人隱私下建構跨產業資料共享框架' subcontent='' />
-
-            <News date='2022/11' content='研究論文 ”Diversity-Optimized Group Extraction in Social Networks” 接受' subcontent='' />
-          </Box>
         </Grid>
 
         <Grid item xs={4} sm={8} md={4.5} >
           <Title title='活動剪影' />
-          <Carousel />
+          <ImageCarousel />
         </Grid>
 
       </Grid>

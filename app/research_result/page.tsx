@@ -48,6 +48,7 @@ const NSTC = [
 ]
 
 const IndustryCooperation = [
+    '計畫主持人，產品擷取分析PoC專案 2023/07/01~2023/09/30',
     '計畫主持人，運用大數據及人工智慧技術建構風險引擎2.0 2023/01/01~2023/12/31',
     '計畫主持人，企業資安風險評估計畫 2022/10/01~2023/09/30',
     '偕同計畫主持人，數位錢包之資安框架建構-APP及底層技術設計 2022/11/01~2022/12/31'
@@ -63,6 +64,9 @@ const JournalPaper = [
 ]
 
 const ConferencePaper = [
+    'T.-Y. Huang, Y.-C. Chen, T.-C. Hsieh, H.-C. Chang and C.-C. Chang, "A Secure and IoT-Enabled Data Sharing System Based on IPFS and IOTA Blockchain" , The 2023 5th Blockchain and Internet of Things Conference, Osaka, Japan, July, 2023.',
+    'C.-L. Hsu, H.-H. Hsu, C.-C. Chang, and N.-W. Lo, "整合公開資料建構企業貸款風險模型," in Proc. CISC 2023, Chiayi, Jun. 2023.',
+    'Z.-X. Cai, C.-Y. Chang, C.-C. Chang, and N.-W. Lo, "基於人工智慧之使用者行為異常檢測系統," in Proc. CISC 2023, Chiayi, Jun. 2023.',
     '張詠盛, 蔣昱弘, 張智傑, 陳駿 （2022年05月）。電影短文評論之情感分析-整合孿生網絡與深度神經網絡。2022人工智慧技術及應用研討會。',
     'C.-C. Chen, K.-W. Lee, Chang C. C., D.-N. Yang, and M.-S. Chen (2013, Oct). Efficient Large Graph Pattern Mining for Big Data in the Cloud. Proc. of the 2013 IEEE International Conference on Big Data.',
     'D.-C. Li, I.-S. Wen, and C.-C. Chang (2013, Jun). A new virtual-sample-generating method based on the heuristics algorithm.. 2013 IEEE International Conference on Grey Systems and Intelligent Services.',

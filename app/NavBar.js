@@ -16,6 +16,7 @@ import Diversity3Icon from '@mui/icons-material/Diversity3';
 import GroupsIcon from '@mui/icons-material/Groups';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
+import NewReleasesIcon from '@mui/icons-material/NewReleases';
 
 const pages = [
     { item: '指導教授', href: '/professor', icon: <PersonIcon /> },
@@ -59,6 +60,19 @@ const CusToolbar = ({ display, children }) => (
     </Toolbar>
 )
 
+const StickyAnnouncement = () => (
+    <Stack sx={{ bgcolor: (theme) => theme.palette.primary.main, p: .5 }}>
+        <Stack direction='row' spacing={1}>
+            <NewReleasesIcon sx={{ color: 'darkred' }} />
+            <Typography>實驗室成員募集中，歡迎資管所甲組、人工智慧所及管理研究所碩博士同學一起開疆闢土</Typography>
+        </Stack>
+        <Stack direction='row' spacing={1}>
+            <NewReleasesIcon sx={{ color: 'darkred' }} />
+            <Typography>歡迎各系所大學部同學參加專題及競賽</Typography>
+        </Stack>
+    </Stack>
+)
+
 function NavBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -83,14 +97,15 @@ function NavBar() {
         setAnchorEl(null);
     };
 
-
     const handleDrawerClick = () => {
         setDrawerOpen(!drawerOpen);
     };
 
     return (
         <AppBar position="fixed" elevation={0} sx={{ bgcolor: "#FFFFFF" }}>
+            {pathname === '/' && <StickyAnnouncement />}
             <Container maxWidth="xl">
+
                 {/* above 900px*/}
                 <CusToolbar display={display.Above900px}>
                     <LogoName {...{ variant: 'h4', xs: 'none', md: 'flex', flexGrow: 0, letterSpacing: '.3rem' }} />
@@ -205,7 +220,7 @@ function NavBar() {
                     </Box>
                 </CusToolbar>
             </Container>
-        </AppBar >
+        </AppBar>
     );
 }
 export default NavBar;

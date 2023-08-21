@@ -93,6 +93,8 @@ const MBACourses = [
     { course: '數位金融概論111-1', link: 'https://moodle2.ntust.edu.tw/course/view.php?id=4405', img: 'digital-finance' }
 ]
 const UniversityCourses = [
+    { course: '計算機概論 112-1', link: '', img: 'computer-science' },
+    { course: '數位金融概論 112-1', link: '', img: 'fintech' },
     { course: '大數據分析導論 111-1', link: 'https://moodle2.ntust.edu.tw/course/view.php?id=4005', img: 'big-data' },
     { course: '大數據分析導論 110-2', link: 'https://moodle2.ntust.edu.tw/course/view.php?id=1790', img: 'big-data' },
     { course: '計算機概論 111-2', link: 'https://moodle2.ntust.edu.tw/course/view.php?id=5832', img: 'computer-science' }
