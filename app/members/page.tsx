@@ -40,11 +40,11 @@ const _112Undergraduate = [
 ]
 
 const CusGrid = ({ grade, data }: any) => (
-    <Box py={2}>
+    <Box py={2} >
         <Typography variant='h6' color='secondary' mb={1}>{grade}</Typography>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16 }} >
             {data ? data.map((person: any, index: number) => (
-                <Grid item xs={4} sm={4} md={6} lg={8} key={index}>
+                <Grid item xs={4} sm={4} md={6} lg={8} key={index} >
                     <PersonCard {...{ person }} />
                 </Grid>
             )) :
@@ -64,7 +64,7 @@ const CusGrid = ({ grade, data }: any) => (
 export default function Members() {
     return (
         <Box>
-            <PageTitle title='研究成員' />
+            <PageTitle title='實驗室成員' />
             <SubTitle title='110學年度'>
                 <CusGrid grade='碩士班' data={_110Master} />
             </SubTitle>
@@ -73,7 +73,7 @@ export default function Members() {
             </SubTitle>
             <SubTitle title='112學年度'>
                 <CusGrid grade='博士班' data={null} />
-                <CusGrid grade='EMBA' data={null} />
+                {/* <CusGrid grade='EMBA' data={null} /> */}
                 <CusGrid grade='碩士班' data={_112Master} />
                 <CusGrid grade='專題生' data={null} />
             </SubTitle>

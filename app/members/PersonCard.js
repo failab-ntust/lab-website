@@ -101,7 +101,7 @@ const Undergraduate = ({ person }) => (
 export default function PersonCard({ person }) {
 
     return (
-        <Stack sx={{ border: '1px solid #CCCCCC' }}
+        <Stack sx={{ border: '1px solid #CCCCCC', bgcolor: 'white', borderRadius: 1 }}
             direction={{ xs: 'column', sm: 'column', md: 'row' }}
             justifyContent='center'
             alignItems={{ xs: 'flex-start', md: 'center' }}
@@ -109,15 +109,15 @@ export default function PersonCard({ person }) {
         >
             <Avatar
                 alt="profile"
-                variant="square"
+                variant="rounded"
                 src={person.imgSrc ? `/members/${person.imgSrc}.jpg` : '/avatar.png'}
                 sx={{
                     width: { xs: '40%', md: 140 }, height: { xs: 120, sm: 200, md: 140 },
                     pointerEvents: 'none',
                     userSelect: 'none',
-                    '-webkit-user-select': 'none', /* Safari */
-                    '-moz-user-select': 'none', /* Firefox */
-                    '-ms-user-select': 'none'
+                    WebkitUserSelect: 'none', /* Safari */
+                    MozUserSelect: 'none', /* Firefox */
+                    msUserSelect: 'none'
                 }}
             />
             <ListItemText

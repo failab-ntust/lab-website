@@ -16,7 +16,7 @@ const Title = ({ title }: any) => (
 
 export default function Home() {
   return (
-    <Box mt={5}>
+    <Box mt={7}>
       <Grid container spacing={{ xs: 2, sm: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
 
         <Grid item xs={4} sm={8} md={7.5} >

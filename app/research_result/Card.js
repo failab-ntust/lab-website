@@ -26,10 +26,10 @@ const data = [
 export default function CusCard() {
 
     return (
-        <Grid container spacing={{ xs: 3, sm: 3, md: 3, lg: 4 }} columns={{ xs: 4, sm: 8, md: 12, lg: 15 }}>
+        <Grid container spacing={{ xs: 3, sm: 3, md: 3, lg: 4 }} columns={{ xs: 4, sm: 8, md: 12, lg: 15 }} py={3}>
             {data.map((data, index) => (
                 <Grid item xs={4} sm={4} md={4} lg={5} key={index}>
-                    <Card elevation={5}>
+                    <Card elevation={4}>
                         <CardHeader
                             title={
                                 <Stack direction='row' justifyContent='space-between' spacing={1}>
