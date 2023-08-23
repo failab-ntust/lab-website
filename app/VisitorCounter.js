@@ -1,7 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Counter = () => {
-    const [counterContent, setCounterContent] = useState(null);
     const counterRef = useRef(null);
 
     useEffect(() => {
@@ -24,35 +23,20 @@ const Counter = () => {
         script.onload = () => {
             const i2yesCounter = window.i2yesCounter;
             if (i2yesCounter) {
-                const counterHtml = i2yesCounter.render(counterConfig);
-                setCounterContent(counterHtml);
+                counterRef.current.innerHTML = i2yesCounter.render(counterConfig);
             }
         };
 
         document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
     }, []);
 
     return (
-        <div>
-            <div ref={counterRef}>
-                {counterContent && <CounterContent content={counterContent} />}
-            </div>
+        <div ref={counterRef}>
+            {/* 這裡會插入計數器 */}
         </div>
     );
 };
 
-const CounterContent = ({ content }) => {
-    const containerRef = useRef(null);
-
-    useEffect(() => {
-        containerRef.current.innerHTML = content;
-    }, [content]);
-
-    return <div ref={containerRef}></div>;
-};
-
 export default Counter;
+
+
