@@ -17,7 +17,7 @@ const Counter = () => {
         };
 
         const script = document.createElement('script');
-        script.src = 'http://counter.i2yes.com/i2yesCounter.js';
+        script.src = 'https://counter.i2yes.com/i2yesCounter.js';
         script.type = 'text/javascript';
         script.async = true;
 
