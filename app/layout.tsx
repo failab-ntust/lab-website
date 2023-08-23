@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
 
 import { Box, Container } from '@mui/material'
 import { ThemeProvider } from '@mui/material/styles';
@@ -8,12 +10,11 @@ import { theme } from './theme'
 import NavBar from './NavBar'
 import Footer from './Footer'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
   title: '金融科技與人工智慧實驗室',
   description: '臺灣科技大學-金融科技與人工智慧實驗室',
 }
+
 
 export default function RootLayout({
   children,
@@ -23,6 +24,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Analytics */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-56RBY37W14" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          gtag('config', 'G-56RBY37W14');
+        `}
+        </Script>
         <link rel="icon" href='/favicon.ico' sizes="any" />
         <link rel='icon' href='/coin.png' />
         <link rel="apple-touch-icon" href="/coin-apple-icon.png" />
