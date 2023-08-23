@@ -7,7 +7,7 @@ const Counter = () => {
         const counterConfig = {
             y: 'counter',
             p: 'dfefwge5hokt8', // 改成你專有的計數器名稱
-            v: window.location.hostname, // 你的網址
+            v: 'https://' + window.location.hostname, // 你的網址
             d: 6, // 數字位數
             r: 1, // 1=不接受Reload, 0=Reload會+1
             t: 'font158', // 字型，可選字型
