@@ -1,13 +1,14 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const Counter = () => {
+    const [counterContent, setCounterContent] = useState(null);
     const counterRef = useRef(null);
 
     useEffect(() => {
         const counterConfig = {
             y: 'counter',
             p: 'dfefwge5hokt8', // 改成你專有的計數器名稱
-            v: 'https://' + window.location.hostname, // 你的網址
+            v: window.location.hostname, // 你的網址
             d: 6, // 數字位數
             r: 1, // 1=不接受Reload, 0=Reload會+1
             t: 'font158', // 字型，可選字型
@@ -23,20 +24,35 @@ const Counter = () => {
         script.onload = () => {
             const i2yesCounter = window.i2yesCounter;
             if (i2yesCounter) {
-                counterRef.current.innerHTML = i2yesCounter.render(counterConfig);
+                const counterHtml = i2yesCounter.render(counterConfig);
+                setCounterContent(counterHtml);
             }
         };
 
         document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
     }, []);
 
     return (
-        <div ref={counterRef}>
-            {/* 這裡會插入計數器 */}
+        <div>
+            <div ref={counterRef}>
+                {counterContent && <CounterContent content={counterContent} />}
+            </div>
         </div>
     );
 };
 
+const CounterContent = ({ content }) => {
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        containerRef.current.innerHTML = content;
+    }, [content]);
+
+    return <div ref={containerRef}></div>;
+};
+
 export default Counter;
-
-
