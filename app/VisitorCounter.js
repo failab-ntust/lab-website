@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const Counter = () => {
-    const [counterHTML, setCounterHTML] = useState(null);
+    const counterRef = useRef(null);
 
     useEffect(() => {
         const counterConfig = {
@@ -23,24 +23,20 @@ const Counter = () => {
         script.onload = () => {
             const i2yesCounter = window.i2yesCounter;
             if (i2yesCounter) {
-                const counterHTML = i2yesCounter.render(counterConfig);
-                setCounterHTML(counterHTML);
+                counterRef.current.innerHTML = i2yesCounter.render(counterConfig);
             }
         };
 
         document.body.appendChild(script);
-
-        return () => {
-            document.body.removeChild(script);
-        };
     }, []);
 
     return (
-        <div>
-            {counterHTML && <div dangerouslySetInnerHTML={{ __html: counterHTML }} />}
+        <div ref={counterRef}>
+            {/* 這裡會插入計數器 */}
         </div>
     );
 };
 
 export default Counter;
+
 
