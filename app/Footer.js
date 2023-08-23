@@ -1,6 +1,6 @@
 'use client'
 import { Stack, Typography } from '@mui/material'
-
+import VisitorCounter from './VisitorCounter'
 export default function Footer() {
     return (
         <Stack direction={{ xs: 'column', md: 'row' }} justifyContent='space-evenly' sx={{ bgcolor: '#FDD700', height: 80 }}>
@@ -11,7 +11,8 @@ export default function Footer() {
                     display="block"
                     color="text.secondary"
                 >訪客人數：</Typography>
-                <img width="100" height="20" border="0" src="http://counter.i2yes.com/counter.php?p=lab-website-khaki.vercel.app_ccchang&amp;v=lab-website-khaki.vercel.app&amp;d=6&amp;r=1&amp;t=font158&amp;n=0" alt="FREE Counter / i2yes.com" />
+                {/* <VisitorCounter /> */}
+                <img width="100" height="20" border="0" src="http://counter.i2yes.com/counter.php?p=nuhjkidgye&amp;v=lab-website-khaki.vercel.app&amp;d=6&amp;r=1&amp;t=font158&amp;n=0" alt="FREE Counter / i2yes.com" />
             </Stack>
             <Stack direction='column' justifyContent='center' alignItems='center'>
                 <Typography
