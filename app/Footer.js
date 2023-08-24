@@ -1,19 +1,17 @@
 'use client'
 import { Stack, Typography } from '@mui/material'
-import VisitorCounter from './VisitorCounter'
 
 export default function Footer() {
     return (
         <Stack direction={{ xs: 'column', md: 'row' }} justifyContent='space-evenly' sx={{ bgcolor: '#FDD700', height: 80 }}>
-            <Stack direction='row' justifyContent='center' alignItems='center'>
+            {/* <Stack direction='row' justifyContent='center' alignItems='center'>
                 <Typography
                     variant="subtitle2"
                     component="div"
                     display="block"
                     color="text.secondary"
                 >訪客人數：</Typography>
-                <VisitorCounter />
-            </Stack>
+            </Stack> */}
             <Stack direction='column' justifyContent='center' alignItems='center'>
                 <Typography
                     variant="subtitle2"

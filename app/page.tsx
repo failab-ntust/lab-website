@@ -25,7 +25,7 @@ export default function Home() {
               <Typography sx={{ typography: { xs: 'h6', sm: 'h5' }, color: '#777777' }}>
                 臺灣科技大學
               </Typography>
-              <Typography sx={{ typography: { xs: 'h4', sm: 'h3', fontWeight: '700 !important' } }}>
+              <Typography sx={{ typography: { xs: 'h5', sm: 'h3', fontWeight: '700 !important' } }}>
                 金融科技與人工智慧實驗室
               </Typography>
               <Typography sx={{ typography: { xs: 'h6', sm: 'h5' } }}>

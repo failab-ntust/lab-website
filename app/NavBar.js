@@ -57,14 +57,14 @@ const CusToolbar = ({ display, children }) => (
 )
 
 const StickyAnnouncement = () => (
-    <Stack sx={{ bgcolor: (theme) => theme.palette.primary.main, p: .5 }}>
-        <Stack direction='row' spacing={1}>
+    <Stack sx={{ bgcolor: '#F5F5F5', p: .5 }} alignItems={{ xs: 'flex-start', sm: 'center' }}>
+        <Stack direction='row' alignItems={{ xs: 'flex-start', sm: 'center' }} spacing={1}>
             <NewReleasesIcon sx={{ color: 'darkred' }} />
-            <Typography>實驗室成員募集中，歡迎資管所甲組、人工智慧所及管理研究所碩博士同學一起開疆闢土</Typography>
+            <Typography sx={{ typography: { xs: 'body1', sm: 'h6' } }}>實驗室成員募集中，歡迎資管所甲組、人工智慧所及管理研究所碩博士同學一起開疆闢土</Typography>
         </Stack>
-        <Stack direction='row' spacing={1}>
+        <Stack direction='row' alignItems='center' spacing={1}>
             <NewReleasesIcon sx={{ color: 'darkred' }} />
-            <Typography>歡迎各系所大學部同學參加專題及競賽</Typography>
+            <Typography sx={{ typography: { xs: 'body1', sm: 'h6' } }}>歡迎各系所大學部同學參加專題及競賽</Typography>
         </Stack>
     </Stack>
 )
