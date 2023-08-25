@@ -3,20 +3,14 @@ import * as React from 'react';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
-import { AppBar, Box, Toolbar, IconButton, Typography, Container, SwipeableDrawer, ListItemButton, ListItemIcon, Stack, Menu, MenuItem, Button, Collapse, ListItemText, List } from '@mui/material';
+import { AppBar, Box, Toolbar, IconButton, Typography, Container, SwipeableDrawer, ListItemButton, ListItemIcon, Stack, Button, ListItemText } from '@mui/material';
 
 import MenuIcon from '@mui/icons-material/Menu';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import PersonIcon from '@mui/icons-material/Person';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import WorkIcon from '@mui/icons-material/Work';
 import ScienceIcon from '@mui/icons-material/Science';
-import ReceiptLongIcon from '@mui/icons-material/ReceiptLong';
-import Diversity3Icon from '@mui/icons-material/Diversity3';
 import GroupsIcon from '@mui/icons-material/Groups';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import NewReleasesIcon from '@mui/icons-material/NewReleases';
 
 const pages = [
     { item: '指導教授', href: '/professor', icon: <PersonIcon /> },
@@ -56,18 +50,6 @@ const CusToolbar = ({ display, children }) => (
     </Toolbar>
 )
 
-const StickyAnnouncement = () => (
-    <Stack sx={{ bgcolor: '#F5F5F5', p: .5 }} alignItems={{ xs: 'flex-start', sm: 'center' }}>
-        <Stack direction='row' alignItems={{ xs: 'flex-start', sm: 'center' }} spacing={1}>
-            <NewReleasesIcon sx={{ color: 'darkred' }} />
-            <Typography sx={{ typography: { xs: 'body1', sm: 'h6' } }}>實驗室成員募集中，歡迎資管所甲組、人工智慧所及管理研究所碩博士同學一起開疆闢土</Typography>
-        </Stack>
-        <Stack direction='row' alignItems='center' spacing={1}>
-            <NewReleasesIcon sx={{ color: 'darkred' }} />
-            <Typography sx={{ typography: { xs: 'body1', sm: 'h6' } }}>歡迎各系所大學部同學參加專題及競賽</Typography>
-        </Stack>
-    </Stack>
-)
 
 function NavBar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -84,7 +66,6 @@ function NavBar() {
 
     return (
         <AppBar position="fixed" elevation={0} sx={{ bgcolor: "#FFFFFF" }}>
-            {pathname === '/' && <StickyAnnouncement />}
             <Container maxWidth="xl">
 
                 {/* above 900px*/}

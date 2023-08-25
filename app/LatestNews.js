@@ -13,7 +13,7 @@ const data = [
 ]
 
 const News = ({ date, content, subcontent }) => (
-    <ListItem>
+    <ListItem sx={{ display: 'flex', alignItems: 'baseline' }}>
         <ListItemAvatar sx={{ bgcolor: (theme) => theme.palette.primary.main, borderRadius: 1, mr: 3 }}>
             {date}
         </ListItemAvatar>
@@ -24,7 +24,7 @@ const News = ({ date, content, subcontent }) => (
 
 function LatestNews() {
 
-    const [newsPerPage] = React.useState(4);
+    const [newsPerPage] = React.useState(7);
 
     const [currentNews, setCurrentNews] = React.useState(data.slice(0, newsPerPage));
     const [page, setPage] = React.useState(1);
@@ -35,7 +35,7 @@ function LatestNews() {
     };
     return (
         <Stack spacing={1} justifyContent='space-between' alignItems='center'>
-            <Stack sx={{ bgcolor: '#F5F5F5', borderRadius: 5, p: { xs: 0, md: 1.5 }, width: '100%', minHeight: 170, overflowY: 'auto' }}>
+            <Stack sx={{ bgcolor: '#F5F5F5', borderRadius: 5, p: { xs: 0, md: 1.5 }, width: '100%', minHeight: 360, overflowY: 'auto' }}>
                 {currentNews.map((data, index) => (
                     <News date={data.date} content={data.content} key={index} />
                 ))}
