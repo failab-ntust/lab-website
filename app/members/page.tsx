@@ -28,6 +28,10 @@ const _112Master = [
     { grade: 'Master', name: '陳軍翰', class: '產創-AI所', imgSrc: '/112/陳軍翰', co_advisor: '羅乃維教授', researchfield: '討論中…', email: 'M11252012@mail.ntust.edu.tw' }
 ]
 
+const _112PhD = [
+    { grade: 'Master', name: '吳宥霆', class: 'AI跨域', imgSrc: '/112/吳宥霆', researchfield: '信用評等、資料探勘、資訊安全與個資保護標準', email: 'D11252005@mail.ntust.edu.tw' }
+]
+
 const _112EMBA = [
     { grade: 'EMBA', name: 'XXX', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
     { grade: 'EMBA', name: 'XXX', imgSrc: '', currentjob: 'XX公司', researchfield: 'XX領域', email: 'xxx@gmail.com' },
@@ -72,7 +76,7 @@ export default function Members() {
                 <CusGrid grade='碩士班' data={_111Master} />
             </SubTitle>
             <SubTitle title='112學年度'>
-                <CusGrid grade='博士班' data={null} />
+                <CusGrid grade='博士班' data={_112PhD} />
                 {/* <CusGrid grade='EMBA' data={null} /> */}
                 <CusGrid grade='碩士班' data={_112Master} />
                 <CusGrid grade='專題生' data={null} />
