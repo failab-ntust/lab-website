@@ -25,14 +25,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-56RBY37W14" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-EG3XE7K718" />
         <Script id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag() {dataLayer.push(arguments); }
           gtag('js', new Date());
 
-          gtag('config', 'G-56RBY37W14');
+          gtag('config', 'G-EG3XE7K718');
         `}
         </Script>
         <link rel="icon" href='/favicon.ico' sizes="any" />
