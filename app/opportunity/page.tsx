@@ -21,7 +21,31 @@ const Marketing = [
 【建議基礎】無`
     }
 ]
-
+const AI = [
+    {
+        date: '2023/10/12', title: '【校內】徵求 資料工程 產學合作計畫-獎助生',
+        content: `【行業別】產學合作計畫-獎助生
+【地點】校內
+【實習名稱】資料工程
+【實習內容】
+    1. 連結資料庫資料
+    2. 資料預處理
+    3. 資料儲存
+【建議年級】大三以上
+【建議基礎】無`
+    },
+    {
+        date: '2023/10/12', title: '【校內】徵求 模型分析 產學合作計畫-獎助生',
+        content: `【行業別】產學合作計畫-獎助生
+【地點】校內
+【實習名稱】模型分析
+【實習內容】
+    1. 模型建構
+    2. 模型優化
+【建議年級】大三以上
+【建議基礎】無`
+    }
+]
 const Data = [
     ``
 ]
@@ -80,7 +104,7 @@ function Opportunity() {
                 <Card data={Marketing} />
             </SubTitle>
             <SubTitle title='數據AI類'>
-                <Card data={null} />
+                <Card data={AI} />
             </SubTitle>
             <SubTitle title='開發實作類'>
                 <Card data={Develop} />
