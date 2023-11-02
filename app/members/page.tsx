@@ -27,8 +27,8 @@ const _112Master = [
     { grade: 'Master', name: '吳竣宇', class: '產創-AI所', imgSrc: '/112/吳竣宇', co_advisor: '羅乃維教授', researchfield: '討論中…', email: 'M11252003@mail.ntust.edu.tw' },
     { grade: 'Master', name: '陳軍翰', class: '產創-AI所', imgSrc: '/112/陳軍翰', co_advisor: '羅乃維教授', researchfield: '討論中…', email: 'M11252012@mail.ntust.edu.tw' },
     { grade: 'Master', name: '李重諺', class: '產創-AI所', imgSrc: '/112/李重諺', researchfield: '討論中…', email: 'M11252026@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '王姿璇', class: 'MBA', imgSrc: '/112/王姿璇', researchfield: '討論中…', email: 'M11221006@mail.ntust.edu.tw' }
-
+    { grade: 'Master', name: '王姿璇', class: 'MBA', imgSrc: '/112/王姿璇', researchfield: '討論中…', email: 'M11221006@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '林瑩姍', class: 'MBA', imgSrc: '/112/林瑩姍', researchfield: '討論中…', email: 'm11221019@ms.ntust.edu.tw' }
 ]
 
 const _112PhD = [
