@@ -9,12 +9,12 @@ const _110Master = [
 ]
 const _111Master = [
     { grade: 'Master', name: 'Do Nguyen Ngan Khanh', class: 'MBA', imgSrc: '/111/Do Nguyen Ngan Khanh', researchfield: '使用者意圖、聯邦式學習', email: 'M11021852mail.ntust.edu.tw' },
-    { grade: 'Master', name: '趙寶蓉', class: 'MBA', imgSrc: '/111/趙寶榕', researchfield: '使用者意圖、對話式商務', email: 'M11121024@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '趙寶榕', class: 'MBA', imgSrc: '/111/趙寶榕', researchfield: '使用者意圖、對話式商務', email: 'M11121024@mail.ntust.edu.tw' },
     { grade: 'Master', name: '許怡晴', class: 'MBA', imgSrc: '/111/許怡晴', researchfield: '使用者意圖、流程自動化', email: 'M10921020@mail.ntust.edu.tw' },
 
     { grade: 'Master', name: '羅雋齡', class: '產碩-AI跨域', imgSrc: '/111/羅雋齡', co_advisor: '王紹睿教授', researchfield: '小樣本、機器學習、自動化爬蟲', email: 'M11115Q02@mail.ntust.edu.tw' },
     { grade: 'Master', name: '陳涵愉', class: '產碩-AI跨域', imgSrc: '/111/陳涵愉', co_advisor: '陳怡伶教授', researchfield: '影像辨識、深度學習、運動科學', email: 'M11115Q24@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '陳哲賢', class: '產碩-AI跨域', imgSrc: '/111/陳哲賢', co_advisor: '王紹睿教授', researchfield: '影像辨識、深度學習、自訂化爬蟲', email: 'M11115Q12@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '陳哲賢', class: '產碩-AI跨域', imgSrc: '/111/陳哲賢', co_advisor: '王紹睿教授', researchfield: '影像辨識、深度學習、自動化爬蟲', email: 'M11115Q12@mail.ntust.edu.tw' },
     { grade: 'Master', name: '高瑜', class: '產碩-AI跨域', imgSrc: '/111/高瑜', co_advisor: '陳怡伶教授', researchfield: '資料隱私保護、機器學習', email: 'M11115Q07@mail.ntust.edu.tw' },
 
     { grade: 'Master', name: '錢嘉偉', class: '產創-AI所', imgSrc: '/111/錢嘉偉', researchfield: '影像辨識、深度學習、運動科學', email: 'M11152029@mail.ntust.edu.tw' },
