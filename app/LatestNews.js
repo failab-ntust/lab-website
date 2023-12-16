@@ -2,7 +2,7 @@ import React from 'react';
 import { Stack, ListItem, ListItemText, ListItemAvatar, Pagination } from '@mui/material';
 
 const data = [
-    { date: '2023/12', content: '研究論文 “Learning to Augment Graphs: Machine Learning-based Social Network Intervention with Self-Supervision,"to appear in IEEE Transactions on @@@-@Computational Social Systems (TCSS).' },
+    { date: '2023/12', content: '研究論文 “Learning to Augment Graphs: Machine Learning-based Social Network Intervention with Self-Supervision,"to appear in IEEE Transactions on Computational Social Systems (TCSS).' },
     { date: '2023/11', content: '研究論文 Maximizing (k, L)-core with Edge Augmentation in Multi-Layer Graphs." to appear in IEEE Transactions on Computational Social Systems (TCSS).' },
     { date: '2023/06', content: '"基於人工智慧之使用者行為異常檢測系統"於第三十三屆資訊安全會議獲選Session Best Paper Award!' },
     { date: '2023/05', content: '"臺灣科大EMBA獅子會社會服務提案競賽"獲得入選' },
