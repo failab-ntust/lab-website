@@ -15,13 +15,13 @@ const EMBA = ({ person }) => (
             variant="body2"
             color="text"
         >
-            現職：{person.currentjob}
+            {/* 現職：{person.currentjob}
         </Typography>
         <Typography
             component="span"
             variant="body2"
             color="text"
-        >
+        > */}
             研究方向：{person.researchfield}
         </Typography>
     </>
