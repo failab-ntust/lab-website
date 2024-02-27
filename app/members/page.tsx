@@ -33,7 +33,7 @@ const _112Master = [
 ]
 
 const _112PhD = [
-    { grade: 'Master', name: '吳宥霆(休學中)', class: 'AI跨域', imgSrc: '/112/吳宥霆', researchfield: '信用評等、資料探勘、資訊安全與個資保護標準', email: 'D11252005@mail.ntust.edu.tw' }
+    { grade: 'Master', name: '吳宥霆', class: 'AI跨域', imgSrc: '/112/吳宥霆', researchfield: '信用評等、資料探勘、資訊安全與個資保護標準', email: 'D11252005@mail.ntust.edu.tw' }
 ]
 
 const _112EMBA = [
