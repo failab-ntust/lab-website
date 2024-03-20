@@ -24,6 +24,14 @@ const images = [
     {
         label: '🎉聖誕期末聚餐-4',
         imgPath: 'lab-photo/lab-photo-4.jpg',
+    },
+    {
+        label: '🎉2024年實驗室聚餐-1',
+        imgPath: 'lab-photo/lab-photo-5.jpg',
+    },
+    {
+        label: '🎉2024年實驗室聚餐-2',
+        imgPath: 'lab-photo/lab-photo-6.jpg',
     }
 ];
 
