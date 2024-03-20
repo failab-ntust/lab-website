@@ -26,7 +26,7 @@ const News = ({ date, content, subcontent }) => (
 
 function LatestNews() {
 
-    const [newsPerPage] = React.useState(7);
+    const [newsPerPage] = React.useState(5);
 
     const [currentNews, setCurrentNews] = React.useState(data.slice(0, newsPerPage));
     const [page, setPage] = React.useState(1);
