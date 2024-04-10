@@ -24,13 +24,16 @@ const _111Master = [
 
 const _112Master = [
     { grade: 'Master', name: '羅巧筠', class: '資管所甲組', imgSrc: '/112/羅巧筠', researchfield: '討論中…', email: 'M11209102@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '劉騫', class: '資管所甲組', imgSrc: '/112/劉騫', researchfield: '討論中…', email: 'brianliu1208@gmail.com' },
+    { grade: 'Master', name: '張尹寧', class: '資管所甲組', imgSrc: '/112/張尹寧', researchfield: '討論中…', email: 'M11209123@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '溫郁綺', class: '資管所甲組', imgSrc: '/112/溫郁綺', researchfield: '討論中…', email: 'M11209105@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '溫婉言', class: '資管所甲組', imgSrc: '/112/溫婉言', researchfield: '待確認', email: 'M11209130@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '王姿璇', class: 'MBA', imgSrc: '/112/王姿璇', researchfield: '聯邦式學習、使用者意圖', email: 'M11221006@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '林瑩姍', class: 'MBA', imgSrc: '/112/林瑩姍', researchfield: '討論中…', email: 'm11221019@ms.ntust.edu.tw' },
     { grade: 'Master', name: '吳竣宇', class: '產創-AI所', imgSrc: '/112/吳竣宇', co_advisor: '羅乃維院長', researchfield: '討論中…', email: 'M11252003@mail.ntust.edu.tw' },
     { grade: 'Master', name: '陳軍翰', class: '產創-AI所', imgSrc: '/112/陳軍翰', co_advisor: '羅乃維院長', researchfield: '討論中…', email: 'M11252012@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '王姿璇', class: 'MBA', imgSrc: '/112/王姿璇', researchfield: '討論中…', email: 'M11221006@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '林瑩姍', class: 'MBA', imgSrc: '/112/林瑩姍', researchfield: '討論中…', email: 'm11221019@ms.ntust.edu.tw' },
-    { grade: 'Master', name: '溫婉言', class: '資管碩甲', imgSrc: '/112/溫婉言', researchfield: '待確認', email: 'M11209130@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '林憲紘', class: '人工智慧所', imgSrc: '/112/林憲紘', co_advisor: '羅乃維院長', researchfield: '待確認…', email: 'M11252029@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '吳孟蓁', class: '產創-AI所', imgSrc: '/112/吳孟蓁', researchfield: '待確認…', email: 'M11252027@mail.ntust.edu.tw' }
+    { grade: 'Master', name: '林憲紘', class: '產創-AI所', imgSrc: '/112/林憲紘', co_advisor: '羅乃維院長', researchfield: '待確認…', email: 'M11252029@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '吳孟蓁', class: '產創-AI所', imgSrc: '/112/吳孟蓁', researchfield: 'AutoML', email: 'mm11252027@gmail.com' }
 ]
 
 const _112PhD = [
