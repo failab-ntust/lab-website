@@ -7,17 +7,24 @@ import Card from './Card'
 import { CustomTab, CustomTabPanel, CusStepper } from './BasicTab'
 
 const NSTC = [
-    '計畫主持人 111-2410-H-011 -041 -MY2 在保護個人隱私下建構跨產業資料共享框架 2022/10/01 ~ 2024/09/30'
-]
-
-const IndustryCooperation = [
     '計畫主持人，產品擷取分析PoC專案 2023/07/01~2023/09/30',
     '計畫主持人，運用大數據及人工智慧技術建構風險引擎2.0 2023/01/01~2023/12/31',
     '計畫主持人，企業資安風險評估計畫 2022/10/01~2023/09/30',
     '偕同計畫主持人，數位錢包之資安框架建構-APP及底層技術設計 2022/11/01~2022/12/31'
 ]
 
+const IndustryCooperation = [
+    '計畫主持人 111-2410-H-011 -041 -MY2 在保護個人隱私下建構跨產業資料共享框架 2022/10/01 ~ 2024/09/30',
+    '計畫主持人，AI鷹眼識詐聯盟技術暨推廣合作案 2024/01/01 ~ 2025/06/30'
+]
+
+const MinistryofEducation = [
+    '計畫主持人，教師推動創新教學-教學與課程精進研究計畫 2023/09/01 ~ 2024/08/31'
+]
+
 const JournalPaper = [
+    'C.-C. Chang, C.-H. Lu, M.-Y. Chang, C.-E. Shen, Y.-C. Ho, and C.-Y. Shen, "Learning to Augment Graphs: Machine Learning-based Social Network Intervention with Self-Supervision."  IEEE Transactions on Computational Social Systems. Accepted.',
+    'C.-C. Chang, C.-H. Lu, S.-J. Teng, M.-Y. Chang, Y.-C. Ho, and C.-Y. Shen, "Maximizing (k, L)-core with Edge Augmentation in Multi-Layer Graphs."  IEEE Transactions on Computational Social Systems. Accepted.',
     'B.-Y. Hsu, P.-Y. Chang, Y.-L.Chen, Y.-C. Ho, C.-C. Chang, C.-Y. Shen, and B.-C. Shia (2022, Nov). Diversity-Optimized Group Extraction in Social Networks. IEEE Transactions on Computational Social Systems . (Accepted).',
     'V. Kumar, R. Kumar, A.-A. Khan, V. Kumar, Y.-C. Chen, and C.-C. Chang (2022, Apr). RAFI: Robust Authentication Framework for IoT based RFID Infrastructure. Sensors, DOI:10.3390/s22093110. (Accepted).',
     'C.-C. Chang , M.-Y. Chang, J.-Y. Jhang, L.-Y. Yeh, and C.-Y. Shen (2022, Feb). Learning to Extract Expert Teams in Social Networks. IEEE Transactions on Computational Social Systems, DOI: 10.1109/TCSS.2022.3152179. (Accepted). 本人為第一作者.',
@@ -27,6 +34,8 @@ const JournalPaper = [
 ]
 
 const ConferencePaper = [
+    'J.-Y. Lin, Y.-H. Liu, Y.-C. Chen and C.-C. Chang, "Constructing a Blockchain-based Framework for Enhancing the Reliability of Election Polls", The 2024 6th Blockchain and Internet of Things Conference, Fukuoka, Japan, July, 2024.',
+    'C.-C. Chang, Y.-C. Li, Y. Kao, Y.-C. Chen, C.-C. Chang, "A Framework with Black2 and Differential Privacy in Handling Data Privacy Problems", International Electronics Communication Conference (IECC 2024), Fukuoka, Japan, July, 2024.',
     'T.-Y. Huang, Y.-C. Chen, T.-C. Hsieh, H.-C. Chang and C.-C. Chang, "A Secure and IoT-Enabled Data Sharing System Based on IPFS and IOTA Blockchain" , The 2023 5th Blockchain and Internet of Things Conference, Osaka, Japan, July, 2023.',
     'C.-L. Hsu, H.-H. Hsu, C.-C. Chang, and N.-W. Lo, "整合公開資料建構企業貸款風險模型," in Proc. CISC 2023, Chiayi, Jun. 2023.',
     'Z.-X. Cai, C.-Y. Chang, C.-C. Chang, and N.-W. Lo, "基於人工智慧之使用者行為異常檢測系統," in Proc. CISC 2023, Chiayi, Jun. 2023.',
@@ -58,6 +67,10 @@ export default function Result() {
                         國科會計畫
                     </Typography>
                     <CusStepper data={IndustryCooperation} />
+                    <Typography variant='h6' color='secondary'>
+                        教育部計畫
+                    </Typography>
+                    <CusStepper data={MinistryofEducation} />
                     <Typography variant='h6' color='secondary'>
                         產學合作案
                     </Typography>
