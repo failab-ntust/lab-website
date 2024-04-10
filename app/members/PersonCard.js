@@ -130,7 +130,7 @@ export default function PersonCard({ person }) {
                     </Stack>
                 }
                 secondary={
-                    <Typography variant='body2' px={1}>E-mail: {person.email}</Typography>
+                    <Typography variant='body2' px={1} pb={1}>E-mail: {person.email}</Typography>
                 }
             />
         </Stack>
