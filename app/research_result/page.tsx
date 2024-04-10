@@ -7,14 +7,14 @@ import Card from './Card'
 import { CustomTab, CustomTabPanel, CusStepper } from './BasicTab'
 
 const NSTC = [
-    '計畫主持人，產品擷取分析PoC專案 2023/07/01~2023/09/30',
-    '計畫主持人，運用大數據及人工智慧技術建構風險引擎2.0 2023/01/01~2023/12/31',
-    '計畫主持人，企業資安風險評估計畫 2022/10/01~2023/09/30',
-    '偕同計畫主持人，數位錢包之資安框架建構-APP及底層技術設計 2022/11/01~2022/12/31'
+    '計畫主持人 111-2410-H-011 -041 -MY2 在保護個人隱私下建構跨產業資料共享框架 2022/10/01 ~ 2024/09/30',
 ]
 
 const IndustryCooperation = [
-    '計畫主持人 111-2410-H-011 -041 -MY2 在保護個人隱私下建構跨產業資料共享框架 2022/10/01 ~ 2024/09/30',
+    '計畫主持人，產品擷取分析PoC專案 2023/07/01~2023/09/30',
+    '計畫主持人，運用大數據及人工智慧技術建構風險引擎2.0 2023/01/01~2023/12/31',
+    '計畫主持人，企業資安風險評估計畫 2022/10/01~2023/09/30',
+    '偕同計畫主持人，數位錢包之資安框架建構-APP及底層技術設計 2022/11/01~2022/12/31',
     '計畫主持人，AI鷹眼識詐聯盟技術暨推廣合作案 2024/01/01 ~ 2025/06/30'
 ]
 
@@ -66,7 +66,7 @@ export default function Result() {
                     <Typography variant='h6' color='secondary'>
                         國科會計畫
                     </Typography>
-                    <CusStepper data={IndustryCooperation} />
+                    <CusStepper data={NSTC} />
                     <Typography variant='h6' color='secondary'>
                         教育部計畫
                     </Typography>
@@ -74,7 +74,7 @@ export default function Result() {
                     <Typography variant='h6' color='secondary'>
                         產學合作案
                     </Typography>
-                    <CusStepper data={NSTC} />
+                    <CusStepper data={IndustryCooperation} />
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
                     <Typography variant='h6' color='secondary'>
