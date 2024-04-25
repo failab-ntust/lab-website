@@ -8,7 +8,7 @@ const _110Master = [
     { grade: 'Master', name: 'Khairul Izyan Bin Anuar', class: 'MBA', imgSrc: '/110/Khairul Izyan Bin Anuar', researchfield: '小樣本、機器學習', email: 'M11021805@mail.ntust.edu.tw' },
 ]
 const _111Master = [
-    { grade: 'Master', name: 'Do Nguyen Ngan Khanh', class: 'MBA', imgSrc: '/111/Do Nguyen Ngan Khanh', researchfield: '使用者意圖、聯邦式學習', email: 'M11021852mail.ntust.edu.tw' },
+    { grade: 'Master', name: 'Do Nguyen Ngan Khanh', class: 'MBA', imgSrc: '/111/Do Nguyen Ngan Khanh', researchfield: '使用者意圖、聯邦式學習', email: 'M11021852@mail.ntust.edu.tw' },
     { grade: 'Master', name: '趙寶榕', class: 'MBA', imgSrc: '/111/趙寶榕', researchfield: '使用者意圖、對話式商務', email: 'M11121024@mail.ntust.edu.tw' },
     { grade: 'Master', name: '許怡晴', class: 'MBA', imgSrc: '/111/許怡晴', researchfield: '使用者意圖、流程自動化', email: 'M10921020@mail.ntust.edu.tw' },
 
@@ -33,7 +33,7 @@ const _112Master = [
     { grade: 'Master', name: '吳竣宇', class: '產創-AI所', imgSrc: '/112/吳竣宇', co_advisor: '羅乃維院長', researchfield: '討論中…', email: 'M11252003@mail.ntust.edu.tw' },
     { grade: 'Master', name: '陳軍翰', class: '產創-AI所', imgSrc: '/112/陳軍翰', co_advisor: '羅乃維院長', researchfield: '討論中…', email: 'M11252012@mail.ntust.edu.tw' },
     { grade: 'Master', name: '林憲紘', class: '產創-AI所', imgSrc: '/112/林憲紘', co_advisor: '羅乃維院長', researchfield: '待確認…', email: 'M11252029@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '吳孟蓁', class: '產創-AI所', imgSrc: '/112/吳孟蓁', researchfield: 'AutoML', email: 'mm11252027@gmail.com' }
+    { grade: 'Master', name: '吳孟蓁', class: '產創-AI所', imgSrc: '/112/吳孟蓁', researchfield: 'AutoML', email: 'M11252027@mail.ntust.edu.tw' }
 ]
 
 const _112PhD = [
