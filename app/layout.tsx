@@ -46,7 +46,7 @@ export default function RootLayout({
             <Box flex={9} sx={{ mx: { xs: 3, sm: 6, md: 10 }, mb: { xs: 3, md: 2 }, mt: 8 }}>
               {children}
             </Box>
-            <Box flex={1}>
+            <Box flex={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
               <Footer />
             </Box>
           </Container>
