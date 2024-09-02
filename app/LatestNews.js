@@ -2,6 +2,7 @@ import React from 'react';
 import { Stack, ListItem, ListItemText, ListItemAvatar, Pagination } from '@mui/material';
 
 const data = [
+    { date: '2024/06', content: '研究論文 "Improving graph-based recommendation with unraveled graph learning" to appear in Data Mining and Knowledge Discovery (DMKD).' },
     { date: '2024/03', content: '會議論文 Constructing a Blockchain-based Framework for Enhancing the Reliability of Election Polls, BIOTC 接受' },
     { date: '2024/02', content: '會議論文A Framework with Black2 and Differential Privacy in Handling Data Privacy Problems, IECC 接受' },
     { date: '2023/12', content: ' "第六屆法遵科技與電腦稽核專題競賽"獲得優選' },

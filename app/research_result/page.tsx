@@ -7,10 +7,12 @@ import Card from './Card'
 import { CustomTab, CustomTabPanel, CusStepper } from './BasicTab'
 
 const NSTC = [
+    '計畫主持人 113-2221-E-011-149- 透過嵌入平衡與對比學習增進以圖為基礎之推薦系統效能 2024/08/01 ~ 2025/07/31',
     '計畫主持人 111-2410-H-011 -041 -MY2 在保護個人隱私下建構跨產業資料共享框架 2022/10/01 ~ 2024/09/30',
 ]
 
 const IndustryCooperation = [
+    '計畫主持人，競品暨技術論文網站分析系統 2024/06/01 ~ 2025/01/31',
     '計畫主持人，產品擷取分析PoC專案 2023/07/01~2023/09/30',
     '計畫主持人，運用大數據及人工智慧技術建構風險引擎2.0 2023/01/01~2023/12/31',
     '計畫主持人，企業資安風險評估計畫 2022/10/01~2023/09/30',
@@ -34,6 +36,7 @@ const JournalPaper = [
 ]
 
 const ConferencePaper = [
+    'C.-C. Chang, D.-R. Tseng, C.-H. Lu, M.-Y. Chang & C.-Y. Shen, "Improving graph-based recommendation with unraveled graph learning." Data Mining and Knowledge Discovery. Accepted.',
     'J.-Y. Lin, Y.-H. Liu, Y.-C. Chen and C.-C. Chang, "Constructing a Blockchain-based Framework for Enhancing the Reliability of Election Polls", The 2024 6th Blockchain and Internet of Things Conference, Fukuoka, Japan, July, 2024.',
     'C.-C. Chang, Y.-C. Li, Y. Kao, Y.-C. Chen, C.-C. Chang, "A Framework with Black2 and Differential Privacy in Handling Data Privacy Problems", International Electronics Communication Conference (IECC 2024), Fukuoka, Japan, July, 2024.',
     'T.-Y. Huang, Y.-C. Chen, T.-C. Hsieh, H.-C. Chang and C.-C. Chang, "A Secure and IoT-Enabled Data Sharing System Based on IPFS and IOTA Blockchain" , The 2023 5th Blockchain and Internet of Things Conference, Osaka, Japan, July, 2023.',
