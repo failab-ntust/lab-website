@@ -8,6 +8,9 @@ const _110Master = [
     { grade: 'Master', name: 'Khairul Izyan Bin Anuar', class: 'MBA', imgSrc: '/110/Khairul Izyan Bin Anuar', researchfield: '小樣本、機器學習', email: 'M11021805@mail.ntust.edu.tw' },
 ]
 const _111Master = [
+    { grade: 'Master', name: '錢嘉偉', class: '產創-AI所', imgSrc: '/111/錢嘉偉', researchfield: '影像辨識、深度學習、運動科學', email: 'M11152029@mail.ntust.edu.tw' },
+]
+const _111graduateMaster = [
     { grade: 'Master', name: 'Do Nguyen Ngan Khanh', class: 'MBA', imgSrc: '/111/Do Nguyen Ngan Khanh', researchfield: '使用者意圖、聯邦式學習', email: 'M11021852@mail.ntust.edu.tw' },
     { grade: 'Master', name: '趙寶榕', class: 'MBA', imgSrc: '/111/趙寶榕', researchfield: '使用者意圖、對話式商務', email: 'M11121024@mail.ntust.edu.tw' },
     { grade: 'Master', name: '許怡晴', class: 'MBA', imgSrc: '/111/許怡晴', researchfield: '使用者意圖、流程自動化', email: 'M10921020@mail.ntust.edu.tw' },
@@ -17,7 +20,6 @@ const _111Master = [
     { grade: 'Master', name: '陳哲賢', class: '產碩-AI跨域', imgSrc: '/111/陳哲賢', co_advisor: '王紹睿教授', researchfield: '影像辨識、深度學習、自動化爬蟲', email: 'M11115Q12@mail.ntust.edu.tw' },
     { grade: 'Master', name: '高瑜', class: '產碩-AI跨域', imgSrc: '/111/高瑜', co_advisor: '陳怡伶教授', researchfield: '資料隱私保護、機器學習', email: 'M11115Q07@mail.ntust.edu.tw' },
 
-    { grade: 'Master', name: '錢嘉偉', class: '產創-AI所', imgSrc: '/111/錢嘉偉', researchfield: '影像辨識、深度學習、運動科學', email: 'M11152029@mail.ntust.edu.tw' },
     { grade: 'Master', name: '張棨揚', class: '產創-AI所', imgSrc: '/111/張棨揚', co_advisor: '羅乃維院長', researchfield: '資訊安全、深度學習', email: 'M11152013@mail.ntust.edu.tw' },
     { grade: 'Master', name: '蔡子勛', class: '產創-AI所', imgSrc: '/111/蔡子勛', co_advisor: '羅乃維院長', researchfield: '資訊安全、深度學習', email: 'M11152026@mail.ntust.edu.tw' }
 ]
@@ -53,6 +55,9 @@ const _112Undergraduate = [
     { grade: 'Undergraduate', name: '林哲宇', class: '管理學士班', imgSrc: '/112/林哲宇', researchfield: '圖探勘、聯邦式學習', email: 'B11033023@mail.ntust.edu.tw' },
     { grade: 'Undergraduate', name: '孫睿君', class: '管理學士班', imgSrc: '/112/孫睿君', co_advisor: '蕭志平教授', researchfield: 'AI數位轉型', email: 'B11033006@mail.ntust.edu.tw' },
     { grade: 'Undergraduate', name: '徐葒', class: '管理學士班', imgSrc: '/112/徐葒', co_advisor: '蕭志平教授', researchfield: 'AI數位轉型', email: 'B11033038@mail.ntust.edu.tw' }
+]
+
+const _113Master = [
 ]
 
 const CusGrid = ({ grade, data }: any) => (
@@ -91,8 +96,12 @@ export default function Members() {
                 <CusGrid grade='碩士班' data={_112Master} />
                 <CusGrid grade='專題生' data={_112Undergraduate} />
             </SubTitle>
+            <SubTitle title='113學年度'>
+                <></>
+            </SubTitle>
             <SubTitle title='ALUMNI校友區'>
                 <CusGrid grade='碩士班' data={_110Master} />
+                <CusGrid grade='碩士班' data={_111graduateMaster } />
             </SubTitle>
 
             {/* <PageTitle title='畢業成員' />
