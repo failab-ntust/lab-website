@@ -45,7 +45,7 @@ const CusGrid = ({ grade, data }: any) => (
 export default function Members() {
     return (
         <Box>
-            <PageTitle title='實驗室成員-畢業成員' />
+            <PageTitle title='實驗室成員-畢業校友' />
 
             {/* <SubTitle title='111學年度'>
                 <CusGrid grade='碩士班' data={_111Master} />
