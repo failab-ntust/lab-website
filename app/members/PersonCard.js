@@ -15,6 +15,13 @@ const EMBA = ({ person }) => (
             variant="body2"
             color="text"
         >
+            學年度：{person.year}
+        </Typography>
+        <Typography
+            component="span"
+            variant="body2"
+            color="text"
+        >
             {/* 現職：{person.currentjob}
         </Typography>
         <Typography
@@ -42,6 +49,13 @@ const Master = ({ person }) => (
             color="text"
         >
             班別：{person.class}
+        </Typography>
+        <Typography
+            component="span"
+            variant="body2"
+            color="text"
+        >
+            學年度：{person.year}
         </Typography>
         {person.co_advisor &&
             <Typography
@@ -77,6 +91,13 @@ const Undergraduate = ({ person }) => (
             color="text"
         >
             班別：{person.class}
+        </Typography>
+        <Typography
+            component="span"
+            variant="body2"
+            color="text"
+        >
+            學年度：{person.year}
         </Typography>
         {person.co_advisor &&
             <Typography
