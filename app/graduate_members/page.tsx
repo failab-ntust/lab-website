@@ -45,8 +45,9 @@ const CusGrid = ({ grade, data }: any) => (
 export default function Members() {
     return (
         <Box>
-            <PageTitle title='實驗室成員-畢業校友' />
+            <PageTitle title='畢業校友' />
 
+            
             <SubTitle title='成員列表'>
                 <CusGrid grade='' data={_GraduateMember} />
             </SubTitle>
