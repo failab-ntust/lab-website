@@ -23,7 +23,7 @@ const Master = [
     { grade: 'Master', name: '吳孟蓁', class: '產創-AI所', year: '112', imgSrc: '/112/吳孟蓁', researchfield: 'AutoML', email: 'M11252027@mail.ntust.edu.tw' },
     { grade: 'Master', name: '錢嘉偉', class: '產創-AI所', year: '111', imgSrc: '/111/錢嘉偉', researchfield: '影像辨識、深度學習、運動科學', email: 'M11152029@mail.ntust.edu.tw' }
 ]
-const _Student = [
+const _PhD = [
     { grade: 'Master', name: '吳宥霆', class: 'AI跨域', year: '112', imgSrc: '/112/吳宥霆', researchfield: '信用評等、資料探勘、資訊安全與個資保護標準', email: 'D11252005@mail.ntust.edu.tw' },
 ]
 
@@ -69,7 +69,7 @@ export default function Members() {
             <PageTitle title='實驗室成員' />
 
             <SubTitle title='博士班'>
-                <CusGrid grade='博士班' data={_Student} />
+                <CusGrid grade='博士班' data={_PhD} />
             </SubTitle>
             <SubTitle title='EMBA'>
                 <CusGrid data={EMBA} />
