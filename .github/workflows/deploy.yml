@@ -33,4 +33,4 @@ jobs:
         deploy_branch: gh-pages  # 設置部署分支為 gh-pages
         folder: out  # Next.js 輸出目錄（`out` 是默認的靜態頁面輸出目錄）
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub token，用於授權操作
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}  # GitHub token，用於授權操作
