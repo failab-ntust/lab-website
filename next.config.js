@@ -2,17 +2,17 @@
 const nextConfig = {
     output: 'export',
     reactStrictMode: true,
-    generateStaticParams: function () { // /Next-React-Components
+    exportPathMap: async function () {
         return {
-            "/": { page: "/" },
-            "/professor": { page: "/professor" },
-            "/research": { page: "/research" },
-            "/research_result": { page: "/research_result" },
-            "/members": { page: "/members" },
-            "/graduate_members": { page: "/graduate_members" },
-        }
+            '/': { page: '/' },
+            '/professor': { page: '/professor' },
+            '/research': { page: '/research' },
+            '/research_result': { page: '/research_result' },
+            '/members': { page: '/members' },
+            '/graduate_members': { page: '/graduate_members' },
+        };
     },
-    assetPrefix: 'https://tiffany0313.github.io/lab-website/'
-}
+    assetPrefix: 'https://tiffany0313.github.io/lab-website/',
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
