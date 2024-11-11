@@ -2,7 +2,7 @@
 const nextConfig = {
     output: 'export',
     reactStrictMode: true,
-    exportPathMap: function () { // /Next-React-Components
+    generateStaticParams: function () { // /Next-React-Components
         return {
             "/": { page: "/" },
             "/professor": { page: "/professor" },
