@@ -25,7 +25,7 @@ jobs:
       run: yarn build  # 編譯 Next.js 應用
 
     - name: Export static files
-      run: yarn export  # 將 Next.js 應用導出為靜態頁面
+      run: yarn export  # 導出靜態頁面
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3  # 使用 GitHub Pages 部署動作
