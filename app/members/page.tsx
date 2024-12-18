@@ -16,7 +16,8 @@ const Master = [
     { grade: 'Master', name: '溫郁綺', class: '資管所甲組', year: '112', imgSrc: '/112/溫郁綺', researchfield: '討論中...', email: 'M11209105@mail.ntust.edu.tw' },
     { grade: 'Master', name: '溫婉言', class: '資管所甲組', year: '112', imgSrc: '/112/溫婉言', researchfield: '待確認', email: 'M11209130@mail.ntust.edu.tw' },
     { grade: 'Master', name: '王姿璇', class: 'MBA', year: '112', imgSrc: '/112/王姿璇', researchfield: '聯邦式學習、使用者意圖', email: 'M11221006@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '林瑩姍', class: 'MBA', year: '112', imgSrc: '/112/林瑩姍', researchfield: '討論中…', email: 'm11221019@ms.ntust.edu.tw' },
+    { grade: 'Master', name: '林瑩姍', class: 'MBA', year: '112', imgSrc: '/112/林瑩姍', researchfield: '討論中…', email: 'M11221019@ms.ntust.edu.tw' },
+    { grade: 'Master', name: 'PHAM QUYNH HUONG', class: 'MBA', year: '112', imgSrc: '/112/PHAM QUYNH HUONG', researchfield: '資料科學', email: 'M11221823@mail.ntust.edu.tw' },
     { grade: 'Master', name: '吳竣宇', class: '產創-AI所', year: '112', imgSrc: '/112/吳竣宇', co_advisor: '羅乃維院長', researchfield: '討論中…', email: 'M11252003@mail.ntust.edu.tw' },
     { grade: 'Master', name: '陳軍翰', class: '產創-AI所', year: '112', imgSrc: '/112/陳軍翰', co_advisor: '羅乃維院長', researchfield: '討論中…', email: 'M11252012@mail.ntust.edu.tw' },
     { grade: 'Master', name: '林憲紘', class: '產創-AI所', year: '112', imgSrc: '/112/林憲紘', co_advisor: '羅乃維院長', researchfield: '待確認…', email: 'M11252029@mail.ntust.edu.tw' },
@@ -24,8 +25,8 @@ const Master = [
     { grade: 'Master', name: '錢嘉偉', class: '產創-AI所', year: '111', imgSrc: '/111/錢嘉偉', researchfield: '影像辨識、深度學習、運動科學', email: 'M11152029@mail.ntust.edu.tw' }
 ]
 const _PhD = [
-    { grade: 'Master', name: '林銘鴻', class: 'AI跨域', year: '113', imgSrc: '/113/林銘鴻', researchfield: '資訊安全與個資保護標準', email:  'D11352002@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '吳宥霆', class: 'AI跨域', year: '112', imgSrc: '/112/吳宥霆', researchfield: '信用評等、資料探勘、資訊安全與個資保護標準', email: 'D11252005@mail.ntust.edu.tw' }    
+    { grade: 'Master', name: '林銘鴻', class: 'AI跨域', year: '113', imgSrc: '/113/林銘鴻', researchfield: '資訊安全與個資保護標準', email: 'D11352002@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '吳宥霆', class: 'AI跨域', year: '112', imgSrc: '/112/吳宥霆', researchfield: '信用評等、資料探勘、資訊安全與個資保護標準', email: 'D11252005@mail.ntust.edu.tw' }
 ]
 
 const EMBA = [
