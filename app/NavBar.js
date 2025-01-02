@@ -67,7 +67,7 @@ function NavBar() {
 
     return (
         <AppBar position="fixed" elevation={0} sx={{ bgcolor: "#FFFFFF" }}>
-            <Container maxWidth="xl">
+            <Container maxWidth={false} sx={{ width: '100%' }}>
 
                 {/* above 900px*/}
                 <CusToolbar display={display.Above900px}>

@@ -32,7 +32,7 @@ const StickyAnnouncement = () => (
 
 export default function Home() {
   return (
-    <Box mt={2}>
+    <Box my={2}>
       <Grid container spacing={{ xs: 2, sm: 3, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} >
         <Grid item xs={4} sm={8} md={12}>
           <Box sx={{ display: 'flex', justifyContent: { xs: 'space-around', md: 'flex-start' } }}>
