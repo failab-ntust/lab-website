@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, ListItem, ListItemText, ListItemAvatar, Pagination } from '@mui/material';
+import { Stack, ListItem, Typography, ListItemText, ListItemAvatar } from '@mui/material';
 
 const data = [
     { date: '2024/06', content: '研究論文 "Improving graph-based recommendation with unraveled graph learning" to appear in Data Mining and Knowledge Discovery (DMKD).' },
@@ -27,29 +27,43 @@ const News = ({ date, content, subcontent }) => (
         <ListItemText primary={content}
             secondary={subcontent} />
     </ListItem>
-)
+);
 
 function LatestNews() {
 
-    const [newsPerPage] = React.useState(5);
-
-    const [currentNews, setCurrentNews] = React.useState(data.slice(0, newsPerPage));
-    const [page, setPage] = React.useState(1);
-
-    const handleChange = (event, page_value) => {
-        setPage(page_value);
-        setCurrentNews(data.slice(page_value * newsPerPage - newsPerPage, page_value * newsPerPage))
-    };
     return (
-        <Stack spacing={1} justifyContent='space-between' alignItems='center'>
-            <Stack sx={{ bgcolor: '#F5F5F5', borderRadius: 5, p: { xs: 0, md: 1.5 }, width: '100%', minHeight: 360, overflowY: 'auto' }}>
-                {currentNews.map((data, index) => (
-                    <News date={data.date} content={data.content} key={index} />
+        <Stack
+            spacing={1}
+            justifyContent="space-between"
+            alignItems="center"
+            sx={{
+                display: { xs: 'flex', md: 'block' },
+                position: { md: 'relative' },
+                paddingTop: { md: '50%' },
+            }}
+        >
+            <Stack
+                sx={{
+                    bgcolor: '#F5F5F5',
+                    borderRadius: 5,
+                    p: { xs: 0, md: 1.5 },
+                    width: '100%',
+                    minHeight: 360,
+                    maxHeight: { xs: 400, md: 'none' },
+                    overflowY: 'auto',
+                    position: { md: 'absolute' },
+                    top: { md: 0 },
+                    left: { md: 0 },
+                    height: { md: '100%' },
+                    objectFit: { md: 'cover' },
+                }}
+            >
+                {data.map((item, index) => (
+                    <News date={item.date} content={item.content} key={index} />
                 ))}
-
             </Stack>
-            <Pagination shape="rounded" count={Math.ceil(data.length / newsPerPage)} page={page} onChange={handleChange} />
         </Stack>
+
     )
 }
 
