@@ -49,7 +49,7 @@ function LatestNews() {
                     p: { xs: 0, md: 1.5 },
                     width: "100%",
                     minHeight: 360,
-                    maxHeight: 400,
+                    maxHeight: { xs: 400, lg: 500 },
                     overflowY: "auto",
                 }}
             >
