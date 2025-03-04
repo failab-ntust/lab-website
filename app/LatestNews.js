@@ -2,6 +2,8 @@ import React from 'react';
 import { Stack, ListItem, Typography, ListItemText, ListItemAvatar } from '@mui/material';
 
 const data = [
+    { date: '2024/12', content: '2024全球品牌策劃 第一名/銀質獎' },
+    { date: '2024/12', content: '2024法遵科技與電腦稽核專題競賽 冠軍' },
     { date: '2024/06', content: '研究論文 "Improving graph-based recommendation with unraveled graph learning" to appear in Data Mining and Knowledge Discovery (DMKD).' },
     { date: '2024/03', content: '會議論文 Constructing a Blockchain-based Framework for Enhancing the Reliability of Election Polls, BIOTC 接受' },
     { date: '2024/02', content: '會議論文A Framework with Black2 and Differential Privacy in Handling Data Privacy Problems, IECC 接受' },
@@ -37,25 +39,18 @@ function LatestNews() {
             justifyContent="space-between"
             alignItems="center"
             sx={{
-                display: { xs: 'flex', md: 'block' },
-                position: { md: 'relative' },
-                paddingTop: { md: '50%' },
+                display: { xs: "flex", md: "block" }
             }}
         >
             <Stack
                 sx={{
-                    bgcolor: '#F5F5F5',
+                    bgcolor: "#F5F5F5",
                     borderRadius: 5,
                     p: { xs: 0, md: 1.5 },
-                    width: '100%',
+                    width: "100%",
                     minHeight: 360,
-                    maxHeight: { xs: 400, md: 'none' },
-                    overflowY: 'auto',
-                    position: { md: 'absolute' },
-                    top: { md: 0 },
-                    left: { md: 0 },
-                    height: { md: '100%' },
-                    objectFit: { md: 'cover' },
+                    maxHeight: 400,
+                    overflowY: "auto",
                 }}
             >
                 {data.map((item, index) => (

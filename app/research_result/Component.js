@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import { Box, Typography, Tabs, Tab, Stepper, Step, StepLabel } from '@mui/material';
+import { Box, Typography, Tabs, Tab, Stepper, Step, StepLabel, StepContent } from '@mui/material';
 
 function a11yProps(index) {
     return {
@@ -35,7 +35,7 @@ function CustomTab({ value, handleChange }) {
             <Tab disableRipple {...a11yProps(2)}
                 label={
                     <Typography variant="body1" noWrap>
-                        競賽成果
+                        學術活動
                     </Typography>
                 } />
         </Tabs>
@@ -74,9 +74,14 @@ const CusStepper = ({ data }) => (
             <Step active key={index}>
                 <StepLabel>
                     <Typography>
-                        {item}
+                        {item.event || item}
                     </Typography>
                 </StepLabel>
+                {item.note &&
+                    <StepContent>
+                        <Typography color="grey.dark">{item.note}</Typography>
+                    </StepContent>
+                }
             </Step>
         ))}
     </Stepper>

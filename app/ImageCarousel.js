@@ -8,6 +8,7 @@ import { autoPlay } from 'react-swipeable-views-utils';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
+// 建立該年份的資料夾，放到public/lab-photo/XXX
 // { label: '{year}', text: '{emoji} {text}', photoCount: '{number of the photos}' }
 const images = [
     { label: '111', text: '🎄聖誕期末聚餐', photoCount: 4 },
@@ -86,7 +87,7 @@ function SwipeableTextMobileStepper() {
                     borderRadius: 5,
                 }}
             >
-                <Stack direction="row" spacing={1}>
+                <Stack direction="row" spacing={1} sx={{ overflowX: 'auto' }}>
                     {filterLabels.map((label, i) => (
                         <Chip
                             key={i}
