@@ -8,6 +8,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { theme } from './theme'
 
 import NavBar from './NavBar'
+import Partners from './Partners'
 import Footer from './Footer'
 
 export const metadata: Metadata = {
@@ -45,6 +46,9 @@ export default function RootLayout({
             <NavBar />
             <Box flex={9} sx={{ mx: { xs: 3, sm: 6, md: 10 }, mb: { xs: 3, md: 2 }, mt: 8 }}>
               {children}
+            </Box>
+            <Box flex={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+              <Partners />
             </Box>
             <Box flex={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
               <Footer />
