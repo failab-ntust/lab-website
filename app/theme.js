@@ -12,6 +12,11 @@ export const theme = createTheme({
             light: '#4383cc',
             main: '#1565C0',
             dark: '#0e4686'
-        }
+        },
+        grey: {
+            light: '#b1b1b1',
+            main: '#9e9e9e',
+            dark: '#6e6e6e'
+        },
     },
 });
