@@ -1,6 +1,6 @@
 'use client'
 import * as React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 
 import PageTitle from '../PageTitle'
 import { CustomTab, CustomTabPanel, CusStepper } from './Component'
@@ -22,11 +22,12 @@ const IndustryCooperation = [
     '計畫主持人，AI戰情室1.0 2024/12/31 ~ 2025/06/30',
     '計畫主持人，醫美產業AI技術引進導入及評估 2024/10/31 ~ 2025/03/31',
     '計畫主持人，競品暨技術論文網站分析系統 2024/06/01 ~ 2025/01/31',
+    '計畫主持人，AI鷹眼識詐聯盟技術暨推廣合作案 2024/01/01 ~ 2025/06/30',
     '計畫主持人，產品擷取分析PoC專案 2023/07/01~2023/09/30',
     '計畫主持人，運用大數據及人工智慧技術建構風險引擎2.0 2023/01/01~2023/12/31',
-    '計畫主持人，企業資安風險評估計畫 2022/10/01~2023/09/30',
     '偕同計畫主持人，數位錢包之資安框架建構-APP及底層技術設計 2022/11/01~2022/12/31',
-    '計畫主持人，AI鷹眼識詐聯盟技術暨推廣合作案 2024/01/01 ~ 2025/06/30'
+    '計畫主持人，企業資安風險評估計畫 2022/10/01~2023/09/30'
+
 ]
 
 const JournalPaper = [
@@ -147,26 +148,32 @@ export default function Result() {
                     <CusStepper data={ConferencePaper} />
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
-                    <Typography variant='h6' color='secondary'>
-                        客座編輯(Guest Editor)
-                    </Typography>
-                    <CusStepper data={guestEditor} />
-                    <Typography variant='h6' color='secondary'>
-                        期刊論文審稿
-                    </Typography>
-                    <CusStepper data={journalReviewer} />
-                    <Typography variant='h6' color='secondary'>
-                        其他學術活動
-                    </Typography>
-                    <CusStepper data={academicActivities} />
-                    <Typography variant='h6' color='secondary'>
-                        個人相關獎項
-                    </Typography>
-                    <CusStepper data={personalAwards} />
-                    <Typography variant='h6' color='secondary'>
-                        指導學生競賽成果
-                    </Typography>
-                    <CusStepper data={studentCompetitionAchievements} />
+                    <Grid container spacing={{ xs: 2, sm: 3, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} >
+                        <Grid item xs={4} sm={8} md={6}>
+                            <Typography variant='h6' color='secondary'>
+                                客座編輯(Guest Editor)
+                            </Typography>
+                            <CusStepper data={guestEditor} />
+                            <Typography variant='h6' color='secondary'>
+                                期刊論文審稿
+                            </Typography>
+                            <CusStepper data={journalReviewer} />
+                            <Typography variant='h6' color='secondary'>
+                                其他學術活動
+                            </Typography>
+                            <CusStepper data={academicActivities} />
+                        </Grid>
+                        <Grid item xs={4} sm={8} md={6}>
+                            <Typography variant='h6' color='secondary'>
+                                個人相關獎項
+                            </Typography>
+                            <CusStepper data={personalAwards} />
+                            <Typography variant='h6' color='secondary'>
+                                指導學生競賽成果
+                            </Typography>
+                            <CusStepper data={studentCompetitionAchievements} />
+                        </Grid>
+                    </Grid>
                 </CustomTabPanel>
             </Box>
         </Box>

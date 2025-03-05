@@ -33,3 +33,4 @@ This is a [Next.js](https://nextjs.org/) project with `create-next-app`.
 
 - [react-swipeable-views](https://react-swipeable-views.com/) - ^0.14.0
 
+- [react-fast-marquee](https://www.react-fast-marquee.com/documentation) - ^1.6.5
