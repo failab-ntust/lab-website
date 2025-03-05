@@ -23,13 +23,13 @@ function CustomTab({ value, handleChange }) {
             <Tab disableRipple {...a11yProps(0)}
                 label={
                     <Typography variant="body1" noWrap>
-                        計畫及產學
+                        計畫/產學
                     </Typography>
                 } />
             <Tab disableRipple {...a11yProps(1)}
                 label={
                     <Typography variant="body1" noWrap>
-                        發表論文Publication
+                        論文發表
                     </Typography>
                 } />
             <Tab disableRipple {...a11yProps(2)}

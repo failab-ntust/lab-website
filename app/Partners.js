@@ -16,20 +16,12 @@ export default function MarqueePartners() {
     return (
         <Box sx={{ width: "100%", overflow: "hidden", py: 2, backgroundColor: "#f4f4f4" }}>
             <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
-                <Typography variant="h6" align="center" sx={{ display: { xs: 'none', sm: 'block' } }}>
-                    以下為我們的合作夥伴，歡迎企業與我們洽談合作！
+                <Typography variant="h5" color="secondary" align="center" sx={{ fontWeight: 700 }}>
+                    合作夥伴
                 </Typography>
-                <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
-                    <Typography variant="h6" align="center">
-                        以下為我們的合作夥伴
-                    </Typography>
-                    <Typography variant="h6" align="center">
-                        歡迎企業與我們洽談合作！
-                    </Typography>
-                </Box>
             </Box>
 
-            <Box sx={{ display: "flex", overflow: "hidden", whiteSpace: "nowrap" }}>
+            <Box sx={{ display: "flex", overflow: "hidden", whiteSpace: "nowrap", mb: 2 }}>
                 <MarqueeEffect speed={50} direction="left" pauseOnHover autoFill>
                     {partners.map((partner, index) => (
                         <Box
@@ -89,6 +81,12 @@ export default function MarqueePartners() {
                         </Box>
                     ))}
                 </MarqueeEffect>
+            </Box>
+
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <Typography variant="h6" align="center">
+                    歡迎企業洽談合作！
+                </Typography>
             </Box>
         </Box>
     );
