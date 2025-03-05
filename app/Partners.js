@@ -16,8 +16,8 @@ export default function MarqueePartners() {
     return (
         <Box sx={{ width: "100%", overflow: "hidden", py: 2, backgroundColor: "#f4f4f4" }}>
             <Box sx={{ display: "flex", justifyContent: "center", mb: 4 }}>
-                <Typography variant="h5" align="center">
-                    以下為我們的合作夥伴
+                <Typography variant="h6" align="center">
+                    以下為我們的合作夥伴，歡迎企業與我們洽談合作！
                 </Typography>
             </Box>
 
