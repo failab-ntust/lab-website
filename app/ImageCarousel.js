@@ -11,9 +11,9 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 // 建立該年份的資料夾，放到public/lab-photo/XXX
 // { label: '{year}', text: '{emoji} {text}', photoCount: '{number of the photos}' }
 const images = [
-    { label: '111', text: '🎄聖誕期末聚餐', photoCount: 4 },
-    { label: '112', text: '🎉饗食天堂', photoCount: 2 },
     { label: '113', text: '🍸Cheers&Co.餐酒館', photoCount: 34 },
+    { label: '112', text: '🎉饗食天堂', photoCount: 2 },
+    { label: '111', text: '🎄聖誕期末聚餐', photoCount: 4 },
 ];
 
 function SwipeableTextMobileStepper() {
