@@ -44,7 +44,7 @@ export default function RootLayout({
         <body className={inter.className} style={{ margin: 0 }}>
           <Container disableGutters maxWidth={false} sx={{ height: '100vh', width: '100%', display: 'flex', flexDirection: 'column' }}>
             <NavBar />
-            <Box flex={9} sx={{ mx: { xs: 3, sm: 6, md: 10 }, mb: { xs: 3, md: 2 }, mt: 8 }}>
+            <Box sx={{ mx: { xs: 3, sm: 6, md: 6, lg: 10 }, mb: { xs: 3, md: 2 }, mt: 8 }}>
               {children}
             </Box>
             <Box flex={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>

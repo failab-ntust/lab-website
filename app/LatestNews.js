@@ -48,8 +48,7 @@ function LatestNews() {
                     borderRadius: 5,
                     p: { xs: 0, md: 1.5 },
                     width: "100%",
-                    minHeight: 360,
-                    maxHeight: { xs: 400, xl: 500 },
+                    maxHeight: { xs: 400, md: 320, lg: 450, xl: 500, xxl: 650, },
                     overflowY: "auto",
                 }}
             >
