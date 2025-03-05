@@ -15,10 +15,18 @@ const partners = [
 export default function MarqueePartners() {
     return (
         <Box sx={{ width: "100%", overflow: "hidden", py: 2, backgroundColor: "#f4f4f4" }}>
-            <Box sx={{ display: "flex", justifyContent: "center", mb: 4 }}>
-                <Typography variant="h6" align="center">
+            <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
+                <Typography variant="h6" align="center" sx={{ display: { xs: 'none', sm: 'block' } }}>
                     以下為我們的合作夥伴，歡迎企業與我們洽談合作！
                 </Typography>
+                <Box sx={{ display: { xs: 'block', sm: 'none' } }}>
+                    <Typography variant="h6" align="center">
+                        以下為我們的合作夥伴
+                    </Typography>
+                    <Typography variant="h6" align="center">
+                        歡迎企業與我們洽談合作！
+                    </Typography>
+                </Box>
             </Box>
 
             <Box sx={{ display: "flex", overflow: "hidden", whiteSpace: "nowrap" }}>
@@ -31,11 +39,11 @@ export default function MarqueePartners() {
                                 flexDirection: "column",
                                 justifyContent: "center",
                                 alignItems: "center",
-                                px: { xs: 3, sm: 4, md: 6 }, // 調整不同螢幕尺寸的內邊距
-                                py: { xs: 1, sm: 2 }, // 調整不同螢幕尺寸的垂直內邊距
+                                px: { xs: 3, sm: 4, md: 6 },
+                                py: { xs: 1, sm: 2 },
                                 mb: 1,
-                                minWidth: { xs: 100, sm: 120, md: 140 },  // 自適應寬度
-                                maxWidth: { xs: 140, sm: 160, md: 180 },  // 自適應最大寬度
+                                minWidth: { xs: 100, sm: 120, md: 140 },
+                                maxWidth: { xs: 140, sm: 160, md: 180 },
                                 borderRadius: 3,
                                 backgroundColor: "#ffffff",
                                 boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
@@ -51,15 +59,15 @@ export default function MarqueePartners() {
                                     src={partner.logo}
                                     alt={partner.name}
                                     layout="intrinsic"
-                                    width={70}  // 減少圖片寬度
-                                    height={45} // 減少圖片高度
+                                    width={70}
+                                    height={45}
                                     style={{
                                         borderRadius: "8px",
                                         objectFit: "contain",
                                     }}
                                     sx={{
-                                        width: { xs: 50, sm: 70, md: 80, lg: 90 },  // 自適應圖片寬度，桌面端更小
-                                        height: { xs: 35, sm: 45, md: 55, lg: 60 },  // 自適應圖片高度
+                                        width: { xs: 50, sm: 70, md: 80, lg: 90 },
+                                        height: { xs: 35, sm: 45, md: 55, lg: 60 },
                                     }}
                                 />
                             </Box>
@@ -73,7 +81,7 @@ export default function MarqueePartners() {
                                     overflow: "hidden",
                                     textOverflow: "ellipsis",
                                     fontWeight: 600,
-                                    fontSize: { xs: "0.75rem", sm: "0.875rem", md: "1rem" },  // 自適應文字大小
+                                    fontSize: { xs: "0.75rem", sm: "0.875rem", md: "1rem" },
                                 }}
                             >
                                 {partner.name}
