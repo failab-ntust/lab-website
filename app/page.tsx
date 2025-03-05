@@ -27,10 +27,6 @@ const StickyAnnouncement = () => (
       <Image src='/fire.gif' alt='fire' width={30} height={30} />
       <Typography sx={{ typography: { xs: 'h6', sm: 'h5' } }}>歡迎各系所大學部同學參加專題及競賽</Typography>
     </Stack>
-    <Stack direction='row' alignItems='baseline' spacing={{ xs: .5, sm: 1 }}>
-      <Image src='/fire.gif' alt='fire' width={30} height={30} />
-      <Typography sx={{ typography: { xs: 'h6', sm: 'h5' } }}>歡迎企業與我們洽談合作</Typography>
-    </Stack>
   </Stack>
 )
 
