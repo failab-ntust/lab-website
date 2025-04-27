@@ -43,6 +43,9 @@ const JournalPaper = [
 ]
 
 const ConferencePaper = [
+    'M.-H. Lin, C.-L. Hsu, H.-S. Hsu and C.-C. Chang “Heuristic Meta Integration and Map Exploration to Solve Industrial Scheduling Problems” 2025 8th International Conference on Mechanical Manufacturing and Industrial Engineering, Tokyo, Japan, August. 2025',
+    'J.-Y. Lin, Y.-H. Liu, M.-H. Lin, Y.-C. Chen and C.-C. Chang, “Blockchain Driven Security: Protecting Data and Ensuring Trustworthiness in Federated Learning” The 2025 7th Blockchain and Internet of Things Conference, Tsukuba, Japan, June. 2025',
+    '劉于華、林哲宇、張智傑。以圖神經網路與聯邦式學習建構之反洗錢交易偵測架構。第36屆國際資訊管理學術研討會',
     'H.-C. Chang, Y.-C. Chen, K.-C. Shih, C.-C. Chang and R.L.- Tso, “ Proof of Liabilities from Sum-Check Protocol and Polynomial Approximation” The 2025 7th Blockchain and Internet of Things Conference, Tsukuba, Japan, June. 2025',
     'N.-W. Lo, C.-Y. Chang, C.-Y. Lin, Z.-X. Cai and C.-C. Chang 基於機器學習的物聯網風險評估機制 in Proc. CISC 2024, Taipei, Aug. 2024',
     'N.-W. Lo, C.-Y. Wu, C.-H. Chen and C.-C. Chang 結合機器學習且基於風險概念的使用者異常檢測 in Proc. CISC 2024, Taipei, Aug. 2024',

@@ -2,11 +2,15 @@ import React from 'react';
 import { Stack, ListItem, Typography, ListItemText, ListItemAvatar } from '@mui/material';
 
 const data = [
+    { date: '2025/04', content: 'Heuristic Meta Integration and Map Exploration to Solve Industrial Scheduling Problems, MMIE 2025接受' },
+    { date: '2025/04', content: '以圖神經網路與聯邦式學習建構之反洗錢交易偵測架構，第36屆國際資訊管理學術研討會 接受' },
+    { date: '2025/03', content: '會議論文 Blockchain Driven Security: Protecting Data and Ensuring Trustworthiness in Federated Learning, BIOTC 2025 接受' },
+    { date: '2025/02', content: '會議論文 Proof of Liabilities from Sum-Check Protocol and Polynomial Approximation, BIOTC 2025 接受' },
     { date: '2024/12', content: '2024全球品牌策劃 第一名/銀質獎' },
     { date: '2024/12', content: '2024法遵科技與電腦稽核專題競賽 冠軍' },
     { date: '2024/06', content: '研究論文 "Improving graph-based recommendation with unraveled graph learning" to appear in Data Mining and Knowledge Discovery (DMKD).' },
-    { date: '2024/03', content: '會議論文 Constructing a Blockchain-based Framework for Enhancing the Reliability of Election Polls, BIOTC 接受' },
-    { date: '2024/02', content: '會議論文A Framework with Black2 and Differential Privacy in Handling Data Privacy Problems, IECC 接受' },
+    { date: '2024/03', content: '會議論文 Constructing a Blockchain-based Framework for Enhancing the Reliability of Election Polls, BIOTC 2024 接受' },
+    { date: '2024/02', content: '會議論文 A Framework with Black2 and Differential Privacy in Handling Data Privacy Problems, IECC 2024 接受' },
     { date: '2023/12', content: ' "第六屆法遵科技與電腦稽核專題競賽"獲得優選' },
     { date: '2023/12', content: '研究論文 “Learning to Augment Graphs: Machine Learning-based Social Network Intervention with Self-Supervision,"to appear in IEEE Transactions on Computational Social Systems (TCSS).' },
     { date: '2023/11', content: '研究論文 Maximizing (k, L)-core with Edge Augmentation in Multi-Layer Graphs." to appear in IEEE Transactions on Computational Social Systems (TCSS).' },

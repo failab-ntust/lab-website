@@ -34,7 +34,7 @@ const EMBA = ({ person }) => (
     </>
 )
 
-const Master = ({ person }) => (
+const MasterPhD = ({ person }) => (
     <>
         <Typography
             component="span"
@@ -75,6 +75,8 @@ const Master = ({ person }) => (
         </Typography>
     </>
 )
+const Master = MasterPhD;
+const PhD = MasterPhD;
 
 const Undergraduate = ({ person }) => (
     <>
@@ -144,9 +146,10 @@ export default function PersonCard({ person }) {
             <ListItemText
                 primary={
                     <Stack spacing={.5} p={1}>
-                        {person.grade === 'EMBA' ? <EMBA {...{ person }} /> :
-                            person.grade === 'Master' ? <Master {...{ person }} /> :
-                                person.grade === 'Undergraduate' && <Undergraduate {...{ person }} />}
+                        {person.grade === 'PhD' ? <PhD {...{ person }} /> :
+                            person.grade === 'EMBA' ? <EMBA {...{ person }} /> :
+                                person.grade === 'Master' ? <Master {...{ person }} /> :
+                                    person.grade === 'Undergraduate' && <Undergraduate {...{ person }} />}
                         <Divider />
                     </Stack>
                 }
