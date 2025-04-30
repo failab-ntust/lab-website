@@ -45,12 +45,18 @@ const EMBA = [
 ]
 
 const Undergraduate = [
-    { grade: 'Undergraduate', name: '許芷綾', class: '管理學士班', year: '112', imgSrc: '/112/許芷綾', researchfield: '圖探勘', email: 'B11033022@mail.ntust.edu.tw' },
-    { grade: 'Undergraduate', name: '許卉萱', class: '管理學士班', year: '112', imgSrc: '/112/許卉萱', researchfield: '圖探勘', email: 'B11033018@mail.ntust.edu.tw' },
-    { grade: 'Undergraduate', name: '劉于華', class: '管理學士班', year: '112', imgSrc: '/112/劉于華', researchfield: '圖探勘、聯邦式學習', email: 'B11033004@mail.ntust.edu.tw' },
-    { grade: 'Undergraduate', name: '林哲宇', class: '管理學士班', year: '112', imgSrc: '/112/林哲宇', researchfield: '圖探勘、聯邦式學習', email: 'B11033023@mail.ntust.edu.tw' },
-    { grade: 'Undergraduate', name: '孫睿君', class: '管理學士班', year: '112', imgSrc: '/112/孫睿君', co_advisor: '蕭志平教授', researchfield: 'AI數位轉型', email: 'B11033006@mail.ntust.edu.tw' },
-    { grade: 'Undergraduate', name: '徐葒', class: '管理學士班', year: '112', imgSrc: '/112/徐葒', co_advisor: '蕭志平教授', researchfield: 'AI數位轉型', email: 'B11033038@mail.ntust.edu.tw' }
+    { grade: 'Undergraduate', name: '鄭宇峰', class: '管理學士班', year: '111', imgSrc: '/111/鄭宇峰', researchfield: '大型語言模型', email: 'B11133022@mail.ntust.edu.tw' },
+    { grade: 'Undergraduate', name: '陳秉承', class: '管理學士班', year: '111', imgSrc: '/111/陳秉承', researchfield: '大型語言模型', email: 'B11133023@mail.ntust.edu.tw' },
+    { grade: 'Undergraduate', name: '何陽', class: '管理學士班', year: '111', imgSrc: '/111/何陽', researchfield: '大型語言模型', email: 'B11133033@mail.ntust.edu.tw' },
+    { grade: 'Undergraduate', name: '林騏宇', class: '管理學士班', year: '111', imgSrc: '/111/林騏宇', researchfield: '大型語言模型', email: 'B11133002@mail.ntust.edu.tw' },
+
+
+    { grade: 'Undergraduate', name: '許芷綾', class: '管理學士班', year: '110', imgSrc: '/110/許芷綾', researchfield: '圖探勘', email: 'B11033022@mail.ntust.edu.tw' },
+    { grade: 'Undergraduate', name: '許卉萱', class: '管理學士班', year: '110', imgSrc: '/110/許卉萱', researchfield: '圖探勘', email: 'B11033018@mail.ntust.edu.tw' },
+    { grade: 'Undergraduate', name: '劉于華', class: '管理學士班', year: '110', imgSrc: '/110/劉于華', researchfield: '圖探勘、聯邦式學習', email: 'B11033004@mail.ntust.edu.tw' },
+    { grade: 'Undergraduate', name: '林哲宇', class: '管理學士班', year: '110', imgSrc: '/110/林哲宇', researchfield: '圖探勘、聯邦式學習', email: 'B11033023@mail.ntust.edu.tw' },
+    { grade: 'Undergraduate', name: '孫睿君', class: '管理學士班', year: '110', imgSrc: '/110/孫睿君', co_advisor: '蕭志平教授', researchfield: 'AI數位轉型', email: 'B11033006@mail.ntust.edu.tw' },
+    { grade: 'Undergraduate', name: '徐葒', class: '管理學士班', year: '110', imgSrc: '/110/徐葒', co_advisor: '蕭志平教授', researchfield: 'AI數位轉型', email: 'B11033038@mail.ntust.edu.tw' }
 ]
 
 const CusGrid = ({ data }: any) => (
