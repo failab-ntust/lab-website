@@ -152,7 +152,7 @@ export default function Result() {
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={2}>
                     <Grid container spacing={{ xs: 2, sm: 3, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} >
-                        <Grid item xs={4} sm={8} md={6}>
+                        <Grid size={{ xs: 4, sm: 8, md: 6 }}>
                             <Typography variant='h6' color='secondary'>
                                 客座編輯(Guest Editor)
                             </Typography>
@@ -166,7 +166,7 @@ export default function Result() {
                             </Typography>
                             <CusStepper data={academicActivities} />
                         </Grid>
-                        <Grid item xs={4} sm={8} md={6}>
+                        <Grid size={{ xs: 4, sm: 8, md: 6 }}>
                             <Typography variant='h6' color='secondary'>
                                 個人相關獎項
                             </Typography>

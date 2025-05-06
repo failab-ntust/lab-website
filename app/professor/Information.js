@@ -13,6 +13,8 @@ import DomainOutlinedIcon from '@mui/icons-material/DomainOutlined';
 
 import SubTitle from '../SubTitle'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const AboutMe = ({ content, icon }) => (
     <Stack direction={{ xs: 'row', sm: 'column' }} justifyContent='space-evenly' spacing={2} sx={{ bgcolor: '#F5F5F5', p: 2, borderRadius: 5, minHeight: { md: 320 } }}>
         <Stack alignItems='center' justifyContent='center'>
@@ -32,7 +34,7 @@ const Education = ({ school, degree, duringtime }) => (
         <Stack direction="row" spacing={2}>
             <Stack direction="row" justifyContent="center" alignItems="center">
                 <Image
-                    src='date.svg'
+                    src={`${basePath}/date.svg`}
                     alt='date'
                     width={23}
                     height={23}
@@ -43,7 +45,7 @@ const Education = ({ school, degree, duringtime }) => (
             </Stack>
             <Stack direction="row" justifyContent="center" alignItems="center">
                 <Image
-                    src='degree.svg'
+                    src={`${basePath}/degree.svg`}
                     alt='degree'
                     width={30}
                     height={30}
@@ -65,7 +67,7 @@ const Experience = ({ workplace, position, duringtime }) => (
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 0.5, sm: 2 }}>
             <Stack direction="row" justifyContent={{ xs: 'flex-start', sm: 'center' }} alignItems="center">
                 <Image
-                    src='date.svg'
+                    src={`${basePath}/date.svg`}
                     alt='date'
                     width={23}
                     height={23}
@@ -76,7 +78,7 @@ const Experience = ({ workplace, position, duringtime }) => (
             </Stack>
             <Stack direction="row" justifyContent={{ xs: 'flex-start', sm: 'center' }} alignItems="center">
                 <Image
-                    src='job-position.svg'
+                    src={`${basePath}/job-position.svg`}
                     alt='job-position'
                     width={30}
                     height={30}
@@ -119,7 +121,7 @@ const CourseGrid = ({ course, link, img }) => (
             }
         }}>
         <Image
-            src={`/fields/${img}.svg`}
+            src={`${basePath}/fields/${img}.svg`}
             alt={img}
             width={100}
             height={100}
@@ -179,22 +181,22 @@ export default function Information() {
                 </Typography>
             </ListItem>
             <Grid container spacing={{ xs: 2, sm: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} >
-                <Grid item xs={4} sm={4} md={3} >
+                <Grid size={{ xs: 4, sm: 4, md: 3 }} >
                     <AboutMe content='Chih-Chieh Chang (CCC) received the Ph.D. degree from the Department of Industrial and Information Management, National Cheng Kung University, in 2012. He is currently an Assistant Professor with the School of Management, National Taiwan University of Science Technology (NTUST).' icon={<PersonPinCircleOutlinedIcon sx={{ fontSize: 60, color: '#FFB400' }} />} />
                 </Grid>
-                <Grid item xs={4} sm={4} md={3} >
+                <Grid size={{ xs: 4, sm: 4, md: 3 }} >
                     <AboutMe content='His research interests include machine learning, data mining, digital transformation and financial technology. Due to his past work experience, CCC puts more emphasis on the connection between practice and academic research.' icon={<InterestsOutlinedIcon sx={{ fontSize: 60, color: '#FFB400' }} />} />
                 </Grid>
-                <Grid item xs={4} sm={4} md={3} >
+                <Grid size={{ xs: 4, sm: 4, md: 3 }}>
                     <AboutMe content='His research has been published in some data mining and machine learning related journals, including Decision Support System (Q1), IEEE TCSS (Q2), Journal of Intelligent Manufacturing (Q1), and etc. He also has some conference papers presented in IEEE Big Data and GSIS.' icon={<CollectionsBookmarkOutlinedIcon sx={{ fontSize: 60, color: '#FFB400' }} />} />
                 </Grid>
-                <Grid item xs={4} sm={4} md={3} >
+                <Grid size={{ xs: 4, sm: 4, md: 3 }}>
                     <AboutMe content='Regarding industry experience, he had eight years in Fubon Group including Fintech office and momo, which he focused on promoting using data science and machine learning tools to help enterprises to process digital transformation. He had finished projects: Robo advisor, Chatbot, Cross Domain data analysis platform.' icon={<DomainOutlinedIcon sx={{ fontSize: 60, color: '#FFB400' }} />} />
                 </Grid>
             </Grid>
 
             <Grid container spacing={{ xs: 2, md: 3, lg: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} >
-                <Grid item xs={4} sm={8} md={6}>
+                <Grid size={{ xs: 4, sm: 8, md: 6 }} >
                     <SubTitle title="經歷">
 
                         <Experience {...{ workplace: '國立台北商業大學 – 會計資訊系', position: '專案助理教授', duringtime: '2021/08～2022/07' }} />
@@ -212,7 +214,7 @@ export default function Information() {
                         <Experience {...{ workplace: '富邦金控 – 創新科技辦公室', position: '大數據暨人工智慧組組長', duringtime: '2015/10～2020/08' }} />
                     </SubTitle>
                 </Grid>
-                <Grid item xs={4} sm={8} md={6}>
+                <Grid size={{ xs: 4, sm: 8, md: 6 }}>
                     <SubTitle title="學歷">
                         <Education {...{ school: '國立成功大學工業與資訊管理所', degree: '博士', duringtime: '2009/09～2012/05' }} />
 
@@ -242,14 +244,14 @@ export default function Information() {
 
                 <CustomTabPanel value={value} index={0}>
                     {MBACourses.map((mba, index) => (
-                        <Grid item xs={4} sm={3} md={4} lg={4} key={index}>
+                        <Grid size={{ xs: 4, sm: 3, md: 4, lg: 4 }} key={index}>
                             <CourseGrid course={mba.course} link={mba.link} img={mba.img} />
                         </Grid>
                     ))}
                 </CustomTabPanel>
                 <CustomTabPanel value={value} index={1}>
                     {UniversityCourses.map((university, index) => (
-                        <Grid item xs={4} sm={3} md={4} lg={4} key={index}>
+                        <Grid size={{ xs: 4, sm: 3, md: 4, lg: 4 }} key={index}>
                             <CourseGrid course={university.course} link={university.link} img={university.img} />
                         </Grid>
                     ))}

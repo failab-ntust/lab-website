@@ -11,6 +11,9 @@ import MenuBookIcon from '@mui/icons-material/MenuBook';
 //import WorkIcon from '@mui/icons-material/Work';
 import ScienceIcon from '@mui/icons-material/Science';
 import GroupsIcon from '@mui/icons-material/Groups';
+import Link from 'next/link';
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const pages = [
     { item: '指導教授', href: '/professor', icon: <PersonIcon /> },
@@ -29,7 +32,7 @@ const LogoName = ({ flexGrow, variant, xs, md, letterSpacing }) => (
         <Typography
             variant={variant}
             noWrap
-            component="a"
+            component={Link}
             href="/"
             sx={{
                 fontFamily: 'monospace',
@@ -46,7 +49,7 @@ const LogoName = ({ flexGrow, variant, xs, md, letterSpacing }) => (
 
 const CusToolbar = ({ display, children }) => (
     <Toolbar disableGutters sx={{ display: display }}>
-        <Image src='/coin.png' width={35} height={35} alt='logo' style={{ marginRight: 10 }} />
+        <Image src={`${basePath}/coin.png`} width={35} height={35} alt='logo' style={{ marginRight: 10 }} />
         {children}
     </Toolbar>
 )
@@ -80,6 +83,7 @@ function NavBar() {
                                     variant="text"
                                     color="secondary"
                                     href={page.href}
+                                    component={Link}
                                     size="large"
                                     disableRipple
                                     sx={{

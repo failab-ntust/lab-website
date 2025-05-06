@@ -5,6 +5,8 @@ import PersonCard from './PersonCard'
 import SubTitle from '../SubTitle'
 import React from 'react'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const Master = [
     // MBA
     { grade: 'Master', name: '林智婷', class: 'MBA', year: '113', imgSrc: '/113/林智婷', researchfield: '討論中...', email: 'M11321028@mail.ntust.edu.tw' },
@@ -63,15 +65,15 @@ const CusGrid = ({ data }: any) => (
     <Box py={2}>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16 }}>
             {data?.length ? data.map((person: any, index: number) => (
-                <Grid item xs={4} sm={4} md={6} lg={8} key={index}>
+                <Grid size={{ xs: 4, sm: 4, md: 6, lg: 8 }} key={index}>
                     <PersonCard {...{ person }} />
                 </Grid>
             )) : (
-                <Grid item xs={4} sm={8} md={12} lg={16} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid size={{ xs: 4, sm: 8, md: 12, lg: 16 }} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Avatar
                         alt="we_want_you"
                         variant="square"
-                        src='/we_want_you.png'
+                        src={`${basePath}/we_want_you.png`}
                         sx={{ width: { xs: 250, sm: 350, md: 450 }, height: { xs: 90, sm: 120, md: 150 } }}
                     />
                 </Grid>

@@ -4,6 +4,8 @@ import PageTitle from '../PageTitle'
 import PersonCard from './PersonCard'
 import SubTitle from '../SubTitle'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const _GraduateMember = [
     { grade: 'Master', name: 'Khairul Izyan Bin Anuar', class: 'MBA', year: '110', imgSrc: '/110/Khairul Izyan Bin Anuar', researchfield: '小樣本、機器學習', email: 'M11021805@mail.ntust.edu.tw' },
     { grade: 'Master', name: 'Do Nguyen Ngan Khanh', class: 'MBA', year: '111', imgSrc: '/111/Do Nguyen Ngan Khanh', researchfield: '使用者意圖、聯邦式學習', email: 'M11021852@mail.ntust.edu.tw' },
@@ -26,15 +28,15 @@ const CusGrid = ({ grade, data }: any) => (
         <Typography variant='h6' color='secondary' mb={1}>{grade}</Typography>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16 }} >
             {data ? data.map((person: any, index: number) => (
-                <Grid item xs={4} sm={4} md={6} lg={8} key={index} >
+                <Grid size={{ xs: 4, sm: 4, md: 6, lg: 8 }} key={index} >
                     <PersonCard {...{ person }} />
                 </Grid>
             )) :
-                <Grid item xs={4} sm={8} md={12} lg={16} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid size={{ xs: 4, sm: 8, md: 12, lg: 16 }} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Avatar
                         alt="we_want_you"
                         variant="square"
-                        src='/we_want_you.png'
+                        src={`${basePath}/we_want_you.png`}
                         sx={{ width: { xs: 250, sm: 350, md: 450 }, height: { xs: 90, sm: 120, md: 150 } }}
                     />
                 </Grid>

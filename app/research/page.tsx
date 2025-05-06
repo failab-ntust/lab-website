@@ -42,26 +42,26 @@ export default function Research() {
 
             <br />
             <Grid container spacing={3} columns={{ xs: 4, sm: 8, md: 12 }} >
-                <Grid item xs={4} sm={8} md={6}>
+                <Grid size={{ xs: 4, sm: 8, md: 6 }} >
                     <FieldGrid field="數位轉型" >
                         <FieldContent icon={<Looks1Icon color='primary' />} subfield='數據賦能' subcontent='在大數據時代下，數據除了蒐集紀錄相關資訊外也同時隱含其他潛在可能的資訊。實驗室將協助企業透過視覺化軟體及No Code AI工具輔助提升企業在數據運用的價值。' />
                         <FieldContent icon={<Looks2Icon color='primary' />} subfield='流程自動化及優化' subcontent='企業仍存在過多人工及反覆行為，可透過RPA工具（Robotic Process Automation）協助企業進行流程自訂化，並運用AI進行流程監控及優化。' />
                     </FieldGrid>
                 </Grid>
-                <Grid item xs={4} sm={8} md={6}>
+                <Grid size={{ xs: 4, sm: 8, md: 6 }}>
                     <FieldGrid field="金融科技" >
                         <FieldContent icon={<Looks1Icon color='primary' />} subfield='數據整合' subcontent='解決跨產業資料使用困境，在保護隱私機制下建構可分析的跨產業資料。' />
                         <FieldContent icon={<Looks2Icon color='primary' />} subfield='單一登入機制驗證' subcontent='建構金控層跨單位單一登入機制，並基於不同風險設計驗證機制。' />
                         <FieldContent icon={<Looks3Icon color='primary' />} subfield='大數據及人工智慧應用' subcontent='建構客戶單一視圖，基於客戶行為運用人工智慧方式進行預測，可應用於異常偵測及Next Action。' />
                     </FieldGrid>
                 </Grid>
-                <Grid item xs={4} sm={8} md={6}>
+                <Grid size={{ xs: 4, sm: 8, md: 6 }}>
                     <FieldGrid field="運動科技 - 羽球" >
                         <FieldContent icon={<Looks1Icon color='primary' />} subfield='使用者軟體設計' subcontent='建構以客戶為體驗之羽球APP。' />
                         <FieldContent icon={<Looks2Icon color='primary' />} subfield='訓練優化' subcontent='透過影像辨識及人工智慧技術分析球員體態及策略應用。' />
                     </FieldGrid>
                 </Grid>
-                <Grid item xs={4} sm={8} md={6}>
+                <Grid size={{ xs: 4, sm: 8, md: 6 }}>
                     <FieldGrid field="資訊安全">
                         <FieldContent icon={<Looks1Icon color='primary' />} subfield='保護隱私框架建立' subcontent='在保護個人隱私下建構可分析式資料平台。' />
                         <FieldContent icon={<Looks2Icon color='primary' />} subfield='使用者行為偵測' subcontent='運用人工智慧建構單一使用者行為態樣，判斷並偵測使用者異常行為。' />
