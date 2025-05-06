@@ -5,7 +5,7 @@ const nextConfig = {
       unoptimized: true,
     },
     trailingSlash: true,
-    assetPrefix: './',
+    assetPrefix: '/',
   };
   
   module.exports = nextConfig;
