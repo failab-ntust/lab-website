@@ -2,11 +2,11 @@
 const nextConfig = {
     output: 'export',
     images: {
-      unoptimized: true,
+        unoptimized: true,
     },
-    basePath:'/lab-website',
+    basePath: '/lab-website',
+    assetPrefix: '/lab-website',
     trailingSlash: true,
-  };
-  
-export default nextConfig;
-  
+};
+
+module.exports = nextConfig;
