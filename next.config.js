@@ -5,6 +5,7 @@ const nextConfig = {
         unoptimized: true,
     },
     basePath: '/lab-website',
+    assetPrefix: '/lab-website',
     trailingSlash: true,
 };
 
