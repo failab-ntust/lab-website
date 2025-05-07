@@ -13,11 +13,11 @@ import ScienceIcon from '@mui/icons-material/Science';
 import GroupsIcon from '@mui/icons-material/Groups';
 
 const pages = [
-    { item: '指導教授', href: '/professor', icon: <PersonIcon /> },
-    { item: '研究領域', href: '/research', icon: <MenuBookIcon /> },
-    { item: '實驗室成果', href: '/research_result', icon: <ScienceIcon /> },
-    { item: '實驗室成員', href: '/members', icon: <GroupsIcon /> },
-    { item: '畢業校友', href: '/graduate_members', icon: <GroupsIcon /> },
+    { item: '指導教授', href: 'professor', icon: <PersonIcon /> },
+    { item: '研究領域', href: 'research', icon: <MenuBookIcon /> },
+    { item: '實驗室成果', href: 'research_result', icon: <ScienceIcon /> },
+    { item: '實驗室成員', href: 'members', icon: <GroupsIcon /> },
+    { item: '畢業校友', href: 'graduate_members', icon: <GroupsIcon /> },
     //{ item: '業界機會', href: '/opportunity', icon: <WorkIcon /> }
 ];
 const display = {
@@ -46,7 +46,7 @@ const LogoName = ({ flexGrow, variant, xs, md, letterSpacing }) => (
 
 const CusToolbar = ({ display, children }) => (
     <Toolbar disableGutters sx={{ display: display }}>
-        <Image src='/coin.png' width={35} height={35} alt='logo' style={{ marginRight: 10 }} />
+        <Image src='coin.png' width={35} height={35} alt='logo' style={{ marginRight: 10 }} />
         {children}
     </Toolbar>
 )
@@ -80,7 +80,6 @@ function NavBar() {
                                     variant="text"
                                     color="secondary"
                                     href={page.href}
-                                    src={page.href}
                                     size="large"
                                     disableRipple
                                     sx={{
@@ -122,7 +121,6 @@ function NavBar() {
                                         divider
                                         selected={pathname === page.href}
                                         href={page.href}
-                                        src={page.href}
                                         sx={{ justifyContent: 'center' }}
                                     >
                                         <Stack direction='row' alignItems='center'>
