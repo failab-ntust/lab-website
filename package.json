@@ -1,6 +1,5 @@
 {
   "name": "lab-website",
-  "homepage": "https://failab-ntust.github.io/lab-website/",
   "version": "0.1.0",
   "private": true,
   "scripts": {

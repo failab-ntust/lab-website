@@ -13,11 +13,11 @@ import ScienceIcon from '@mui/icons-material/Science';
 import GroupsIcon from '@mui/icons-material/Groups';
 
 const pages = [
-    { item: '指導教授', href: 'professor', icon: <PersonIcon /> },
-    { item: '研究領域', href: 'research', icon: <MenuBookIcon /> },
-    { item: '實驗室成果', href: 'research_result', icon: <ScienceIcon /> },
-    { item: '實驗室成員', href: 'members', icon: <GroupsIcon /> },
-    { item: '畢業校友', href: 'graduate_members', icon: <GroupsIcon /> },
+    { item: '指導教授', href: './professor', icon: <PersonIcon /> },
+    { item: '研究領域', href: './research', icon: <MenuBookIcon /> },
+    { item: '實驗室成果', href: '/research_result', icon: <ScienceIcon /> },
+    { item: '實驗室成員', href: '/members', icon: <GroupsIcon /> },
+    { item: '畢業校友', href: '/graduate_members', icon: <GroupsIcon /> },
     //{ item: '業界機會', href: '/opportunity', icon: <WorkIcon /> }
 ];
 const display = {
