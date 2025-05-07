@@ -80,6 +80,7 @@ function NavBar() {
                                     variant="text"
                                     color="secondary"
                                     href={page.href}
+                                    src={page.href}
                                     size="large"
                                     disableRipple
                                     sx={{
@@ -121,6 +122,7 @@ function NavBar() {
                                         divider
                                         selected={pathname === page.href}
                                         href={page.href}
+                                        src={page.href}
                                         sx={{ justifyContent: 'center' }}
                                     >
                                         <Stack direction='row' alignItems='center'>
