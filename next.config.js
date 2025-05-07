@@ -6,8 +6,7 @@ const nextConfig = {
     },
     basePath:'/lab-website',
     trailingSlash: true,
-    assetPrefix: '/',
   };
   
-  module.exports = nextConfig;
+export default nextConfig;
   
