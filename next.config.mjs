@@ -8,6 +8,9 @@ const nextConfig = {
     },
     basePath: isProd ? '/lab-website' : '',
     trailingSlash: true,
+    publicRuntimeConfig: {
+        basePath: isProd ? '/lab-website' : '',
+    },
 };
 
 export default nextConfig;
