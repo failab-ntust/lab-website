@@ -6,9 +6,8 @@ import ViewStreamIcon from '@mui/icons-material/ViewStream';
 import ImageCarousel from './ImageCarousel'
 import LatestNews from './LatestNews'
 import Image from 'next/image';
-import getConfig from 'next/config';
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig.basePath || '';
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const Title = ({ title }: any) => (
   <ListItem disableGutters>

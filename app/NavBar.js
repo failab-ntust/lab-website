@@ -13,9 +13,7 @@ import ScienceIcon from '@mui/icons-material/Science';
 import GroupsIcon from '@mui/icons-material/Groups';
 import Link from 'next/link';
 
-import getConfig from 'next/config';
-const { publicRuntimeConfig } = getConfig();
-const basePath = publicRuntimeConfig.basePath || '';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const pages = [
     { item: '指導教授', href: '/professor', icon: <PersonIcon /> },

@@ -8,8 +8,8 @@ const nextConfig = {
     },
     basePath: isProd ? '/lab-website' : '',
     trailingSlash: true,
-    publicRuntimeConfig: {
-        basePath: isProd ? '/lab-website' : '',
+    env: {
+        NEXT_PUBLIC_BASE_PATH: isProd ? '/lab-website' : '',
     },
 };
 
