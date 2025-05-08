@@ -131,7 +131,7 @@ export default function PersonCard({ person }) {
             <Avatar
                 alt="profile"
                 variant="rounded"
-                src={person.imgSrc ? `/members/${person.imgSrc}.jpg` : '/avatar.png'}
+                src={person.imgSrc ? `${basePath}/members/${person.imgSrc}.jpg` : `${basePath}/avatar.png`}
                 sx={{
                     width: { xs: '40%', md: 140 }, height: { xs: 120, sm: 200, md: 140 },
                     pointerEvents: 'none',

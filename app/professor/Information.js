@@ -13,6 +13,8 @@ import DomainOutlinedIcon from '@mui/icons-material/DomainOutlined';
 
 import SubTitle from '../SubTitle'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const AboutMe = ({ content, icon }) => (
     <Stack direction={{ xs: 'row', sm: 'column' }} justifyContent='space-evenly' spacing={2} sx={{ bgcolor: '#F5F5F5', p: 2, borderRadius: 5, minHeight: { md: 320 } }}>
         <Stack alignItems='center' justifyContent='center'>
@@ -32,7 +34,7 @@ const Education = ({ school, degree, duringtime }) => (
         <Stack direction="row" spacing={2}>
             <Stack direction="row" justifyContent="center" alignItems="center">
                 <Image
-                    src='date.svg'
+                    src={`${basePath}/date.svg`}
                     alt='date'
                     width={23}
                     height={23}
@@ -43,7 +45,7 @@ const Education = ({ school, degree, duringtime }) => (
             </Stack>
             <Stack direction="row" justifyContent="center" alignItems="center">
                 <Image
-                    src='degree.svg'
+                    src={`${basePath}/degree.svg`}
                     alt='degree'
                     width={30}
                     height={30}
@@ -65,7 +67,7 @@ const Experience = ({ workplace, position, duringtime }) => (
         <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 0.5, sm: 2 }}>
             <Stack direction="row" justifyContent={{ xs: 'flex-start', sm: 'center' }} alignItems="center">
                 <Image
-                    src='date.svg'
+                    src={`${basePath}/date.svg`}
                     alt='date'
                     width={23}
                     height={23}
@@ -76,7 +78,7 @@ const Experience = ({ workplace, position, duringtime }) => (
             </Stack>
             <Stack direction="row" justifyContent={{ xs: 'flex-start', sm: 'center' }} alignItems="center">
                 <Image
-                    src='job-position.svg'
+                    src={`${basePath}/job-position.svg`}
                     alt='job-position'
                     width={30}
                     height={30}
@@ -119,7 +121,7 @@ const CourseGrid = ({ course, link, img }) => (
             }
         }}>
         <Image
-            src={`/fields/${img}.svg`}
+            src={`${basePath}/fields/${img}.svg`}
             alt={img}
             width={100}
             height={100}

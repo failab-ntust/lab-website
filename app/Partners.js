@@ -5,12 +5,14 @@ import { Box, Typography } from "@mui/material";
 import MarqueeEffect from "react-fast-marquee";
 
 const partners = [
-    { name: "台北富邦銀行", logo: "/partners/fubon.jpg" },
-    { name: "鈊象電子", logo: "/partners/iGS.jpg" },
-    { name: "英業達", logo: "/partners/inventec.jpg" },
-    { name: "來毅數位科技", logo: "/partners/keypasco.jpg" },
-    { name: "耐斯診所", logo: "/partners/nice_clinic.jpg" },
+    { name: "台北富邦銀行", logo: "partners/fubon.jpg" },
+    { name: "鈊象電子", logo: "partners/iGS.jpg" },
+    { name: "英業達", logo: "partners/inventec.jpg" },
+    { name: "來毅數位科技", logo: "partners/keypasco.jpg" },
+    { name: "耐斯診所", logo: "partners/nice_clinic.jpg" },
 ];
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 export default function MarqueePartners() {
     return (
@@ -48,7 +50,7 @@ export default function MarqueePartners() {
                         >
                             <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                                 <Image
-                                    src={partner.logo}
+                                    src={`${basePath}/${partner.logo}`}
                                     alt={partner.name}
                                     layout="intrinsic"
                                     width={70}
