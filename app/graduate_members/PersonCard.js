@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Stack, ListItemText, Typography, Avatar, Divider } from '@mui/material'
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const EMBA = ({ person }) => (
     <>
         <Typography
