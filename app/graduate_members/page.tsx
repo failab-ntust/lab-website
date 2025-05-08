@@ -26,11 +26,11 @@ const CusGrid = ({ grade, data }: any) => (
         <Typography variant='h6' color='secondary' mb={1}>{grade}</Typography>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12, lg: 16 }} >
             {data ? data.map((person: any, index: number) => (
-                <Grid item xs={4} sm={4} md={6} lg={8} key={index} >
+                <Grid size={{ xs: 4, sm: 4, md: 6, lg: 8 }} key={index} >
                     <PersonCard {...{ person }} />
                 </Grid>
             )) :
-                <Grid item xs={4} sm={8} md={12} lg={16} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid size={{ xs: 4, sm: 8, md: 12, lg: 16 }} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Avatar
                         alt="we_want_you"
                         variant="square"

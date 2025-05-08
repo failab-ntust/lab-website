@@ -2,7 +2,6 @@
 import React from 'react';
 import { Box, Stack, Typography, Grid, ListItem } from '@mui/material'
 import ViewStreamIcon from '@mui/icons-material/ViewStream';
-import NewReleasesIcon from '@mui/icons-material/NewReleases';
 
 import ImageCarousel from './ImageCarousel'
 import LatestNews from './LatestNews'
@@ -34,7 +33,7 @@ export default function Home() {
   return (
     <Box my={2}>
       <Grid container spacing={{ xs: 2, sm: 3, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }} >
-        <Grid item xs={4} sm={8} md={12}>
+        <Grid size={{ xs: 4, sm: 8, md: 12 }}>
           <Box sx={{ display: 'flex', justifyContent: { xs: 'space-around', md: 'flex-start' } }}>
             <Stack justifyContent='space-evenly'>
               <Typography sx={{ typography: { xs: 'h6', sm: 'h5', md: 'h6', lg: 'h5' }, color: '#777777' }}>
@@ -52,12 +51,12 @@ export default function Home() {
           </Box>
         </Grid>
 
-        <Grid item xs={4} sm={8} md={7.5} >
+        <Grid size={{ xs: 4, sm: 8, md: 7.5 }} >
           <Title title='最新消息' />
           <LatestNews />
         </Grid>
 
-        <Grid item xs={4} sm={8} md={4.5} >
+        <Grid size={{ xs: 4, sm: 8, md: 4.5 }} >
           <Title title='活動剪影' />
           <ImageCarousel />
         </Grid>

@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
     output: 'export',
-    reactStrictMode: true,
     images: {
         unoptimized: true,
     },
-    basePath: '/lab-website',
-    assetPrefix: 'https://failab-ntust.github.io/lab-website/',
+    basePath: isProd ? '/lab-website' : '',
     trailingSlash: true,
 };
 
-export default nextConfig
+export default nextConfig;

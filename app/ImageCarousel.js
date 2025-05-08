@@ -1,12 +1,11 @@
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
 import { Box, IconButton, MobileStepper, Paper, Typography, Chip, Stack } from '@mui/material';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
-
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/autoplay';
 
 // 建立該年份的資料夾，放到public/lab-photo/XXX
 // { label: '{year}', text: '{emoji} {text}', photoCount: '{number of the photos}' }
@@ -16,10 +15,10 @@ const images = [
     { label: '111', text: '🎄聖誕期末聚餐', photoCount: 4 },
 ];
 
-function SwipeableTextMobileStepper() {
-    const theme = useTheme();
+function ImageCarousel() {
     const [activeStep, setActiveStep] = React.useState(0);
     const [selectedLabelIndex, setSelectedLabelIndex] = React.useState(0);
+    const swiperRef = React.useRef(null);
 
     const selectedLabel = images[selectedLabelIndex]?.label;
 
@@ -39,7 +38,7 @@ function SwipeableTextMobileStepper() {
     // 處理下一步，並自動切換到下一組圖片
     const handleNext = () => {
         if (activeStep + 1 < maxSteps) {
-            setActiveStep((prevActiveStep) => prevActiveStep + 1);
+            swiperRef.current?.slideNext();
         } else {
             handleNextGroup();
         }
@@ -48,7 +47,7 @@ function SwipeableTextMobileStepper() {
     // 處理上一步
     const handleBack = () => {
         if (activeStep > 0) {
-            setActiveStep((prevActiveStep) => prevActiveStep - 1);
+            swiperRef.current?.slidePrev();
         } else {
             handlePreviousGroup();
         }
@@ -66,13 +65,6 @@ function SwipeableTextMobileStepper() {
         setSelectedLabelIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
     };
 
-    // 處理步驟變化
-    const handleStepChange = (step) => {
-        setActiveStep(step);
-    };
-
-    const filterLabels = images.map((item) => item.label);
-
     return (
         <Box sx={{ flexGrow: 1, bgcolor: '#F5F5F5', borderRadius: 5 }}>
             <Paper
@@ -88,16 +80,15 @@ function SwipeableTextMobileStepper() {
                 }}
             >
                 <Stack direction="row" spacing={1} sx={{ overflowX: 'auto' }}>
-                    {filterLabels.map((label, i) => (
+                    {images.map((item, i) => (
                         <Chip
                             key={i}
-                            variant={selectedLabel === label ? 'contained' : 'outlined'}
-                            label={`${label} 年`}
+                            variant={selectedLabel === item.label ? 'filled' : 'outlined'}
+                            label={`${item.label} 年`}
                             onClick={() => {
                                 setSelectedLabelIndex(i);
                                 setActiveStep(0);
                             }}
-                            disableRipple
                             sx={{ cursor: 'pointer' }}
                         />
                     ))}
@@ -106,44 +97,49 @@ function SwipeableTextMobileStepper() {
 
             {selectedLabel && (
                 <>
-                    <AutoPlaySwipeableViews
-                        axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-                        index={activeStep}
-                        onChangeIndex={handleStepChange}
-                        enableMouseEvents
-                        onTransitionEnd={() => {
-                            if (activeStep === maxSteps - 1) {
-                                handleNextGroup();
+                    <Swiper
+                        modules={[Autoplay]}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                        }}
+                        onSwiper={(swiper) => {
+                            swiperRef.current = swiper;
+                        }}
+                        onSlideChange={(swiper) => {
+                            const newIndex = swiper.realIndex;
+                            setActiveStep(newIndex);
+                            if (newIndex === maxSteps - 1) {
+                                setTimeout(() => handleNextGroup(), 3000); // 切換到下一組
                             }
                         }}
+                        loop={false}
+                        slidesPerView={1}
+                        style={{ width: '100%', height: '100%' }}
                     >
                         {filteredImages.map((item, index) => (
-                            <Box
-                                key={index}
-                                sx={{
-                                    display: 'block',
-                                    position: 'relative',
-                                    paddingTop: '70%',
-                                }}
-                            >
-                                <Box
-                                    component="img"
-                                    sx={{
-                                        position: 'absolute',
-                                        top: 0,
-                                        left: 0,
-                                        width: '100%',
-                                        height: '100%',
-                                        objectFit: 'cover',
-                                    }}
-                                    src={item.src}
-                                    alt={item.text}
-                                />
-                            </Box>
+                            <SwiperSlide key={index}>
+                                <Box sx={{ position: 'relative', paddingTop: '70%' }}>
+                                    <Box
+                                        component="img"
+                                        src={item.src}
+                                        alt={item.text}
+                                        sx={{
+                                            position: 'absolute',
+                                            top: 0,
+                                            left: 0,
+                                            width: '100%',
+                                            height: '100%',
+                                            objectFit: 'cover',
+                                        }}
+                                    />
+                                </Box>
+                            </SwiperSlide>
                         ))}
-                    </AutoPlaySwipeableViews>
-                    <Typography align="center">
-                        {filteredImages[activeStep]?.text}-{activeStep + 1}
+                    </Swiper>
+
+                    <Typography align="center" sx={{ mt: 1 }}>
+                        {filteredImages[activeStep]?.text} - {activeStep + 1}
                     </Typography>
 
                     <MobileStepper
@@ -169,4 +165,4 @@ function SwipeableTextMobileStepper() {
     );
 }
 
-export default SwipeableTextMobileStepper;
+export default ImageCarousel;
