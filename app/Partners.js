@@ -48,20 +48,20 @@ export default function MarqueePartners() {
                                 },
                             }}
                         >
-                            <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                            <Box
+                                sx={{
+                                    position: 'relative',
+                                    width: { xs: 50, sm: 70, md: 80, lg: 90 },
+                                    height: { xs: 35, sm: 45, md: 55, lg: 60 },
+                                }}
+                            >
                                 <Image
                                     src={`${basePath}/${partner.logo}`}
                                     alt={partner.name}
-                                    layout="intrinsic"
-                                    width={70}
-                                    height={45}
+                                    fill
                                     style={{
-                                        borderRadius: "8px",
-                                        objectFit: "contain",
-                                    }}
-                                    sx={{
-                                        width: { xs: 50, sm: 70, md: 80, lg: 90 },
-                                        height: { xs: 35, sm: 45, md: 55, lg: 60 },
+                                        objectFit: 'contain',
+                                        borderRadius: '8px',
                                     }}
                                 />
                             </Box>

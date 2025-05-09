@@ -125,6 +125,7 @@ function NavBar() {
                                         divider
                                         selected={pathname === page.href}
                                         href={page.href}
+                                        component={Link}
                                         sx={{ justifyContent: 'center' }}
                                     >
                                         <Stack direction='row' alignItems='center'>
