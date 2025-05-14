@@ -40,7 +40,7 @@ export default function Home() {
                 臺灣科技大學
               </Typography>
               <Typography sx={{ typography: { xs: { fontSize: 28 }, sm: 'h3', md: { fontSize: 45 }, lg: 'h3', fontWeight: '700 !important' } }}>
-                金融科技與人工智慧實驗室
+                金融科技與人工智慧實驗
               </Typography>
               <Typography sx={{ typography: { xs: 'h6', sm: 'h5', md: 'h6', lg: 'h5' } }}>
                 Fintech and Artificial Intelligence Lab
