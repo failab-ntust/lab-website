@@ -12,8 +12,6 @@ const partners = [
     { name: "耐斯診所", logo: "partners/nice_clinic.jpg" },
 ];
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 export default function MarqueePartners() {
     return (
         <Box sx={{ width: "100%", overflow: "hidden", py: 2, backgroundColor: "#f4f4f4" }}>
@@ -56,7 +54,7 @@ export default function MarqueePartners() {
                                 }}
                             >
                                 <Image
-                                    src={`${basePath}/${partner.logo}`}
+                                    src={`/${partner.logo}`}
                                     alt={partner.name}
                                     fill
                                     style={{

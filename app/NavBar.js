@@ -13,8 +13,6 @@ import ScienceIcon from '@mui/icons-material/Science';
 import GroupsIcon from '@mui/icons-material/Groups';
 import Link from 'next/link';
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 const pages = [
     { item: '指導教授', href: '/professor', icon: <PersonIcon /> },
     { item: '研究領域', href: '/research', icon: <MenuBookIcon /> },
@@ -49,7 +47,7 @@ const LogoName = ({ flexGrow, variant, xs, md, letterSpacing }) => (
 
 const CusToolbar = ({ display, children }) => (
     <Toolbar disableGutters sx={{ display: display }}>
-        <Image src={`${basePath}/coin.png`} width={35} height={35} alt='logo' style={{ marginRight: 10 }} />
+        <Image src={`/coin.png`} width={35} height={35} alt='logo' style={{ marginRight: 10 }} />
         {children}
     </Toolbar>
 )

@@ -4,8 +4,6 @@ import PageTitle from '../PageTitle'
 import PersonCard from './PersonCard'
 import SubTitle from '../SubTitle'
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 const _GraduateMember = [
     { grade: 'Master', name: 'Khairul Izyan Bin Anuar', class: 'MBA', year: '110', imgSrc: '/110/Khairul Izyan Bin Anuar', researchfield: '小樣本、機器學習', email: 'M11021805@mail.ntust.edu.tw' },
     { grade: 'Master', name: 'Do Nguyen Ngan Khanh', class: 'MBA', year: '111', imgSrc: '/111/Do Nguyen Ngan Khanh', researchfield: '使用者意圖、聯邦式學習', email: 'M11021852@mail.ntust.edu.tw' },
@@ -36,7 +34,7 @@ const CusGrid = ({ grade, data }: any) => (
                     <Avatar
                         alt="we_want_you"
                         variant="square"
-                        src={`${basePath}/we_want_you.png`}
+                        src={`/we_want_you.png`}
                         sx={{ width: { xs: 250, sm: 350, md: 450 }, height: { xs: 90, sm: 120, md: 150 } }}
                     />
                 </Grid>

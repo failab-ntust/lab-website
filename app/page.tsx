@@ -7,8 +7,6 @@ import ImageCarousel from './ImageCarousel'
 import LatestNews from './LatestNews'
 import Image from 'next/image';
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 const Title = ({ title }: any) => (
   <ListItem disableGutters>
     <ViewStreamIcon fontSize="large" color='secondary' sx={{ mr: 1 }} />
@@ -21,11 +19,11 @@ const Title = ({ title }: any) => (
 const StickyAnnouncement = () => (
   <Stack>
     <Stack direction='row' alignItems='baseline' spacing={{ xs: .5, sm: 1 }}>
-      <Image src={`${basePath}/fire.gif`} alt='fire' width={30} height={30} />
+      <Image src={`/fire.gif`} alt='fire' width={30} height={30} />
       <Typography sx={{ typography: { xs: 'h6', sm: 'h5', md: 'h6', lg: 'h5' } }}>實驗室成員募集中，歡迎資管所甲組、人工智慧所及管理研究所碩博士同學一起開疆闢土</Typography>
     </Stack>
     <Stack direction='row' alignItems='baseline' spacing={{ xs: .5, sm: 1 }}>
-      <Image src={`${basePath}/fire.gif`} alt='fire' width={30} height={30} />
+      <Image src={`/fire.gif`} alt='fire' width={30} height={30} />
       <Typography sx={{ typography: { xs: 'h6', sm: 'h5', md: 'h6', lg: 'h5' } }}>歡迎各系所大學部同學參加專題及競賽</Typography>
     </Stack>
   </Stack>

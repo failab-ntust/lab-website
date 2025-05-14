@@ -7,14 +7,12 @@ import EmailIcon from '@mui/icons-material/Email';
 import BusinessIcon from '@mui/icons-material/Business';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-
 function About() {
     return (
         <Stack justifyContent='space-evenly' flexDirection={{ xs: 'column', sm: 'row' }} sx={{ bgcolor: '#F5F5F5', borderRadius: 5 }} spacing={2}>
             <Stack alignItems='center'>
                 <Image
-                    src={`${basePath}/chihchieh-removebg.png`}
+                    src={`/chihchieh-removebg.png`}
                     alt='professor'
                     width={230}
                     height={300}
@@ -80,7 +78,7 @@ function About() {
                         </ListItem>
                     </Box>
                     <Stack direction='column'>
-                        <Image src={`${basePath}/QR code.jpg`} alt='QR code' width={100} height={100} />
+                        <Image src={`/QR code.jpg`} alt='QR code' width={100} height={100} />
                         <Typography>歡迎與我聯繫</Typography>
                     </Stack>
                 </Stack>
