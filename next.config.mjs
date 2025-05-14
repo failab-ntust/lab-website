@@ -6,11 +6,11 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
-    basePath: isProd ? '/lab-website' : '',
+    //basePath: isProd ? '/lab-website' : '',
     trailingSlash: true,
-    env: {
-        NEXT_PUBLIC_BASE_PATH: isProd ? '/lab-website' : '',
-    },
+    //env: {
+        //NEXT_PUBLIC_BASE_PATH: isProd ? '/lab-website' : '',
+    //},
 };
 
 export default nextConfig;
