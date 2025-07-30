@@ -45,7 +45,7 @@ export default function Research() {
                 <Grid size={{ xs: 4, sm: 8, md: 6 }} >
                     <FieldGrid field="生成式AI／大型語言模型" >
                         <FieldContent icon={<Looks1Icon color='primary' />} subfield='多模態LLM' subcontent='讓AI能同時理解文字、圖片、影片與聲音，全面擴展其理解能力。' />
-                        <FieldContent icon={<Looks2Icon color='primary' />} subfield='全流程自動化合規 agent' subcontent='運用AI的思考與記憶能力，實現企業跨部門因應法規變動的全流程自動化合規，進一步提升員工對合規性的重視與執行力。' />
+                        <FieldContent icon={<Looks2Icon color='primary' />} subfield='全流程自動化合規 Agent' subcontent='運用AI的思考與記憶能力，實現企業跨部門因應法規變動的全流程自動化合規，進一步提升員工對合規性的重視與執行力。' />
                         <FieldContent icon={<Looks3Icon color='primary' />} subfield='模型效能自動化學習' subcontent='自動進行模型資源最佳化及績效追蹤，簡化模型迭代所需要耗費的人力。' />
                     </FieldGrid>
                 </Grid>
