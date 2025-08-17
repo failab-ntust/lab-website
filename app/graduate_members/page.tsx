@@ -18,6 +18,11 @@ const _GraduateMember = [
     { grade: 'Master', name: '蔡子勛', class: '產創-AI所', year: '111', imgSrc: '/111/蔡子勛', co_advisor: '羅乃維院長', researchfield: '資訊安全、深度學習', email: 'M11152026@mail.ntust.edu.tw' },
     { grade: 'Master', name: '錢嘉偉', class: '產創-AI所', year: '111', imgSrc: '/111/錢嘉偉', researchfield: '影像辨識、深度學習、運動科學', email: 'M11152029@mail.ntust.edu.tw' },
     { grade: 'Master', name: '吳孟蓁', class: '產創-AI所', year: '112', imgSrc: '/112/吳孟蓁', researchfield: 'AutoML', email: 'M11252027@mail.ntust.edu.tw' },
+    { grade: 'EMBA', name: '蔡宗儒', year: '112', imgSrc: '/112/蔡宗儒', researchfield: '人工智慧與商業應用', email: 'M11216217@mail.ntsut.edu.tw' },
+    { grade: 'Master', name: '王姿璇', class: 'MBA', year: '112', imgSrc: '/112/王姿璇', researchfield: '聯邦式學習、使用者意圖', email: 'M11221006@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '温郁綺', class: '資管所甲組', year: '112', imgSrc: '/112/温郁綺', researchfield: '集成學習', email: 'M11209105@mail.ntust.edu.tw' },
+
+
 ]
 
 
