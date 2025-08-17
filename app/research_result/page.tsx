@@ -7,6 +7,7 @@ import { CustomTab, CustomTabPanel, CusStepper } from './Component'
 
 // 國科會計畫
 const NSTC = [
+    '計畫主持人 114-2410-H-011-026-MY3 考慮運算效率、自動稽查檢核及安全防護設計全域聯邦學習框架：實踐跨業聯盟學習 2025/08/01~2028/07/31',
     '計畫主持人 113-2221-E-011-149- 透過嵌入平衡與對比學習增進以圖為基礎之推薦系統效能 2024/08/01 ~ 2025/07/31',
     '計畫主持人 111-2410-H-011 -041 -MY2 在保護個人隱私下建構跨產業資料共享框架 2022/10/01 ~ 2024/09/30',
 ]
@@ -19,18 +20,20 @@ const MinistryofEducation = [
 
 // 產學合作案
 const IndustryCooperation = [
+    '計畫主持人 資訊安全-打造AI人工智慧1.0框架 2025/07/01~ 2025/12/31',
     '計畫主持人，AI戰情室1.0 2024/12/31 ~ 2025/06/30',
     '計畫主持人，醫美產業AI技術引進導入及評估 2024/10/31 ~ 2025/03/31',
     '計畫主持人，競品暨技術論文網站分析系統 2024/06/01 ~ 2025/01/31',
     '計畫主持人，AI鷹眼識詐聯盟技術暨推廣合作案 2024/01/01 ~ 2025/06/30',
     '計畫主持人，產品擷取分析PoC專案 2023/07/01~2023/09/30',
     '計畫主持人，運用大數據及人工智慧技術建構風險引擎2.0 2023/01/01~2023/12/31',
-    '偕同計畫主持人，數位錢包之資安框架建構-APP及底層技術設計 2022/11/01~2022/12/31',
+    '共同主持人，數位錢包之資安框架建構-APP及底層技術設計 2022/11/01~2022/12/31',
     '計畫主持人，企業資安風險評估計畫 2022/10/01~2023/09/30'
 
 ]
 
 const JournalPaper = [
+    'C.-C. Chang, Z.-X. Chen, and C.-C. Lin (2025). Food Classification via Vision Transformer with Data Augmentation on Small Datasets. to appear in Journal of Internet Technology.',
     "C.-C. Chang, C.-H. Lu, M.-Y. Chang, C.-E. Shen, Y.-C. Ho, and C.-Y. Shen (2024). Learning to Augment Graphs: Machine Learning-based Social Network Intervention with Self-Supervision. IEEE Transactions on Computational Social Systems, 11(3): 3286-3298.",
     "C.-C. Chang, C.-H. Lu, S.-J. Teng, M.-Y. Chang, Y.-C. Ho, and C.-Y. Shen (2024). Maximizing (k, L)-core with Edge Augmentation in Multi-Layer Graphs. IEEE Transactions on Computational Social Systems, 11(3): 3931-3943.",
     "C.-C. Chang, D.-R. Tseng, C.-H. Lu, M.-Y. Chang, and C.-Y. Shen (2024). Improving graph-based recommendation with unraveled graph learning. Data Mining and Knowledge Discovery, 38(4), 2440-2465.",
@@ -98,6 +101,7 @@ const personalAwards = [
 
 // 指導學生競賽成果
 const studentCompetitionAchievements = [
+    '2025/06 2025全球GCMF 銀質獎',
     '2024/12 2024全球品牌策劃 第一名&銀質獎',
     '2024/12 指導學生參加第七屆法遵科技與電腦稽核專題競賽 – 冠軍',
     '2023/12 指導學生參加第六屆法遵科技與電腦稽核專題競賽 – 優選',
