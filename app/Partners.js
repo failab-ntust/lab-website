@@ -10,6 +10,7 @@ const partners = [
     { name: "英業達", logo: "partners/inventec.jpg" },
     { name: "來毅數位科技", logo: "partners/keypasco.jpg" },
     { name: "耐斯診所", logo: "partners/nice_clinic.jpg" },
+    { name:"Cellopoint", logo:"partners/cellopoint.jpg"}
 ];
 
 export default function MarqueePartners() {
