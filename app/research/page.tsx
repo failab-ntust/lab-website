@@ -51,7 +51,7 @@ export default function Research() {
                     </FieldGrid>
                 </Grid>
                 <Grid size={{ xs: 4, sm: 8, md: 4 }}>
-                    <FieldGrid field="大型語言模型 (Large Language Model，LLM)" >
+                    <FieldGrid field="大型語言模型" >
                         <FieldContent icon={<Looks1Icon color='primary' />} subfield='底層運作建構' />
                         <FieldContent icon={<Looks2Icon color='primary' />} subfield='多模態資料處裡' />
                         <FieldContent icon={<Looks3Icon color='primary' />} subfield='模型Fine-Tuning (SFT、LORA、Alignment)' />
