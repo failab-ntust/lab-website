@@ -18,7 +18,7 @@ const Master = [
 
     // 資管所甲組
     { grade: 'Master', name: '張姿儀', class: '資管所甲組', year: '114', imgSrc: '/114/張姿儀', researchfield: '討論中...', email: 'M11409127@mail.ntust.edu.tw'},
-    { grade: 'Master', name: '徐澍萭', class: '資管所甲組', year: '114', imgSrc: '/114/徐澍萭', researchfield: '討論中...', email: 'M11409111@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '徐澍萭', class: '資管所甲組', year: '114', imgSrc: '/114/Benson', researchfield: '討論中...', email: 'M11409111@mail.ntust.edu.tw' },
     { grade: 'Master', name: 'TRAN THI LUU LY', class: '資管所甲組', year: '113', imgSrc: '/113/TRAN THI LUU LY', researchfield: '資料分析與AI應用 Data Analysis and AI applications', email: 'M11309813@mail.ntust.edu.tw' },
     { grade: 'Master', name: '吳錞柔', class: '資管所甲組', year: '113', imgSrc: '/113/吳錞柔', researchfield: '討論中...', email: 'M11309125@mail.ntust.edu.tw' },
     { grade: 'Master', name: '林怡彣', class: '資管所甲組', year: '113', imgSrc: '/113/林怡彣', researchfield: '討論中...', email: 'M11309114@mail.ntust.edu.tw' },
