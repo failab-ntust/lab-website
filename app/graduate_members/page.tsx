@@ -21,6 +21,9 @@ const _GraduateMember = [
     { grade: 'EMBA', name: '蔡宗儒', year: '112', imgSrc: '/112/蔡宗儒', researchfield: '人工智慧與商業應用', email: 'M11216217@mail.ntsut.edu.tw' },
     { grade: 'Master', name: '王姿璇', class: 'MBA', year: '112', imgSrc: '/112/王姿璇', researchfield: '聯邦式學習、使用者意圖', email: 'M11221006@mail.ntust.edu.tw' },
     { grade: 'Master', name: '温郁綺', class: '資管所甲組', year: '112', imgSrc: '/112/温郁綺', researchfield: '集成學習', email: 'M11209105@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '吳竣宇', class: '人工智慧所', year: '112', imgSrc: '/112/吳竣宇', co_advisor: '羅乃維院長', researchfield: '圖神經學習、生成式AI', email: 'M11252003@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '羅巧筠', class: '資管所甲組', year: '112', imgSrc: '/112/羅巧筠', researchfield: '大型語言模型', email: 'M11209102@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '劉騫', class: '資管所甲組', year: '112', imgSrc: '/112/劉騫', researchfield: '圖神經學習、神經網路壓縮', email: 'brianliu1208@gmail.com' },
 
 
 ]
