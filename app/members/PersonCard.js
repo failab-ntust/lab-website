@@ -15,6 +15,13 @@ const EMBA = ({ person }) => (
             variant="body2"
             color="text"
         >
+            班別：{person.class}
+        </Typography>
+        <Typography
+            component="span"
+            variant="body2"
+            color="text"
+        >
             學年度：{person.year}
         </Typography>
         <Typography
@@ -22,13 +29,6 @@ const EMBA = ({ person }) => (
             variant="body2"
             color="text"
         >
-            {/* 現職：{person.currentjob}
-        </Typography>
-        <Typography
-            component="span"
-            variant="body2"
-            color="text"
-        > */}
             研究方向：{person.researchfield}
         </Typography>
     </>
