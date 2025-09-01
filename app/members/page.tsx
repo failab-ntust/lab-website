@@ -7,6 +7,7 @@ import React from 'react'
 
 const Master = [
     // MBA
+    { grade: 'Master', name: '呂采沛', class: 'MBA', year: '114', imgSrc: '/114/呂采沛', researchfield: '討論中...', email: 'M11421025@mail.ntust.edu.tw'},
     { grade: 'Master', name: '林智婷', class: 'MBA', year: '113', imgSrc: '/113/林智婷', researchfield: '討論中...', email: 'M11321028@mail.ntust.edu.tw' },
     { grade: 'Master', name: '余得如', class: 'MBA', year: '113', imgSrc: '/113/余得如', researchfield: '討論中...', email: 'M11321015@mail.ntust.edu.tw' },
     { grade: 'Master', name: '余祥安', class: 'MBA', year: '111', imgSrc: '/111/余祥安', researchfield: '小樣本資料、機器學習', email: 'M11121026@mail.ntust.edu.tw' },
@@ -27,6 +28,7 @@ const Master = [
     { grade: 'Master', name: '溫婉言', class: '資管所甲組', year: '112', imgSrc: '/112/溫婉言', researchfield: '聯邦式學習', email: 'M11209130@mail.ntust.edu.tw' },
 
     // 人工智慧所
+    { grade: 'Master', name: '林吉', class: '人工智慧所', year: '114', imgSrc: '/114/林吉', researchfield: '資訊安全', co_advisor:'羅乃維院長',email: 'M11452033@mail.ntust.edu.tw'},
     { grade: 'Master', name: '蔡芷芸', class: '人工智慧所', year: '114', imgSrc: '/114/蔡芷芸', researchfield: '人工智慧、機器學習', email: 'M11452026@mail.ntust.edu.tw'},
     { grade: 'Master', name: '吳冠霖', class: '人工智慧所', year: '113', imgSrc: '/113/吳冠霖', researchfield: '語言模型、生成式AI', email: 'M11352035@mail.ntust.edu.tw' },
     { grade: 'Master', name: '陳軍翰', class: '人工智慧所', year: '112', imgSrc: '/112/陳軍翰', co_advisor: '羅乃維院長', researchfield: '討論中…', email: 'M11252012@mail.ntust.edu.tw' },
@@ -47,7 +49,9 @@ const Undergraduate = [
    ]
 
 const EMBA = [
-    { grade: 'EMBA', name: '朱正光', year: '114', imgSrc: '/114/朱正光', researchfield: '討論中...', email: 'M11416112@mail.ntust.edu.tw' },
+    { grade: 'EMBA', name: '朱正光', class:'管研所',year: '114', imgSrc: '/114/朱正光', researchfield: '討論中...', email: 'M11416112@mail.ntust.edu.tw' },
+    { grade: 'EMBA', name: '甘桂杭', class:'管研所',year: '114', imgSrc: '/114/甘桂杭', researchfield: '討論中...', email: 'M11416224@mail.ntust.edu.tw'}
+
 ]
 
 const CusGrid = ({ data }: any) => (
