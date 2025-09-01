@@ -4,7 +4,7 @@ import { Stack, ListItem, Typography, ListItemText, ListItemAvatar } from '@mui/
 const data = [
     { date: '2025/07', content: '研究論文“Food Classification via Vision Transformer with Data Augmentation on Small Datasets” to appear in Journal of Internet Technology.' },
     { date: '2025/07', content: '恭喜本研究團隊獲得國科會專題計畫補助' },
-    { date: '2025/06', content: '恭喜本研究團隊專題生榮獲國科位大專生專題計畫' },
+    { date: '2025/06', content: '恭喜本研究團隊專題生榮獲國科會大專生專題計畫' },
     { date: '2025/06', content: '恭喜本研究團隊參加全球GCMF獲得銀質獎' },
     { date: '2025/04', content: 'Heuristic Meta Integration and Map Exploration to Solve Industrial Scheduling Problems, MMIE 2025接受' },
     { date: '2025/04', content: '以圖神經網路與聯邦式學習建構之反洗錢交易偵測架構，第36屆國際資訊管理學術研討會 接受' },
