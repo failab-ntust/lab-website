@@ -7,6 +7,7 @@ import React from 'react'
 
 const Master = [
     // MBA
+    { grade: 'Master', name: '鄧書妤', class: 'MBA', year: '114', imgSrc: '/114/鄧書妤', researchfield: '討論中...', email: 'M11421016@mail.ntust.edu.tw'},
     { grade: 'Master', name: '李婷芳', class: 'MBA', year: '114', imgSrc: '/114/李婷芳', researchfield: '討論中...', email: 'M11421003@mail.ntust.edu.tw'},
     { grade: 'Master', name: '尹沛琪', class: 'MBA', year: '114', imgSrc: '/114/尹沛琪', researchfield: '討論中...', email: 'M11421019@mail.ntust.edu.tw'},
     { grade: 'Master', name: '呂采沛', class: 'MBA', year: '114', imgSrc: '/114/呂采沛', researchfield: '討論中...', email: 'M11421025@mail.ntust.edu.tw'},
