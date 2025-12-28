@@ -8,7 +8,14 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 
 const images = [
-    { label: '114', text: '🏈Sports Nation 迎新送舊', photoCount: 7},
+    {
+        label: '114',
+        photoCount: 20, // 114 今年總張數（1~20）
+        segments: [
+            { start: 1, end: 7, text: '🏈Sports Nation 迎新送舊' },
+            { start: 8, end: 20, text: '🎊114年 期末聖誕暨尾牙聚餐' },
+        ]
+    },    
     { label: '113', text: '🍸Cheers&Co.餐酒館', photoCount: 34 },
     { label: '112', text: '🎉饗食天堂', photoCount: 2 },
     { label: '111', text: '🎄聖誕期末聚餐', photoCount: 4 },
@@ -20,15 +27,21 @@ function ImageCarousel() {
 
     const allSlides = useMemo(() => {
         return images.flatMap((item, groupIndex) =>
-            Array.from({ length: item.photoCount }, (_, i) => ({
+            Array.from({ length: item.photoCount }, (_, i) => {
+            const photoNo = i + 1;
+
+            const segText =
+                item.segments?.find(s => photoNo >= s.start && photoNo <= s.end)?.text;
+
+            return {
                 label: item.label,
                 groupIndex,
-                text: item.text,
-                src: `lab-photo/${item.label}/${i + 1}.jpg`,
-            }))
+                text: segText ?? item.text, // 有分段就用分段，沒有就用原本 item.text
+                src: `lab-photo/${item.label}/${photoNo}.jpg`,
+            };
+            })
         );
     }, []);
-
     const groupStartIndices = useMemo(() => {
         return images.map((img, i) =>
             images.slice(0, i).reduce((sum, img) => sum + img.photoCount, 0)

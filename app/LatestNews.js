@@ -2,6 +2,8 @@ import React from 'react';
 import { Stack, ListItem, Typography, ListItemText, ListItemAvatar } from '@mui/material';
 
 const data = [
+    { date: '2025/12', content: '研究論文“Structure-based virtual sample generation using average-linkage clustering for small dataset problems” to appear in CMC-Computers, Materials & Continua.' },
+    { date: '2025/11', content: '恭喜本研究團隊大學生專題獲得系上第一名' },
     { date: '2025/07', content: '研究論文“Food Classification via Vision Transformer with Data Augmentation on Small Datasets” to appear in Journal of Internet Technology.' },
     { date: '2025/07', content: '恭喜本研究團隊獲得國科會專題計畫補助' },
     { date: '2025/06', content: '恭喜本研究團隊專題生榮獲國科會大專生專題計畫' },

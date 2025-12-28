@@ -24,6 +24,12 @@ const _GraduateMember = [
     { grade: 'Master', name: '吳竣宇', class: '人工智慧所', year: '112', imgSrc: '/112/吳竣宇', co_advisor: '羅乃維院長', researchfield: '圖神經學習、生成式AI', email: 'M11252003@mail.ntust.edu.tw' },
     { grade: 'Master', name: '羅巧筠', class: '資管所甲組', year: '112', imgSrc: '/112/羅巧筠', researchfield: '大型語言模型', email: 'M11209102@mail.ntust.edu.tw' },
     { grade: 'Master', name: '劉騫', class: '資管所甲組', year: '112', imgSrc: '/112/劉騫', researchfield: '圖神經學習、神經網路壓縮', email: 'brianliu1208@gmail.com' },
+    { grade: 'Master', name: '陳軍翰', class: '人工智慧所', year: '112', imgSrc: '/112/陳軍翰', co_advisor: '羅乃維院長', researchfield: '討論中…', email: 'M11252012@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '林憲紘', class: '人工智慧所', year: '112', imgSrc: '/112/林憲紘', co_advisor: '羅乃維院長', researchfield: '待確認…', email: 'M11252029@mail.ntust.edu.tw' },
+    { grade: 'Master', name: 'PHAM QUYNH HUONG', class: 'MBA', year: '112', imgSrc: '/112/PHAM QUYNH HUONG', researchfield: '資料科學', email: 'M11221823@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '余祥安', class: 'MBA', year: '111', imgSrc: '/111/余祥安', researchfield: '小樣本資料、機器學習', email: 'M11121026@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '林瑩姍', class: 'MBA', year: '112', imgSrc: '/112/林瑩姍', researchfield: '資料不平衡、聯邦式學習', email: 'M11221019@ms.ntust.edu.tw' },
+    { grade: 'Master', name: '溫婉言', class: '資管所甲組', year: '112', imgSrc: '/112/溫婉言', researchfield: '聯邦式學習', email: 'M11209130@mail.ntust.edu.tw' },
 
 
 ]

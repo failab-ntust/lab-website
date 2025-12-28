@@ -14,12 +14,17 @@ const NSTC = [
 
 // 教育部計畫
 const MinistryofEducation = [
+    '計畫主持人，教師推動創新教學-教學與課程精進研究計畫 2025/09/01 ~ 2026/08/31',
     '計畫主持人，教師推動創新教學-教學與課程精進研究計畫 2024/09/01 ~ 2025/08/31',
     '計畫主持人，教師推動創新教學-教學與課程精進研究計畫 2023/09/01 ~ 2024/08/31',
 ]
 
 // 產學合作案
 const IndustryCooperation = [
+    '共同主持人，零信任之信任推斷引擎AI外腦研究報告 2025/12/01~2026/07/31',
+    '計畫主持人，遊戲產業智慧情報平台 2025/11/01~2026/06/30',
+    '共同主持人，AI胚胎影像辨識 2025/10/01~2026/03/31',
+    '計畫主持人，行為基準與風險動態分析引擎建置 2025/09/01~2026/08/31',
     '計畫主持人，資訊安全-打造AI人工智慧1.0框架 2025/07/01~ 2025/12/31',
     '計畫主持人，AI戰情室1.0 2024/12/31 ~ 2025/06/30',
     '計畫主持人，醫美產業AI技術引進導入及評估 2024/10/31 ~ 2025/03/31',
@@ -33,7 +38,8 @@ const IndustryCooperation = [
 ]
 
 const JournalPaper = [
-    'C.-C. Chang, Z.-X. Chen, and C.-C. Lin (2025). Food Classification via Vision Transformer with Data Augmentation on Small Datasets. to appear in Journal of Internet Technology.',
+    "C.-C. Chang, K.-I.-B. Anuar, and Y.-H. Liu. Structure-based virtual sample generation using average-linkage clustering for small dataset problems. To appear in CMC-Computers, Materials & Continua.",
+    "C.-C. Chang, Z.-X. Chen, and C.-C. Lin. Food Classification via Vision Transformer with Data Augmentation on Small Datasets. To appear in Journal of Internet Technology.",
     "C.-C. Chang, C.-H. Lu, M.-Y. Chang, C.-E. Shen, Y.-C. Ho, and C.-Y. Shen (2024). Learning to Augment Graphs: Machine Learning-based Social Network Intervention with Self-Supervision. IEEE Transactions on Computational Social Systems, 11(3): 3286-3298.",
     "C.-C. Chang, C.-H. Lu, S.-J. Teng, M.-Y. Chang, Y.-C. Ho, and C.-Y. Shen (2024). Maximizing (k, L)-core with Edge Augmentation in Multi-Layer Graphs. IEEE Transactions on Computational Social Systems, 11(3): 3931-3943.",
     "C.-C. Chang, D.-R. Tseng, C.-H. Lu, M.-Y. Chang, and C.-Y. Shen (2024). Improving graph-based recommendation with unraveled graph learning. Data Mining and Knowledge Discovery, 38(4), 2440-2465.",
@@ -46,6 +52,8 @@ const JournalPaper = [
 ]
 
 const ConferencePaper = [
+    'M.-H. Lin, L.-L. Tran, H.-Y. Chen and C.-C. Chang "Constructing Time-Series Badminton Prediction Model within Gated Recurrent Units" 2026 8th Asia Pacific Information Technology Conference, Hokkaido, Japan, Jan. 2026',
+    'L.-L. Tran, C.-C. Chang, H.-A. Yu, Y.-C. Chen. and R.-L. Tso. "Considering Cluster Validity in Attribute Extension for Small Data Set Predictions" 2026 8th Asia Pacific Information Technology Conference, Hokkaido, Japan, Jan. 2026',
     'M.-H. Lin, C.-L. Hsu, H.-S. Hsu and C.-C. Chang “Heuristic Meta Integration and Map Exploration to Solve Industrial Scheduling Problems” 2025 8th International Conference on Mechanical Manufacturing and Industrial Engineering, Tokyo, Japan, August. 2025',
     'J.-Y. Lin, Y.-H. Liu, M.-H. Lin, Y.-C. Chen and C.-C. Chang, “Blockchain Driven Security: Protecting Data and Ensuring Trustworthiness in Federated Learning” The 2025 7th Blockchain and Internet of Things Conference, Tsukuba, Japan, June. 2025',
     '劉于華、林哲宇、張智傑。以圖神經網路與聯邦式學習建構之反洗錢交易偵測架構。第36屆國際資訊管理學術研討會',
