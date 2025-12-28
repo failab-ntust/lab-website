@@ -34,18 +34,22 @@ const Master = [
 
 const _PhD = [
     { grade: 'PhD', name: '林銘鴻', class: 'AI跨域', year: '113', imgSrc: '/113/林銘鴻', researchfield: '資訊安全與個資保護標準', email: 'D11352002@mail.ntust.edu.tw' },
-    { grade: 'PhD', name: '吳宥霆', class: 'AI跨域', year: '112', imgSrc: '/112/吳宥霆', researchfield: '信用評等、資料探勘、資訊安全與個資保護標準', email: 'D11252005@mail.ntust.edu.tw' }
+    //休學{ grade: 'PhD', name: '吳宥霆', class: 'AI跨域', year: '112', imgSrc: '/112/吳宥霆', researchfield: '信用評等、資料探勘、資訊安全與個資保護標準', email: 'D11252005@mail.ntust.edu.tw' }
 ]
 
 
 const Undergraduate = [
+    { grade: 'Undergraduate', name: '鄭佳茵', class: '管理學士班', year: '112', imgSrc: '/112/鄭佳茵', researchfield: '金融科技', email: 'B11233034@mail.ntust.edu.tw'},
+    { grade: 'Undergraduate', name: '賴思穎', class: '管理學士班', year: '112', imgSrc: '/112/賴思穎', researchfield: '金融科技', email: 'B11233029@mail.ntust.edu.tw'},
+    { grade: 'Undergraduate', name: '鍾佳諭', class: '管理學士班', year: '112', imgSrc: '/112/鍾佳諭', researchfield: '金融科技', email: 'B11233032@mail.ntust.edu.tw'},
+    { grade: 'Undergraduate', name: '陳儀珊', class: '管理學士班', year: '112', imgSrc: '/112/陳儀珊', researchfield: '資料科學 參數最佳化', email: 'B11233030@mail.ntust.edu.tw'},
+    { grade: 'Undergraduate', name: '陳玟君', class: '管理學士班', year: '112', imgSrc: '/112/陳玟君', researchfield: '資料科學 參數最佳化', email: 'B11233026@mail.ntust.edu.tw'},
+
     { grade: 'Undergraduate', name: '鄭宇峰', class: '管理學士班', year: '111', imgSrc: '/111/鄭宇峰', researchfield: '大型語言模型', email: 'B11133022@mail.ntust.edu.tw' },
     { grade: 'Undergraduate', name: '陳秉承', class: '管理學士班', year: '111', imgSrc: '/111/陳秉承', researchfield: '大型語言模型', email: 'B11133023@mail.ntust.edu.tw' },
     { grade: 'Undergraduate', name: '何陽', class: '管理學士班', year: '111', imgSrc: '/111/何陽', researchfield: '大型語言模型', email: 'B11133033@mail.ntust.edu.tw' },
     { grade: 'Undergraduate', name: '林騏宇', class: '管理學士班', year: '111', imgSrc: '/111/林騏宇', researchfield: '大型語言模型', email: 'B11133002@mail.ntust.edu.tw' },
-    { grade: 'Undergraduate', name: '鄭佳茵', class: '管理學士班', year: '112', imgSrc: '/112/鄭佳茵', researchfield: '金融科技', email: 'B11233034@mail.ntust.edu.tw'},
-    { grade: 'Undergraduate', name: '賴思穎', class: '管理學士班', year: '112', imgSrc: '/112/賴思穎', researchfield: '金融科技', email: 'B11233029@mail.ntust.edu.tw'},
-    { grade: 'Undergraduate', name: '鍾佳諭', class: '管理學士班', year: '112', imgSrc: '/112/鍾佳諭', researchfield: '金融科技', email: 'B11233032@mail.ntust.edu.tw'},
+    
 
    ]
 
