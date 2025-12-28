@@ -5,6 +5,8 @@ import { Box, Typography } from "@mui/material";
 import MarqueeEffect from "react-fast-marquee";
 
 const partners = [
+    { name: "精誠資訊", logo: "partners/SYSTEX.jpg" },
+    { name: "明美科技", logo: "partners/MMT.jpg" },
     { name: "台北富邦銀行", logo: "partners/fubon.jpg" },
     { name: "鈊象電子", logo: "partners/iGS.jpg" },
     { name: "英業達", logo: "partners/inventec.jpg" },
