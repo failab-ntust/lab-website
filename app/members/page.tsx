@@ -44,7 +44,7 @@ const Undergraduate = [
     { grade: 'Undergraduate', name: '鍾佳諭', class: '管理學士班', year: '112', imgSrc: '/112/鍾佳諭', researchfield: '金融科技', email: 'B11233032@mail.ntust.edu.tw'},
     { grade: 'Undergraduate', name: '陳儀珊', class: '管理學士班', year: '112', imgSrc: '/112/陳儀珊', researchfield: '資料科學 參數最佳化', email: 'B11233030@mail.ntust.edu.tw'},
     { grade: 'Undergraduate', name: '陳玟君', class: '管理學士班', year: '112', imgSrc: '/112/陳玟君', researchfield: '資料科學 參數最佳化', email: 'B11233026@mail.ntust.edu.tw'},
-
+    { grade: 'Undergraduate', name: '林易逵', class: '管理學士班', year: '112', imgSrc: '/112/林易逵', researchfield: '資料科學 參數最佳化', email: 'B11233001@mail.ntust.edu.tw'},
     { grade: 'Undergraduate', name: '鄭宇峰', class: '管理學士班', year: '111', imgSrc: '/111/鄭宇峰', researchfield: '大型語言模型', email: 'B11133022@mail.ntust.edu.tw' },
     { grade: 'Undergraduate', name: '陳秉承', class: '管理學士班', year: '111', imgSrc: '/111/陳秉承', researchfield: '大型語言模型', email: 'B11133023@mail.ntust.edu.tw' },
     { grade: 'Undergraduate', name: '何陽', class: '管理學士班', year: '111', imgSrc: '/111/何陽', researchfield: '大型語言模型', email: 'B11133033@mail.ntust.edu.tw' },
