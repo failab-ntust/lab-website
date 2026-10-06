@@ -9,19 +9,19 @@ const Master = [
     // MBA
     { grade: 'Master', name: '蕭至苓', class: 'MBA', year: '115', imgSrc: '/115/蕭至苓', researchfield: '討論中...', email: 'M11521014@mail.ntust.edu.tw' },
     { grade: 'Master', name: '鄧書妤', class: 'MBA', year: '114', imgSrc: '/114/鄧書妤', researchfield: '討論中...', email: 'M11421016@mail.ntust.edu.tw'},
-    { grade: 'Master', name: '李婷芳', class: 'MBA', year: '114', imgSrc: '/114/李婷芳', researchfield: '討論中...', email: 'M11421003@mail.ntust.edu.tw'},
+    { grade: 'Master', name: '李婷芳', class: 'MBA', year: '114', imgSrc: '/114/李婷芳', researchfield: '個人式AI代理人、使用者感知', email: 'M11421003@mail.ntust.edu.tw'},
     { grade: 'Master', name: '尹沛琪', class: 'MBA', year: '114', imgSrc: '/114/尹沛琪', researchfield: '討論中...', email: 'M11421019@mail.ntust.edu.tw'},
-    { grade: 'Master', name: '呂采沛', class: 'MBA', year: '114', imgSrc: '/114/呂采沛', researchfield: '討論中...', email: 'M11421025@mail.ntust.edu.tw'},
-    { grade: 'Master', name: '余得如', class: 'MBA', year: '113', imgSrc: '/113/余得如', researchfield: '討論中...', email: 'M11321015@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '葉芯妤', class: 'MBA', year: '113', imgSrc: '/113/葉芯妤', researchfield: '討論中...', email: 'M11321016@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '董念耘', class: 'MBA', year: '113', imgSrc: '/113/董念耘', researchfield: '討論中...', email: 'M11321029@mail.ntust.edu.tw' },
-    { grade: 'Master', name: '蔡雨芳', class: 'MBA', year: '113', imgSrc: '/113/蔡雨芳', researchfield: '討論中...', email: 'M11321022@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '呂采沛', class: 'MBA', year: '114', imgSrc: '/114/呂采沛', researchfield: 'AI代理人、組織管理評估', email: 'M11421025@mail.ntust.edu.tw'},
+    { grade: 'Master', name: '余得如', class: 'MBA', year: '113', imgSrc: '/113/余得如', researchfield: '生成式AI、資訊不對稱、消費者行為', email: 'M11321015@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '葉芯妤', class: 'MBA', year: '113', imgSrc: '/113/葉芯妤', researchfield: '沉浸式體驗、使用者意圖及感知', email: 'M11321016@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '董念耘', class: 'MBA', year: '113', imgSrc: '/113/董念耘', researchfield: 'CSR、ESG、AI資訊揭露、企業價值', email: 'M11321029@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '蔡雨芳', class: 'MBA', year: '113', imgSrc: '/113/蔡雨芳', researchfield: '多代理人系統、使用者意圖及感知', email: 'M11321022@mail.ntust.edu.tw' },
 
     // 資管所甲組
     {grade: 'Master', name: '蔡沂庭', class: '資管所甲組', year: '115', imgSrc: '/115/蔡沂庭', researchfield: '討論中...', email: 'M11509106@mail.ntust.edu.tw'},
     { grade: 'Master', name: '潘俊廷', class: '資管所甲組', year: '115', imgSrc: '/115/潘俊廷', researchfield: '討論中...', email: 'M11509110@mail.ntust.edu.tw'},
-    { grade: 'Master', name: '張姿儀', class: '資管所甲組', year: '114', imgSrc: '/114/張姿儀', researchfield: '討論中...', email: 'M11409127@mail.ntust.edu.tw'},
-    { grade: 'Master', name: '徐澍萭', class: '資管所甲組', year: '114', imgSrc: '/114/Benson', researchfield: '討論中...', email: 'M11409111@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '張姿儀', class: '資管所甲組', year: '114', imgSrc: '/114/張姿儀', researchfield: 'Agent架構優化、代理人式自動化溝通', email: 'M11409127@mail.ntust.edu.tw'},
+    { grade: 'Master', name: '徐澍萭', class: '資管所甲組', year: '114', imgSrc: '/114/Benson', researchfield: 'LLM Agent、人類行為模擬', email: 'M11409111@mail.ntust.edu.tw' },
     { grade: 'Master', name: 'TRAN THI LUU LY', class: '資管所甲組', year: '113', imgSrc: '/113/TRAN THI LUU LY', researchfield: '資料分析與AI應用 Data Analysis and AI applications', email: 'M11309813@mail.ntust.edu.tw' },
     { grade: 'Master', name: '張尹寧', class: '資管所甲組', year: '112', imgSrc: '/112/張尹寧', researchfield: '聯邦式學習、圖神經學習', email: 'M11209123@mail.ntust.edu.tw' },
 
@@ -50,8 +50,9 @@ const Undergraduate = [
 const EMBA = [
     { grade: 'EMBA', name: '李惠昭', class:'管研所',year: '115', imgSrc: '/115/李惠昭', researchfield: '討論中...', email: 'm11516122@mail.ntust.edu.tw' },
     { grade: 'EMBA', name: '羅偉倫', class:'管研所',year: '115', imgSrc: '/115/羅偉倫', researchfield: '討論中...', email: 'm11516126@mail.ntust.edu.tw' },
-    { grade: 'EMBA', name: '朱正光', class:'管研所',year: '114', imgSrc: '/114/朱正光', researchfield: '討論中...', email: 'M11416112@mail.ntust.edu.tw' },
-    { grade: 'EMBA', name: '甘桂杭', class:'管研所',year: '114', imgSrc: '/114/甘桂杭', researchfield: '討論中...', email: 'M11416224@mail.ntust.edu.tw'}
+    { grade: 'EMBA', name: '黃建勳', class:'管研所',year: '114', imgSrc: '/114/黃建勳', researchfield: '討論中...', email: 'M11416220@mail.ntust.edu.tw' },
+    { grade: 'EMBA', name: '朱正光', class:'管研所',year: '114', imgSrc: '/114/朱正光', researchfield: 'AI Agent產業應用、組織管理', email: 'M11416112@mail.ntust.edu.tw' },
+    { grade: 'EMBA', name: '甘桂杭', class:'管研所',year: '114', imgSrc: '/114/甘桂杭', researchfield: 'ESG、跨產業轉型', email: 'M11416224@mail.ntust.edu.tw'}
 
 ]
 
