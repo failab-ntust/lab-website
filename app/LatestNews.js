@@ -2,6 +2,7 @@ import React from 'react';
 import { Stack, ListItem, Typography, ListItemText, ListItemAvatar } from '@mui/material';
 
 const data = [
+    { date: '2026/09', content:'恭喜本研究團隊獲得國家運動科學中心補助'},
     { date: '2026/07', content: '「第一屆永續金融我最行－2026全國大專院校永續金融知識競賽」分區第5名' },
     { date: '2026/07', content: '榮獲台科大優良研究教師' },
     { date: '2026/07', content: '恭喜本研究團隊專題生榮獲國科會大專生專題計畫' },
