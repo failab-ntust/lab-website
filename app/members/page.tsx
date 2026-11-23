@@ -8,6 +8,7 @@ import React from 'react'
 const Master = [
     // MBA
     { grade: 'Master', name: '蕭至苓', class: 'MBA', year: '115', imgSrc: '/115/蕭至苓', researchfield: '討論中...', email: 'M11521014@mail.ntust.edu.tw' },
+    { grade: 'Master', name: '蘇立翎', class: 'MBA', year: '115', imgSrc: '/115/蘇立翎', researchfield: '討論中...', email: 'm11521026@mail.ntust.edu.tw' },
     { grade: 'Master', name: '鄧書妤', class: 'MBA', year: '114', imgSrc: '/114/鄧書妤', researchfield: '討論中...', email: 'M11421016@mail.ntust.edu.tw'},
     { grade: 'Master', name: '李婷芳', class: 'MBA', year: '114', imgSrc: '/114/李婷芳', researchfield: '個人式AI代理人、使用者感知', email: 'M11421003@mail.ntust.edu.tw'},
     { grade: 'Master', name: '尹沛琪', class: 'MBA', year: '114', imgSrc: '/114/尹沛琪', researchfield: '討論中...', email: 'M11421019@mail.ntust.edu.tw'},
@@ -50,6 +51,8 @@ const Undergraduate = [
 const EMBA = [
     { grade: 'EMBA', name: '李惠昭', class:'管研所',year: '115', imgSrc: '/115/李惠昭', researchfield: '討論中...', email: 'm11516122@mail.ntust.edu.tw' },
     { grade: 'EMBA', name: '羅偉倫', class:'管研所',year: '115', imgSrc: '/115/羅偉倫', researchfield: '討論中...', email: 'm11516126@mail.ntust.edu.tw' },
+    { grade: 'EMBA', name: '林昌儀', class:'管研所',year: '115', imgSrc: '/115/林昌儀', researchfield: '討論中...', email: 'M11516217@mail.ntust.edu.tw' },
+    { grade: 'EMBA', name: '蔡佳璇', class:'管研所',year: '115', imgSrc: '/115/蔡佳璇', researchfield: '討論中...', email: 'm11516111@mail.ntust.edu.tw' },
     { grade: 'EMBA', name: '黃建勳', class:'管研所',year: '114', imgSrc: '/114/黃建勳', researchfield: '討論中...', email: 'M11416220@mail.ntust.edu.tw' },
     { grade: 'EMBA', name: '朱正光', class:'管研所',year: '114', imgSrc: '/114/朱正光', researchfield: 'AI Agent產業應用、組織管理', email: 'M11416112@mail.ntust.edu.tw' },
     { grade: 'EMBA', name: '甘桂杭', class:'管研所',year: '114', imgSrc: '/114/甘桂杭', researchfield: 'ESG、跨產業轉型', email: 'M11416224@mail.ntust.edu.tw'}
